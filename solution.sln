@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{76B1D84B-62BA-4526-9431-33375BE81EE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{4F232462-DC40-49CD-9058-1C5BC1B2AA48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76B1D84B-62BA-4526-9431-33375BE81EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B1D84B-62BA-4526-9431-33375BE81EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B1D84B-62BA-4526-9431-33375BE81EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B1D84B-62BA-4526-9431-33375BE81EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F232462-DC40-49CD-9058-1C5BC1B2AA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F232462-DC40-49CD-9058-1C5BC1B2AA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F232462-DC40-49CD-9058-1C5BC1B2AA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F232462-DC40-49CD-9058-1C5BC1B2AA48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

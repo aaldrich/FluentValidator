@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F232462-DC40-49CD-9058-1C5BC1B2AA48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Validation</RootNamespace>
+    <AssemblyName>Validation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ExpressionHelper.cs" />
+    <Compile Include="Helpers\IObjectHidingHelper.cs" />
+    <Compile Include="Mapping\ValidationBuilders\BetweenValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\CompositeValidationBuilder.cs" />
+    <Compile Include="Validation\Validators\EmptyValidator.cs" />
+    <Compile Include="Mapping\ValidationBuilders\ObjectValidationBuilder.cs" />
+    <Compile Include="Registry\ValidationRegistry.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="Validation\Validators\NotValidator.cs" />
+    <Compile Include="Validation\Validators\LessThanEqualToValidator.cs" />
+    <Compile Include="Validation\Validators\GreaterThanEqualToValidator.cs" />
+    <Compile Include="Validation\Validators\ExclusiveBetweenValidator.cs" />
+    <Compile Include="Validation\Validators\InclusiveBetweenValidator.cs" />
+    <Compile Include="Validation\Validators\GreaterThanValidator.cs" />
+    <Compile Include="Mapping\ValidationMappers\ObjectValidationMap.cs" />
+    <Compile Include="Mapping\ValidationBuilders\LongValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationMappers\LongValidationMap.cs" />
+    <Compile Include="Mapping\ValidationBuilders\ValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\StringValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationMappers\StringValidationMap.cs" />
+    <Compile Include="Mapping\ValidationMappers\ValidationMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation\Validators\IValidator.cs" />
+    <Compile Include="Validation\Validators\LessThanValidator.cs" />
+    <Compile Include="Validation\Validators\NullValidator.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
