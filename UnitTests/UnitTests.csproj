@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\ExpressionHelperSpecs.cs" />
+    <Compile Include="Helpers\ReflectionHelperSpecs.cs" />
     <Compile Include="Mapping\BetweenValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\LongValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\ValidationMapSpecs.cs" />
