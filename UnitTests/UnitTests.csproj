@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{76B1D84B-62BA-4526-9431-33375BE81EE0}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -61,6 +61,8 @@
     <Compile Include="Stubs\CatMap.cs" />
     <Compile Include="Registry\ValidationRegistrySpecs.cs" />
     <Compile Include="Stubs\Cat.cs" />
+    <Compile Include="Stubs\Dog.cs" />
+    <Compile Include="Stubs\DogMap.cs" />
     <Compile Include="Validation\ValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\EmptyValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\NotValidatorSpecs.cs" />
