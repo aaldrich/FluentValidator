@@ -66,6 +66,7 @@
     <Compile Include="Stubs\DogMap.cs" />
     <Compile Include="Validation\ValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\BooleanValidatorSpecs.cs" />
+    <Compile Include="Validation\Validators\EqualsValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\EmptyValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\NotValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\LessThanEqualToValidatorSpecs.cs" />

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Machine.Specifications;
 using Moq;
 using Validation.Mapping.ValidationBuilders;
+using Validation.Mapping.ValidationBuilders.Numeric;
 using Validation.Mapping.ValidationMappers;
 using Validation.UnitTests.Stubs;
 using Validation.Validation.Validators;

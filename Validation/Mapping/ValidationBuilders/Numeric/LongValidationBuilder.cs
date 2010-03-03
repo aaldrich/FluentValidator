@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Validation.Mapping.ValidationBuilders;
 using Validation.Validation.Validators;
 
-namespace Validation.Mapping.ValidationBuilders
+namespace Validation.Mapping.ValidationBuilders.Numeric
 {
     public class LongValidationBuilder<T>: ValidationBuilder<T>
     {
@@ -33,6 +32,13 @@ namespace Validation.Mapping.ValidationBuilders
             var not_validator = new NotValidator<T, long>(expression, value);
             validators.Add(not_validator);
             return new CompositeValidationBuilder<T,LongValidationBuilder<T>>(this);
+        }
+
+        public CompositeValidationBuilder<T, LongValidationBuilder<T>> should_be(long value)
+        {
+            var equals_validator = new EqualsValidator<T, long>(expression, value);
+            validators.Add(equals_validator);
+            return new CompositeValidationBuilder<T, LongValidationBuilder<T>>(this);
         }
 
         /// <summary>

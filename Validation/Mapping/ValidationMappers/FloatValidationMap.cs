@@ -6,9 +6,9 @@ namespace Validation.Mapping.ValidationMappers
 {
     public partial class ValidationMap<T>
     {
-        public LongValidationBuilder<T> Map(Expression<Func<T, long>> property)
+        public FloatValidationBuilder<T> Map(Expression<Func<T, float>> property)
         {
-            return new LongValidationBuilder<T>(property,validators);
+            return new FloatValidationBuilder<T>(property,validators);
         }
     }
 }

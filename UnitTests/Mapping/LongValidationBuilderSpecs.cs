@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Machine.Specifications;
 using Validation.Mapping.ValidationBuilders;
+using Validation.Mapping.ValidationBuilders.Numeric;
 using Validation.UnitTests.Stubs;
 using Validation.Validation.Validators;
 using It=Machine.Specifications.It;
