@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4F232462-DC40-49CD-9058-1C5BC1B2AA48}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -55,6 +55,8 @@
     <Compile Include="Helpers\TypeInfo.cs" />
     <Compile Include="Mapping\ValidationBuilders\BetweenValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\CompositeValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\BooleanValidationBuilder.cs" />
+    <Compile Include="Validation\Validators\BooleanValidator.cs" />
     <Compile Include="Validation\Validators\EmptyValidator.cs" />
     <Compile Include="Mapping\ValidationBuilders\ObjectValidationBuilder.cs" />
     <Compile Include="Registry\ValidationRegistry.cs" />

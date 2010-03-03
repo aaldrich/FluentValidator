@@ -7,5 +7,6 @@ namespace Validation.UnitTests.Stubs
         public long id { get; set; }
         public string name { get; set; }
         public IList<Cat> kittens { get; set; }
+        public bool is_hungry { get; set; }
     }
 }
