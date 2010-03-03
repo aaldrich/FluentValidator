@@ -23,12 +23,6 @@ namespace Validation.Helpers
             return Activator.CreateInstance(real_type);
         }
 
-        //public static Type create_generic_IValidator(string assembly_qualified_name)
-        //{
-        //    return typeof(IValidator<>)
-        //        .MakeGenericType(Type.GetType(assembly_qualified_name));
-        //}
-
         public static Type create_generic_ValidationMap(string assembly_qualified_name)
         {
             return typeof(ValidationMap<>)
