@@ -2,14 +2,8 @@ using System;
 
 namespace Validation.Validation.Validators
 {
-    public interface IValidator<T> // : IValidator 
+    public interface IValidator<T> 
     {
         bool Validate(T value);
     }
-    
-    //public interface IValidator
-    //{
-    //    bool Validate(Type type, object value);
-
-    //}
 }

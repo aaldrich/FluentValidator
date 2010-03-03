@@ -21,6 +21,9 @@ namespace Validation.Validation.Validators
         /// <returns>true if it is less or equal, false if not</returns>
         public bool Validate(T value)
         {
+            if (value == null)
+                return false;
+
             var original_delegate = expression.Compile();
             var property_value = original_delegate.Invoke(value);
 

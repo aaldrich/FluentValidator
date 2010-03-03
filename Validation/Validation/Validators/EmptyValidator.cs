@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq.Expressions;
 
 namespace Validation.Validation.Validators
@@ -22,6 +21,9 @@ namespace Validation.Validation.Validators
         /// <returns>true if not empty, false if empty</returns>
         public bool Validate(T value)
         {
+            if(value == null)
+                return false;
+
             var compiled = expression.Compile();
             var original_delegate = compiled.Invoke(value);
 

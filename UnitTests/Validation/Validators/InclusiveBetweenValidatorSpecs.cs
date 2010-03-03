@@ -84,4 +84,14 @@ namespace Validation.UnitTests.Validation.Validators
         It should_return_true = () =>
             result.ShouldBeTrue();
     }
+
+    [Subject("Validating a null value")]
+    public class when_asking_inclusive_between_validator_to_validate_a_null_value : inclusive_between_validator_concern
+    {
+        Because b = () =>
+            result = validator.Validate(null);
+
+        It should_return_false = () =>
+            result.ShouldBeFalse();
+    }
 }

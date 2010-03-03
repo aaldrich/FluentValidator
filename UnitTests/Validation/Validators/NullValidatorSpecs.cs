@@ -45,4 +45,14 @@ namespace Validation.UnitTests.Validation.Validators
         It should_return_false = () =>
             result.ShouldBeFalse();
     }
+
+    [Subject("Validating a null value")]
+    public class when_asking_null_validator_to_validate_a_null_instance : null_validator_concern
+    {
+        Because b = () =>
+            result = validator.Validate(null);
+
+        It should_return_false = () =>
+            result.ShouldBeFalse();
+    }
 }

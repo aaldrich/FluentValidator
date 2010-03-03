@@ -21,6 +21,7 @@ namespace Validation.Registry
 
         public static void Configure()
         {
+            validation_maps = new Dictionary<string, object>();
             add_validation_maps();
         }
 
@@ -52,30 +53,6 @@ namespace Validation.Registry
             } 
         }
 
-        //public static ValidationMap<T> GetMapFor(string type) where T
-        //{
-        //    var map = validation_maps.FirstOrDefault(
-        //        x => ((IValidationMap)x.Value).ValidationType.AssemblyQualifiedName.Equals(type));
-
-        //    //if (map == null)
-        //    //    throw new NullReferenceException("No Mapping for Type " + typeof(T));
-
-        //    var validation_map = typeof(ValidationMap<>);
-        //    validation_map.MakeGenericType(map.ValidationType);
-
-        //    return validation_map as ValidationMap<T>;
-        //}
-
-        //public static ValidationMap<T> GetMapFor<T>()
-        //{
-        //    var map = validation_maps.FirstOrDefault(x => x.ValidationType.Equals(typeof(T)));
-
-        //    if (map == null)
-        //        throw new NullReferenceException("No Mapping for Type " + typeof(T));
-            
-        //    return map as ValidationMap<T>;
-        //}
-
         public static void IsValid()
         {
             
@@ -86,6 +63,14 @@ namespace Validation.Registry
             ////if (maps.Count() > 1)
             //    throw new AmbiguousMatchException("Multiple maps exist for the generic type " + typeof(T).Name);
 
+        }
+
+        public static ValidationMap<T> GetMapFor<T>()
+        {
+            var map = (ValidationMap<T>) validation_maps.
+                                          First(x => x.Key.Equals(typeof (T).AssemblyQualifiedName))
+                                          .Value;
+            return map;
         }
     }
 }

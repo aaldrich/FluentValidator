@@ -35,38 +35,41 @@ namespace Validation.UnitTests.Registry
             ValidationRegistry.get_scan_assemblies().Count().ShouldEqual(1);
     }
 
-    //[Subject("Getting all classes that inherit ValidationMap")]
-    //public class when_asked_for_all_the_validation_maps : validation_registry_concern
-    //{
-    //    Establish c = () =>
-    //        ValidationRegistry.AddAssemblyFrom<CatMap>();
-        
-    //    Because b = () =>
-    //        maps = ValidationRegistry.get_validation_maps();
+    [Subject("Getting all classes that inherit ValidationMap")]
+    public class when_asked_for_all_the_validation_maps : validation_registry_concern
+    {
+        Establish c = () =>
+            {
+                ValidationRegistry.AddAssemblyFrom<CatMap>();
+                ValidationRegistry.Configure();
+            };
 
-    //    It should_return_all_the_classes_that_inherit_from_validationmap = () =>
-    //        maps.First().ShouldBeOfType<CatMap>(); 
+        Because b = () =>
+            maps = ValidationRegistry.validation_maps;
 
-    //    static IEnumerable<IValidationMap> maps;
-    //}
+        It should_return_all_the_classes_that_inherit_from_validationmap = () =>
+            maps.First().Value.ShouldBeOfType<CatMap>();
 
-    //[Subject("Getting Validation Map for specified type")]
-    //public class when_asked_for_a_validation_map_for_the_specified_type : validation_registry_concern
-    //{
-    //    Establish c = () =>
-    //        {
-    //            ValidationRegistry.AddAssemblyFrom<CatMap>();
-    //            ValidationRegistry.Configure();
-    //        };
+        static IDictionary<string, object> maps;
+    }
 
-    //    Because b = () =>
-    //        map = ValidationRegistry.GetMapFor<Cat>();
+    [Subject("Getting Validation Map for specified type")]
+    public class when_asked_for_a_validation_map_for_the_specified_type : validation_registry_concern
+    {
+        Establish c = () =>
+            {
+                ValidationRegistry.AddAssemblyFrom<CatMap>();
+                ValidationRegistry.Configure();
+            };
 
-    //    It should_return_the_validation_map_instance_for_the_given_type = () =>
-    //        map.ShouldBeOfType<CatMap>();
+        Because b = () =>
+            map = ValidationRegistry.GetMapFor<Cat>();
 
-    //    static ValidationMap<Cat> map;
-    //}
+        It should_return_the_validation_map_instance_for_the_given_type = () =>
+            map.ShouldBeOfType<CatMap>();
+
+        static ValidationMap<Cat> map;
+    }
 
     [Subject("Validating Registry for only 1 validation map for a type")]
     [Ignore]

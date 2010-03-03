@@ -16,6 +16,9 @@ namespace Validation.Validation.Validators
 
         public bool Validate(T value)
         {
+            if (value == null)
+                return false;
+
             var compiled = expression.Compile();
             var invoked = compiled.Invoke(value);
 

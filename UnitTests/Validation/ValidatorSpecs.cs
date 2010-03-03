@@ -27,7 +27,7 @@ namespace Validation.UnitTests.Validation
 
         protected static Dog valid_dog()
         {
-            return new Dog() {id = 1};
+            return new Dog() {id = 1, fights_with = new Cat()};
         }
     }
 
@@ -35,7 +35,7 @@ namespace Validation.UnitTests.Validation
     public class when_asked_to_validate_a_valid_class : validator_concern
     {
         Establish c = () =>
-            cat = new Cat { id = 1};
+            cat = valid_cat(); 
 			
         Because b = () =>
             result = Validator.Validate(cat);	
@@ -51,7 +51,7 @@ namespace Validation.UnitTests.Validation
     public class when_asked_to_validate_an_invalid_class : validator_concern
     {
         Establish c = () =>
-            cat = new Cat { id = 0 };
+            cat = invalid_cat(); 
 
         Because b = () =>
             result = Validator.Validate(cat);

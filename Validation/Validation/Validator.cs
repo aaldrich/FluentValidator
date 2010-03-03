@@ -1,17 +1,23 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Validation.Helpers;
+using Validation.Helpers.Generics;
 using Validation.Mapping.ValidationMappers;
 using Validation.Registry;
-using Validation.Validation.Validators;
 
 namespace Validation.Validation
 {
     public static class Validator
     {
+        static readonly IGenericListFactory generic_list_factory;
+        static readonly IGenericValidatorFactory generic_validator_factory;
+
+        static Validator()
+        {
+            generic_list_factory = new GenericListFactory();
+            generic_validator_factory = new GenericValidatorFactory();
+        }
+
         public static bool Validate<T>(T instance) where T : class
         {
             if (instance == null)
@@ -28,25 +34,39 @@ namespace Validation.Validation
 
                 object validators_instance = get_property_validators(property, property_validation_map);
 
-                bool worked = validate_property_map(instance, property, validators_instance);
-                if (!worked) return false;
+                bool result = validate_property_map(instance, property, validators_instance);
+                if (!result) return false;
             }
 
             return true;
         }
 
+        /// <summary>
+        /// Validates a ValidationMap for the specified property.
+        /// Example: A Person has a Address property. This method
+        /// is responsible for validating the Address.
+        /// </summary>
+        /// <typeparam name="T">The Generic Type T passed in</typeparam>
+        /// <param name="instance">An instance of the Generic Type ie. Person</param>
+        /// <param name="property">A TypeInfo that stores things such
+        ///  as PropertyInfo ie. Address Property</param>
+        /// <param name="validators_instance">The validators property
+        ///  on the cooresponding ValidationMap instance ie. PersonMap.validators</param>
+        /// <returns>true if all validators passed, false if not.</returns>
         static bool validate_property_map<T>(T instance, TypeInfo property, object validators_instance)
         {
-            var closed_validator = typeof(IValidator<>).MakeGenericType(Type.GetType(property.type.AssemblyQualifiedName));
-            var closed_list = typeof(List<>).MakeGenericType(closed_validator);
-            var count = (int)closed_list.GetMethod("get_Count").Invoke(validators_instance, null);
+            var value = ReflectionHelper.get_property_value(instance, property.property_info.Name);
 
-            for (int i = 0; i < count; i++)
+            var generic_validator = generic_validator_factory
+                .create(property.type.AssemblyQualifiedName);            
+            
+            var generic_list = generic_list_factory
+                .create(generic_validator.generic_type,validators_instance);
+
+            for (int i = 0; i < generic_list.count; i++)
             {
-                var validator = closed_list.GetMethod("get_Item").Invoke(validators_instance, new object[] { i });
-                var value = instance.GetType().GetProperty(property.property_info.Name).GetValue(instance, null);
-                var method_template = closed_validator.GetMethod("Validate");
-                var result = (bool)method_template.Invoke(validator, new []{ value });
+                var validator = generic_list.items[i];
+                var result = generic_validator.Validate(validator, value);
                 if (!result)
                     return false;
             }
@@ -56,12 +76,11 @@ namespace Validation.Validation
 
         static object get_property_validators(TypeInfo property, object property_validation_map)
         {
-            var validators_generic 
-                = typeof(ValidationMap<>)
-                    .MakeGenericType(Type.GetType(property.type.AssemblyQualifiedName))
-                    .GetProperty("validators");
+            var validators = 
+                ReflectionHelper.create_generic_ValidationMap(property.type.AssemblyQualifiedName)
+                .GetProperty("validators");
 
-            return validators_generic.GetValue(property_validation_map, null);
+            return validators.GetValue(property_validation_map, null);
         }
 
         static bool validate_instance<T>(T instance)
