@@ -32,9 +32,14 @@ namespace Validation.Mapping.ValidationMappers
         //        return new LongValidationBuilder<T>(new_expression, validators);
         //    }
         //}
+        public Type ValidationType
+        {
+            get { return typeof(T); }
+        }
     }
 
     public interface IValidationMap : IObjectHidingHelper
     {
+        Type ValidationType { get; }
     }
 }

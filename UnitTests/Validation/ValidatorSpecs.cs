@@ -12,9 +12,10 @@ namespace Validation.UnitTests.Validation
             {
                 ValidationRegistry.AddAssemblyFrom<CatMap>();
                 ValidationRegistry.AddAssemblyFrom<DogMap>();
+                ValidationRegistry.Configure();
             };
 
-        protected Cat valid_cat()
+        protected static Cat valid_cat()
         {
             return new Cat() {id = 1};
         }

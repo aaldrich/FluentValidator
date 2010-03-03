@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Validation.Helpers;
 using Validation.Mapping.ValidationMappers;
 
 namespace Validation.Registry
@@ -9,10 +11,17 @@ namespace Validation.Registry
     public static class ValidationRegistry
     {
         static IList<Assembly> scan_assemblies;
+        public static IDictionary<string,object> validation_maps;
 
         static ValidationRegistry()
         {
             scan_assemblies = new List<Assembly>(); 
+            validation_maps = new Dictionary<string, object>();
+        }
+
+        public static void Configure()
+        {
+            add_validation_maps();
         }
 
         public static void AddAssemblyFrom<T>()
@@ -27,57 +36,54 @@ namespace Validation.Registry
         {
             return scan_assemblies;
         }
+        
+        static void add_validation_maps()
+        {
+            foreach (var assembly in scan_assemblies)
+            {
+                var types = assembly.GetTypes()
+                    .Where(x => typeof(IValidationMap).IsAssignableFrom(x));
+                    
+                foreach (var type in types)
+                {
+                    var instance = ReflectionHelper.create_instance_from_type(type) as IValidationMap; 
+                    validation_maps.Add(instance.ValidationType.AssemblyQualifiedName,instance);
+                }
+            } 
+        }
 
-        //static IEnumerable<IValidationMap> get_validation_maps()
+        //public static ValidationMap<T> GetMapFor(string type) where T
         //{
-        //    IEnumerable<Type> types = get_validation_maps_from_assemblies();
+        //    var map = validation_maps.FirstOrDefault(
+        //        x => ((IValidationMap)x.Value).ValidationType.AssemblyQualifiedName.Equals(type));
 
-        //    foreach (var type in types)
-        //    {
-        //        object instance = create_instance_from_type(type);
-        //        yield return (IValidationMap)instance;
-        //    }
+        //    //if (map == null)
+        //    //    throw new NullReferenceException("No Mapping for Type " + typeof(T));
+
+        //    var validation_map = typeof(ValidationMap<>);
+        //    validation_map.MakeGenericType(map.ValidationType);
+
+        //    return validation_map as ValidationMap<T>;
         //}
 
-        static object create_instance_from_type(Type type)
-        {
-            var real_type = Type.GetType(type.AssemblyQualifiedName);
-            return Activator.CreateInstance(real_type);
-        }
+        //public static ValidationMap<T> GetMapFor<T>()
+        //{
+        //    var map = validation_maps.FirstOrDefault(x => x.ValidationType.Equals(typeof(T)));
 
-        static IEnumerable<Type> get_validation_maps_from_assemblies()
-        {
-            return scan_assemblies .SelectMany(x => x.GetTypes())
-                .Where(x=>x.IsClass)
-                .Where(x=>x.BaseType.Name.Equals(typeof(ValidationMap<>).Name))
-                .Where(typeof(IValidationMap).IsAssignableFrom);
-        }
-
-        public static ValidationMap<T> GetMapFor<T>()
-        {
-            IEnumerable<Type> maps = get_validation_map_for_type<T>();
+        //    if (map == null)
+        //        throw new NullReferenceException("No Mapping for Type " + typeof(T));
             
-            var instance = create_instance_from_type(maps.First());
-
-            return instance as ValidationMap<T>;
-        }
-
-        static IEnumerable<Type> get_validation_map_for_type<T>()
-        {
-            return scan_assemblies.SelectMany(x => x.GetTypes())
-                .Where(x=>x.IsClass)
-                .Where(x=>x.BaseType.FullName.Equals(typeof(ValidationMap<T>).FullName))
-                .Where(typeof(IValidationMap).IsAssignableFrom);
-        }
+        //    return map as ValidationMap<T>;
+        //}
 
         public static void IsValid()
         {
             
-            var maps = get_validation_maps_from_assemblies();
+            //var maps = get_validation_maps_from_assemblies();
 
-            var group = maps.GroupBy(x => x.FullName);
+            //var group = maps.GroupBy(x => x.FullName);
 
-            //if (maps.Count() > 1)
+            ////if (maps.Count() > 1)
             //    throw new AmbiguousMatchException("Multiple maps exist for the generic type " + typeof(T).Name);
 
         }

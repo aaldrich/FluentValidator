@@ -50,20 +50,23 @@ namespace Validation.UnitTests.Registry
     //    static IEnumerable<IValidationMap> maps;
     //}
 
-    [Subject("Getting Validation Map for specified type")]
-    public class when_asked_for_a_validation_map_for_the_specified_type : validation_registry_concern
-    {
-        Establish c = () =>
-            ValidationRegistry.AddAssemblyFrom<CatMap>();
+    //[Subject("Getting Validation Map for specified type")]
+    //public class when_asked_for_a_validation_map_for_the_specified_type : validation_registry_concern
+    //{
+    //    Establish c = () =>
+    //        {
+    //            ValidationRegistry.AddAssemblyFrom<CatMap>();
+    //            ValidationRegistry.Configure();
+    //        };
 
-        Because b = () =>
-            map = ValidationRegistry.GetMapFor<Cat>();
+    //    Because b = () =>
+    //        map = ValidationRegistry.GetMapFor<Cat>();
 
-        It should_return_the_validation_map_instance_for_the_given_type = () =>
-            map.ShouldBeOfType<CatMap>();
+    //    It should_return_the_validation_map_instance_for_the_given_type = () =>
+    //        map.ShouldBeOfType<CatMap>();
 
-        static ValidationMap<Cat> map;
-    }
+    //    static ValidationMap<Cat> map;
+    //}
 
     [Subject("Validating Registry for only 1 validation map for a type")]
     [Ignore]
