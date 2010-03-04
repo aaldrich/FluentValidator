@@ -17,7 +17,7 @@ namespace Validation.UnitTests.Validation
 
         protected static Cat valid_cat()
         {
-            return new Cat() {id = 1};
+            return new Cat() {id = 1, birth_date = new DateTime(2005,06,07)};
         }
 
         protected static Cat invalid_cat()

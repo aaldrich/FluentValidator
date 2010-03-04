@@ -56,10 +56,12 @@
     <Compile Include="Mapping\ValidationBuilders\BetweenValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\CompositeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\BooleanValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\DateTime\Month.cs" />
-    <Compile Include="Mapping\ValidationBuilders\DateTime\MonthValidaionBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Months\IMonthSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Months\MonthSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Months\Month.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Months\MonthValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\ByteValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\DateTime\DateTimeValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\DateTimeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DoubleValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DecimalValidationBuilder.cs" />

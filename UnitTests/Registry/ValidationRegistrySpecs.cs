@@ -48,7 +48,10 @@ namespace Validation.UnitTests.Registry
             maps = ValidationRegistry.validation_maps;
 
         It should_return_all_the_classes_that_inherit_from_validationmap = () =>
-            maps.First().Value.ShouldBeOfType<CatMap>();
+            {
+                maps.Values.Where(x => x.GetType().Equals(typeof(CatMap))).Count().ShouldEqual(1);
+                maps.Values.Where(x => x.GetType().Equals(typeof(DogMap))).Count().ShouldEqual(1);
+            };
 
         static IDictionary<string, object> maps;
     }
