@@ -54,9 +54,12 @@
     <Compile Include="Helpers\ReflectionHelper.cs" />
     <Compile Include="Helpers\TypeInfo.cs" />
     <Compile Include="Mapping\ValidationBuilders\BetweenValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\CanWrapWithNotValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\CompositeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\BooleanValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Months\IMonthPartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\IMonthSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Months\MonthPartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\MonthSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\Month.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\MonthValidationBuilder.cs" />
@@ -95,6 +98,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\Validators\IValidator.cs" />
     <Compile Include="Validation\Validators\LessThanValidator.cs" />
+    <Compile Include="Validation\Validators\NotValidatorWrapper.cs" />
     <Compile Include="Validation\Validators\NullValidator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

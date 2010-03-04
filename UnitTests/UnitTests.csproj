@@ -76,6 +76,7 @@
     <Compile Include="Validation\Validators\ExclusiveBetweenValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\InclusiveBetweenValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\LessThanValidatorSpecs.cs" />
+    <Compile Include="Validation\Validators\NotValidatorWrapperSpecs.cs" />
     <Compile Include="Validation\Validators\NullValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\GreaterThanValidatorSpecs.cs" />
   </ItemGroup>

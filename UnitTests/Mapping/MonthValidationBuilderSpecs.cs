@@ -55,4 +55,25 @@ namespace Validation.UnitTests.Mapping
         static ValidationBuilder<Cat> month_builder;
         static ValidationBuilder<Cat> current_builder;
     }
+
+    [Subject("Specifiying February is not greater than January")]
+    public class when_specifiying_that_february_is_not_greater_than_january : month_validation_builder_concern
+    {
+        Establish c = () =>
+        {
+            validators = new List<IValidator<Cat>>();
+            current_builder = new ValidationBuilder<Cat>(validators);
+        };
+
+        Because b = () =>
+            month_builder = new MonthValidationBuilder<Cat, ValidationBuilder<Cat>>(x => x.birth_date, current_builder)
+            .should_not_be().greater_than().January();
+
+        It should_add_a_not_validator_wrapping_a_greater_than_validator_to_the_list_of_validators = () =>
+            validators.First().ShouldBeOfType<NotValidatorWrapper<Cat,GreaterThanValidator<Cat, int>>>();
+
+        static IList<IValidator<Cat>> validators;
+        static ValidationBuilder<Cat> current_builder;
+        static ValidationBuilder<Cat> month_builder;
+    }
 }
