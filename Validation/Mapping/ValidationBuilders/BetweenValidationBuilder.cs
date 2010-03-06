@@ -1,12 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Validation.Mapping.ValidationBuilders.Dates;
+using Validation.Mapping.ValidationBuilders.Dates.Months;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders
 {
     public class BetweenValidationBuilder<T, TReturnBuilder, TProperty> : ValidationBuilder<T>
-        where TReturnBuilder : ValidationBuilder<T>
+        where TReturnBuilder : IValidationBuilder<T>
         where TProperty : IComparable
     {
         readonly Expression<Func<T, TProperty>> expression;

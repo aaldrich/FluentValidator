@@ -10,69 +10,67 @@ using It=Machine.Specifications.It;
 
 namespace Validation.UnitTests.Mapping
 {
-    public abstract class month_validation_builder_concern
+    public abstract class year_validation_builder_concern
     {
 		
     }
 		
-    [Subject("Specifiying a Month must be january")]
-    public class when_specifiying_that_a_month_must_be_january : month_validation_builder_concern
+    [Subject("Specifiying a Year must be 2010")]
+    public class when_specifiying_that_a_year_must_be_2010 : year_validation_builder_concern
     {
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
+                current_builder = new ValidationBuilder<Cat>(validators);
             };
 
         Because b = () =>
-            month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators)
-            .should_be().equal_to().January();
+            year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,current_builder.validators)
+            .should_be().equal_to(2010);
 
         It should_add_an_integer_equals_validator_to_the_list_of_validators = () =>
             validators.First().ShouldBeOfType<EqualsValidator<Cat, int>>();
 
         static IList<IValidator<Cat>> validators;
-        static ValidationBuilder<Cat> month_builder;
+        static ValidationBuilder<Cat> year_builder;
+        static ValidationBuilder<Cat> current_builder;
     }
 
-    [Subject("Specifiying June is between January and July")]
-    public class when_specifiying_that_june_is_between_january_and_july : month_validation_builder_concern
+    [Subject("Specifiying 2009 is between 2008 and 2010")]
+    public class when_specifiying_that_2009_is_between_2008_and_2010 : month_validation_builder_concern
     {
         Establish c = () =>
         {
             validators = new List<IValidator<Cat>>();
-            current_builder = new ValidationBuilder<Cat>(validators);
         };
 
         Because b = () =>
-            month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators)
-            .should_be().between(Month.January,Month.July);
+            year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,validators )
+            .should_be().between(2008,2010);
 
         It should_add_an_inclusive_between_validator_to_the_list_of_validators = () =>
             validators.First().ShouldBeOfType<InclusiveBetweenValidator<Cat, int>>();
 
         static IList<IValidator<Cat>> validators;
-        static ValidationBuilder<Cat> month_builder;
-        static ValidationBuilder<Cat> current_builder;
+        static ValidationBuilder<Cat> year_builder;
     }
 
-    [Subject("Specifiying February is not greater than January")]
-    public class when_specifiying_that_february_is_not_greater_than_january : month_validation_builder_concern
+    [Subject("Specifiying 2010 is not greater than 2009")]
+    public class when_specifiying_that_2010_is_not_greater_than_2009 : month_validation_builder_concern
     {
         Establish c = () =>
         {
             validators = new List<IValidator<Cat>>();
-            current_builder = new ValidationBuilder<Cat>(validators);
         };
 
         Because b = () =>
-            month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators)
-            .should_not_be().greater_than().January();
+            year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,validators)
+            .should_not_be().greater_than(2009);
 
         It should_add_a_not_validator_wrapping_a_greater_than_validator_to_the_list_of_validators = () =>
             validators.First().ShouldBeOfType<NotValidatorWrapper<Cat,GreaterThanValidator<Cat, int>>>();
 
         static IList<IValidator<Cat>> validators;
-        static ValidationBuilder<Cat> current_builder;
-        static ValidationBuilder<Cat> month_builder;
+        static ValidationBuilder<Cat> year_builder;
     }
 }
