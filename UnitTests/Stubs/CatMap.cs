@@ -1,4 +1,4 @@
-using Validation.Mapping.ValidationBuilders.Date;
+using System;
 using Validation.Mapping.ValidationBuilders.Dates.Months;
 using Validation.Mapping.ValidationMappers;
 
@@ -12,6 +12,7 @@ namespace Validation.UnitTests.Stubs
                 .and().greater_than_zero()
                 .and().not(2);
             Map(x => x.birth_date).month().should_be().between(Month.January,Month.July);
+            Map(x => x.birth_date).date().should_be().greater_than(new DateTime());
         }
     }
 }

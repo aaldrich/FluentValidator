@@ -6,21 +6,21 @@ namespace Validation.Mapping.ValidationBuilders
     /// next ValidationBuilder.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <typeparam name="TCurrentBuilder"></typeparam>
-    public class CompositeValidationBuilder<T,TCurrentBuilder>
-        : ValidationBuilder<T> where TCurrentBuilder : ValidationBuilder<T>
+    /// <typeparam name="TReturnBuilder"></typeparam>
+    public class CompositeValidationBuilder<T,TReturnBuilder>
+        : ValidationBuilder<T> where TReturnBuilder : IValidationBuilder<T>
     {
-        readonly TCurrentBuilder current_builder;
+        readonly IValidationBuilder<T> return_builder;
 
-        public CompositeValidationBuilder(TCurrentBuilder current_builder)
-            : base(current_builder.validators)
+        public CompositeValidationBuilder(IValidationBuilder<T> return_builder)
+            : base(return_builder.validators)
         {
-            this.current_builder = current_builder;
+            this.return_builder = return_builder;
         }
 
-        public TCurrentBuilder and()
+        public TReturnBuilder and()
         {
-            return current_builder; 
+            return (TReturnBuilder)return_builder; 
         }
     }
 }

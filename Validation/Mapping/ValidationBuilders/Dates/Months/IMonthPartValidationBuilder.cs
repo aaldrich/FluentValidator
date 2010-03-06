@@ -1,11 +1,10 @@
 namespace Validation.Mapping.ValidationBuilders.Dates.Months
 {
-    public interface IMonthPartValidationBuilder<T, TCurrentBuilder>
-        where TCurrentBuilder : ValidationBuilder<T>
+    public interface IMonthPartValidationBuilder<T>
     {
-        BetweenValidationBuilder<T, MonthValidationBuilder<T,TCurrentBuilder>,int> between(Month lower, Month upper);
-        IMonthSpecificationValidationBuilder<T, TCurrentBuilder> less_than();
-        IMonthSpecificationValidationBuilder<T, TCurrentBuilder> greater_than();
-        IMonthSpecificationValidationBuilder<T, TCurrentBuilder> equal_to();
+        BetweenValidationBuilder<T,CompositeValidationBuilder<T,IDateTimeEntryValidationBuilder<T>>,int> between(Month lower, Month upper);
+        IMonthSpecificationValidationBuilder<T> less_than();
+        IMonthSpecificationValidationBuilder<T> greater_than();
+        IMonthSpecificationValidationBuilder<T> equal_to();
     }
 }
