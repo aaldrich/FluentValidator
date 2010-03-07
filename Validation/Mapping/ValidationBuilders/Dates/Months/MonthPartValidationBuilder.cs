@@ -9,7 +9,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
     /// code easier to read. It was getting to bulky having all the implementation
     /// of all the code in one file.
     /// </summary>
-    public partial class MonthValidationBuilder<T> 
+    public partial class MonthValidationBuilder<T> where T : class
     {
         public IMonthSpecificationValidationBuilder<T> less_than()
         {

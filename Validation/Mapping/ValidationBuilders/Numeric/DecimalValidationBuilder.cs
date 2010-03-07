@@ -5,7 +5,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Numeric
 {
-    public class DecimalValidationBuilder<T>: ValidationBuilder<T>
+    public class DecimalValidationBuilder<T>: ValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, decimal>> expression;
 

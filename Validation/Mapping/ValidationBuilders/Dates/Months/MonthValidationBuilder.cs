@@ -16,7 +16,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
     public partial class MonthValidationBuilder<T> : CanWrapWithNotValidationBuilder<T>,
                                                      IMonthEntryValidationBuilder<T>,
                                                      IMonthPartValidationBuilder<T>,
-                                                     IMonthSpecificationValidationBuilder<T>
+                                                     IMonthSpecificationValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, DateTime>> expression;
         

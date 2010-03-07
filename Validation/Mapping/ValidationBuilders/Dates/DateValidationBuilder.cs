@@ -7,7 +7,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates
 {
     public partial class DateValidationBuilder<T> : CanWrapWithNotValidationBuilder<T>,
                                                     IDateEntryValidationBuilder<T>,
-                                                    IDatePartValidationBuilder<T>
+                                                    IDatePartValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, DateTime>> expression;
 

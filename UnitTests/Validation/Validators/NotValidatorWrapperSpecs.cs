@@ -15,19 +15,19 @@ namespace Validation.UnitTests.Validation.Validators
     {
         Establish c = () =>
             {
-                greater_than_validator = new GreaterThanValidator<long, long>(x=>x,0);
+                greater_than_validator = new GreaterThanValidator<Cat, long>(x=>x.id,0);
                 not_validator_wrapper = 
-                    new NotValidatorWrapper<long, GreaterThanValidator<long, long>>(greater_than_validator);
+                    new NotValidatorWrapper<Cat, GreaterThanValidator<Cat, long>>(greater_than_validator);
             };
 			
         Because b = () =>
-            result = not_validator_wrapper.Validate(1);
+            result = not_validator_wrapper.Validate(new Cat{id = 1});
 
         It should_return_false = () =>
             result.ShouldBeFalse();
 
-        static GreaterThanValidator<long, long> greater_than_validator;
-        static NotValidatorWrapper<long, GreaterThanValidator<long, long>> not_validator_wrapper;
+        static GreaterThanValidator<Cat, long> greater_than_validator;
+        static NotValidatorWrapper<Cat, GreaterThanValidator<Cat, long>> not_validator_wrapper;
         static bool result;
     }
 
@@ -36,19 +36,19 @@ namespace Validation.UnitTests.Validation.Validators
     {
         Establish c = () =>
         {
-            greater_than_validator = new GreaterThanValidator<long, long>(x => x, 0);
+            greater_than_validator = new GreaterThanValidator<Cat, long>(x => x.id, 0);
             not_validator_wrapper =
-                new NotValidatorWrapper<long, GreaterThanValidator<long, long>>(greater_than_validator);
+                new NotValidatorWrapper<Cat, GreaterThanValidator<Cat, long>>(greater_than_validator);
         };
 
         Because b = () =>
-            result = not_validator_wrapper.Validate(-1);
+            result = not_validator_wrapper.Validate(new Cat{id = -1});
 
         It should_return_true = () =>
             result.ShouldBeTrue();
 
-        static GreaterThanValidator<long, long> greater_than_validator;
-        static NotValidatorWrapper<long, GreaterThanValidator<long, long>> not_validator_wrapper;
+        static GreaterThanValidator<Cat, long> greater_than_validator;
+        static NotValidatorWrapper<Cat, GreaterThanValidator<Cat, long>> not_validator_wrapper;
         static bool result;
     }
 }

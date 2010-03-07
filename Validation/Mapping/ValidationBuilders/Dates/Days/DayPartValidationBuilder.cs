@@ -9,7 +9,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
     /// code easier to read. It was getting to bulky having all the implementation
     /// of all the code in one file.
     /// </summary>
-    public partial class DayValidationBuilder<T> 
+    public partial class DayValidationBuilder<T> where T : class
     {
         public IDaySpecificationValidationBuilder<T> less_than()
         {

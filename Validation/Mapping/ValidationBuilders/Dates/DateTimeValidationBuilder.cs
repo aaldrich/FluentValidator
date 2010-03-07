@@ -8,7 +8,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates
 {
-    public class DateTimeValidationBuilder<T>: IDateTimeEntryValidationBuilder<T>
+    public class DateTimeValidationBuilder<T>: IDateTimeEntryValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, DateTime>> expression;
         public IList<IValidator<T>> validators { get; set; }

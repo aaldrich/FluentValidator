@@ -8,7 +8,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationMappers
 {
-    public partial class ValidationMap<T> : IValidationMap
+    public partial class ValidationMap<T> : IValidationMap where T : class
     {
         public IList<IValidator<T>> validators {get; protected set;}
 

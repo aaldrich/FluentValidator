@@ -9,7 +9,7 @@ using Validation.UnitTests.Stubs;
 using Validation.Validation.Validators;
 using It=Machine.Specifications.It;
 
-namespace Validation.UnitTests.Mapping
+namespace Validation.UnitTests.Mapping.Builders
 {
     public abstract class between_builder_concern
     {
@@ -31,17 +31,17 @@ namespace Validation.UnitTests.Mapping
     public class when_specifying_that_between_should_be_exclusive : between_builder_concern
     {
         Establish c = () =>
-            between_builder = new BetweenValidationBuilder<Cat, ValidationBuilder<Cat>, long>
-                (expression, inclusive_validator, validation_builder, 1, 10);
+                      between_builder = new BetweenValidationBuilder<Cat, ValidationBuilder<Cat>, long>
+                                            (expression, inclusive_validator, validation_builder, 1, 10);
 
         Because b = () =>
-            between_builder.exclusive();
+                    between_builder.exclusive();
 
         It should_remove_the_inclusive_validator_from_the_list_of_validators = () =>
-            validators.ShouldNotContain(inclusive_validator);
+                                                                               validators.ShouldNotContain(inclusive_validator);
         
         It should_add_an_exclusive_between_validator_to_the_list_of_validators = () =>
-            validators.First().ShouldBeOfType<ExclusiveBetweenValidator<Cat,long>>();
+                                                                                 validators.First().ShouldBeOfType<ExclusiveBetweenValidator<Cat,long>>();
 
         static BetweenValidationBuilder<Cat, ValidationBuilder<Cat>, long> between_builder;
     }

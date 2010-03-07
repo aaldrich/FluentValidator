@@ -3,7 +3,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates
 {
-    public partial class DateValidationBuilder<T>
+    public partial class DateValidationBuilder<T> where T : class
     {
         public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(DateTime value)
         {

@@ -16,7 +16,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
     public partial class DayValidationBuilder<T> : CanWrapWithNotValidationBuilder<T>,
                                                      IDayEntryValidationBuilder<T>,
                                                      IDayPartValidationBuilder<T>,
-                                                     IDaySpecificationValidationBuilder<T>
+                                                     IDaySpecificationValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, DateTime>> expression;
         

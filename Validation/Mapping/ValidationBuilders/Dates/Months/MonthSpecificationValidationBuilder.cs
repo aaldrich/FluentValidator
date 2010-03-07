@@ -1,6 +1,6 @@
 namespace Validation.Mapping.ValidationBuilders.Dates.Months
 {
-    public partial class MonthValidationBuilder<T> 
+    public partial class MonthValidationBuilder<T> where T : class
     {
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> build_month(Month month)
         {

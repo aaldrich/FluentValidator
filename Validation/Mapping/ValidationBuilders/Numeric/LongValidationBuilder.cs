@@ -5,7 +5,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Numeric
 {
-    public class LongValidationBuilder<T>: ValidationBuilder<T>
+    public class LongValidationBuilder<T>: ValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, long>> expression;
 

@@ -2,7 +2,7 @@ using System;
 
 namespace Validation.Mapping.ValidationBuilders.Dates
 {
-    public interface IDatePartValidationBuilder<T>
+    public interface IDatePartValidationBuilder<T> where T : class
     {
         BetweenValidationBuilder<T, IDateTimeEntryValidationBuilder<T>, DateTime> between(DateTime lower, DateTime upper);
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(DateTime date_time);

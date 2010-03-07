@@ -1,6 +1,6 @@
 namespace Validation.Mapping.ValidationBuilders.Dates.Months
 {
-    public interface IMonthSpecificationValidationBuilder<T>
+    public interface IMonthSpecificationValidationBuilder<T> where T : class
     {
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> January();
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> February();

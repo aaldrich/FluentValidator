@@ -15,7 +15,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Years
     /// </typeparam>
     public partial class YearValidationBuilder<T> : CanWrapWithNotValidationBuilder<T>,
                                                     IYearEntryValidationBuilder<T>,
-                                                    IYearPartValidationBuilder<T>
+                                                    IYearPartValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, DateTime>> expression;
         

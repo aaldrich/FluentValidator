@@ -4,7 +4,7 @@ using Validation.Mapping.ValidationBuilders.Numeric;
 
 namespace Validation.Mapping.ValidationMappers
 {
-    public partial class ValidationMap<T>
+    public partial class ValidationMap<T> where T : class
     {
         public ByteValidationBuilder<T> Map(Expression<Func<T, byte>> property)
         {

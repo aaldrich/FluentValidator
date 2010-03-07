@@ -2,7 +2,7 @@ using System;
 
 namespace Validation.Mapping.ValidationBuilders.Dates.Days
 {
-    public interface IDayPartValidationBuilder<T>
+    public interface IDayPartValidationBuilder<T> where T : class
     {
         BetweenValidationBuilder<T,CompositeValidationBuilder<T,IDateTimeEntryValidationBuilder<T>>,DayOfWeek>
             between(DayOfWeek lower, DayOfWeek upper);

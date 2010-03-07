@@ -4,7 +4,7 @@ using Validation.Mapping.ValidationBuilders.Dates.Years;
 
 namespace Validation.Mapping.ValidationBuilders.Dates
 {
-    public interface IDateTimeEntryValidationBuilder<T> : IValidationBuilder<T>
+    public interface IDateTimeEntryValidationBuilder<T> : IValidationBuilder<T> where T : class
     {
         IMonthEntryValidationBuilder<T> month();
         IYearEntryValidationBuilder<T> year();

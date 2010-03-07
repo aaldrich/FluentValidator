@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationBuilders
     /// to help facilitate not wrapping.
     /// </summary>
     /// <typeparam name="T">The Validation Type</typeparam>
-    public class CanWrapWithNotValidationBuilder<T> : ValidationBuilder<T>
+    public class CanWrapWithNotValidationBuilder<T> : ValidationBuilder<T> where T : class
     {
         protected bool should_wrap_with_not {get;set;}
 

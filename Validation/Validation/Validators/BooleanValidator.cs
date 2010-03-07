@@ -3,7 +3,9 @@ using System.Linq.Expressions;
 
 namespace Validation.Validation.Validators
 {
-    public class BooleanValidator<T, TProperty> : IValidator<T> where TProperty : IComparable 
+    public class BooleanValidator<T, TProperty> : ValidatorBase<T>, IValidator<T> 
+        where TProperty : IComparable
+        where T : class 
     {
         readonly Expression<Func<T, TProperty>> expression;
         readonly TProperty comparison_value;
@@ -22,7 +24,12 @@ namespace Validation.Validation.Validators
             var compiled = expression.Compile();
             var invoked = compiled.Invoke(value);
 
-            return invoked.CompareTo(comparison_value) == 0 ;
+            var result = invoked.CompareTo(comparison_value) == 0;
+
+            if ((!result) && (null != execute_upon_failure))
+                execute_upon_failure(value);
+
+            return result; 
         }
     }
 }

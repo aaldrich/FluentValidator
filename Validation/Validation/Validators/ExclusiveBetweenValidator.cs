@@ -3,7 +3,9 @@ using System.Linq.Expressions;
 
 namespace Validation.Validation.Validators
 {
-    public class ExclusiveBetweenValidator<T,TProperty> : IValidator<T> where TProperty : IComparable
+    public class ExclusiveBetweenValidator<T,TProperty> : ValidatorBase<T>, IValidator<T>
+        where TProperty : IComparable
+        where T : class 
     {
         readonly Expression<Func<T, TProperty>> expression;
         readonly TProperty lower_range;
@@ -32,7 +34,12 @@ namespace Validation.Validation.Validators
             var is_greater_than_lower = original_delegate.CompareTo(lower_range) > 0;
             var is_less_than_upper = original_delegate.CompareTo(upper_range) < 0;
 
-            return (is_greater_than_lower && is_less_than_upper);
+            var result = (is_greater_than_lower && is_less_than_upper);
+
+            if ((!result) && (null != execute_upon_failure))
+                execute_upon_failure(value);
+
+            return result;
         }
     }
 }

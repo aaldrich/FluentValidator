@@ -9,7 +9,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Years
     /// code easier to read. It was getting to bulky having all the implementation
     /// of all the code in one file.
     /// </summary>
-    public partial class YearValidationBuilder<T> 
+    public partial class YearValidationBuilder<T> where T : class
     {
         public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(int year)
         {

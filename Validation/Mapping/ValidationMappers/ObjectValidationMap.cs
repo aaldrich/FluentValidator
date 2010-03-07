@@ -4,7 +4,7 @@ using Validation.Mapping.ValidationBuilders;
 
 namespace Validation.Mapping.ValidationMappers
 {
-    public partial class ValidationMap<T>
+    public partial class ValidationMap<T> where T : class
     {
         public ObjectValidationBuilder<T> Map(Expression<Func<T, object>> property)
         {

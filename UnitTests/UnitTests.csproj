@@ -55,12 +55,13 @@
   <ItemGroup>
     <Compile Include="Helpers\ExpressionHelperSpecs.cs" />
     <Compile Include="Helpers\ReflectionHelperSpecs.cs" />
-    <Compile Include="Mapping\BetweenValidationBuilderSpecs.cs" />
-    <Compile Include="Mapping\DayValidationBuilderSpecs.cs" />
-    <Compile Include="Mapping\YearValidationBuilderSpecs.cs" />
-    <Compile Include="Mapping\IntValidationBuilderSpecs.cs" />
-    <Compile Include="Mapping\MonthValidationBuilderSpecs.cs" />
-    <Compile Include="Mapping\LongValidationBuilderSpecs.cs" />
+    <Compile Include="Mapping\Builders\BetweenValidationBuilderSpecs.cs" />
+    <Compile Include="Mapping\Builders\DayValidationBuilderSpecs.cs" />
+    <Compile Include="Mapping\Builders\FailureValidationBuilder.cs" />
+    <Compile Include="Mapping\Builders\YearValidationBuilderSpecs.cs" />
+    <Compile Include="Mapping\Builders\IntValidationBuilderSpecs.cs" />
+    <Compile Include="Mapping\Builders\MonthValidationBuilderSpecs.cs" />
+    <Compile Include="Mapping\Builders\LongValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\ValidationMapSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stubs\CatMap.cs" />

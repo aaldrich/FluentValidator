@@ -65,7 +65,7 @@ namespace Validation.Registry
 
         }
 
-        public static ValidationMap<T> GetMapFor<T>()
+        public static ValidationMap<T> GetMapFor<T>() where T : class
         {
             var map = (ValidationMap<T>) validation_maps.
                                           First(x => x.Key.Equals(typeof (T).AssemblyQualifiedName))

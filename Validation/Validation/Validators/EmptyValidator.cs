@@ -4,7 +4,9 @@ using System.Linq.Expressions;
 
 namespace Validation.Validation.Validators
 {
-    public class EmptyValidator<T,TProperty> : IValidator<T> where TProperty : IEnumerable
+    public class EmptyValidator<T,TProperty> : ValidatorBase<T>, IValidator<T>
+        where TProperty : IEnumerable
+        where T : class 
     {
         readonly Expression<Func<T, TProperty>> expression;
 
@@ -29,8 +31,13 @@ namespace Validation.Validation.Validators
 
             var enumerator = original_delegate.GetEnumerator();
             enumerator.Reset();
-            
-            return enumerator.MoveNext();
+
+            var result = enumerator.MoveNext();
+
+            if ((!result) && (null != execute_upon_failure))
+                execute_upon_failure(value);
+
+            return result; 
         }
     }
 }

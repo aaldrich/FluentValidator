@@ -3,7 +3,9 @@ using System.Linq.Expressions;
 
 namespace Validation.Validation.Validators
 {
-    public class NullValidator<T, TProperty> : IValidator<T> where TProperty : class
+    public class NullValidator<T, TProperty> : ValidatorBase<T>, IValidator<T>
+        where TProperty : class
+        where T : class 
     {
         readonly Expression<Func<T, TProperty>> expression;
 
@@ -20,7 +22,12 @@ namespace Validation.Validation.Validators
             var compiled = expression.Compile();
             var invoked = compiled.Invoke(value);
 
-            return invoked != null;
+            var result = invoked != null;
+
+            if ((!result) && (null != execute_upon_failure))
+                execute_upon_failure(value);
+
+            return result;
         }
     }
 }

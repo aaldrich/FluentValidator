@@ -83,7 +83,7 @@ namespace Validation.Validation
             return validators.GetValue(property_validation_map, null);
         }
 
-        static bool validate_instance<T>(T instance)
+        static bool validate_instance<T>(T instance) where T : class
         {
             var map = ValidationRegistry.validation_maps[instance.GetType().AssemblyQualifiedName];
             var validation_map = map as ValidationMap<T>;

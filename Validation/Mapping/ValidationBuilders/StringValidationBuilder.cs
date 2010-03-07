@@ -5,7 +5,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders
 {
-    public class StringValidationBuilder<T> : ValidationBuilder<T>
+    public class StringValidationBuilder<T> : ValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, string>> expression;
 

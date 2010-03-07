@@ -2,7 +2,7 @@ using System;
 
 namespace Validation.Mapping.ValidationBuilders.Dates.Days
 {
-    public partial class DayValidationBuilder<T> 
+    public partial class DayValidationBuilder<T> where T : class
     {
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> build_day(DayOfWeek day)
         {

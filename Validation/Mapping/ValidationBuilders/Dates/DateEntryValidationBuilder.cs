@@ -4,7 +4,7 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates
 {
-    public partial class DateValidationBuilder<T>
+    public partial class DateValidationBuilder<T> where T : class
     {
         public IDatePartValidationBuilder<T> should_be()
         {

@@ -80,6 +80,7 @@
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\IYearPartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearPartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Failure\FailureValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\ByteValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateTimeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Validation\Validators\LessThanValidator.cs" />
     <Compile Include="Validation\Validators\NotValidatorWrapper.cs" />
     <Compile Include="Validation\Validators\NullValidator.cs" />
+    <Compile Include="Validation\Validators\ValidatorBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

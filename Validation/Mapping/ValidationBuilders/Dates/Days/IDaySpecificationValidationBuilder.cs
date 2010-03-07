@@ -1,6 +1,6 @@
 namespace Validation.Mapping.ValidationBuilders.Dates.Days
 {
-    public interface IDaySpecificationValidationBuilder<T>
+    public interface IDaySpecificationValidationBuilder<T> where T : class
     {
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Sunday();
         CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Monday();

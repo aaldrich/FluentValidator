@@ -9,7 +9,8 @@ namespace Validation.Mapping.ValidationBuilders
 {
     public class BetweenValidationBuilder<T, TReturnBuilder, TProperty> : ValidationBuilder<T>
         where TReturnBuilder : IValidationBuilder<T>
-        where TProperty : IComparable
+        where TProperty : IComparable 
+        where T : class
     {
         readonly Expression<Func<T, TProperty>> expression;
         readonly InclusiveBetweenValidator<T, TProperty> inclusive_validator;
