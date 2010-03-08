@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq.Expressions;
+using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
@@ -13,6 +14,8 @@ namespace Validation.Validation.Validators
         public EmptyValidator(Expression<Func<T,TProperty>> expression)
         {
             this.expression = expression;
+            this.failure_message_strategy = new ExpressionFailureMessageStrategy(
+                expression.Body as MemberExpression, String.Empty, "non empty");
         }
 
         /// <summary>

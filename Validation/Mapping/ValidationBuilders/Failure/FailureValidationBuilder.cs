@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Validation.Validation.Failures;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Failure
@@ -27,7 +28,7 @@ namespace Validation.Mapping.ValidationBuilders.Failure
 
         public FailureValidationBuilder<T, TReturnBuilder> use_message(string message)
         {
-            current_validator.failure_message = message;
+            current_validator.failure_message_strategy = new CustomFailureMessageStrategy(message);
             return this;
         }
 

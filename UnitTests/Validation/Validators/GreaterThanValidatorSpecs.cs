@@ -1,8 +1,11 @@
 using System;
 using System.Linq.Expressions;
 using Machine.Specifications;
+using Moq;
 using Validation.UnitTests.Stubs;
+using Validation.Validation.Failures;
 using Validation.Validation.Validators;
+using It=Machine.Specifications.It;
 
 namespace Validation.UnitTests.Validation.Validators
 {
@@ -67,5 +70,12 @@ namespace Validation.UnitTests.Validation.Validators
 
         It should_return_false = () =>
             result.ShouldBeFalse();
+    }
+
+    [Subject("ExpressionFailureMessageStrategy is used upon creation")]
+    public class when_creating_greater_than_validator : greater_than_validator_concern
+    {
+        It should_use_a_ExpressionFailureMessageStrategy_as_the_default_failure_message_strategy = () =>
+            validator.failure_message.ShouldEqual("id must be greater than 0");
     }
 }

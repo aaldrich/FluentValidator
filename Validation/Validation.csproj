@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="StructureMap, Version=2.5.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\thirdparty\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -95,11 +99,14 @@
     <Compile Include="Mapping\ValidationMappers\DecimalValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\IntValidationMap.cs" />
     <Compile Include="Validation\Validators\BooleanValidator.cs" />
+    <Compile Include="Validation\Failures\ExpressionFailureMessageStrategy.cs" />
+    <Compile Include="Validation\Failures\CustomFailureMessageStrategy.cs" />
     <Compile Include="Validation\Validators\EqualsValidator.cs" />
     <Compile Include="Validation\Validators\EmptyValidator.cs" />
     <Compile Include="Mapping\ValidationBuilders\ObjectValidationBuilder.cs" />
     <Compile Include="Registry\ValidationRegistry.cs" />
     <Compile Include="Validation\Validator.cs" />
+    <Compile Include="Validation\Failures\IFailureMessageStrategy.cs" />
     <Compile Include="Validation\Validators\NotValidator.cs" />
     <Compile Include="Validation\Validators\LessThanEqualToValidator.cs" />
     <Compile Include="Validation\Validators\GreaterThanEqualToValidator.cs" />

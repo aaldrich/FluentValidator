@@ -94,4 +94,11 @@ namespace Validation.UnitTests.Validation.Validators
         It should_return_false = () =>
             result.ShouldBeFalse();
     }
+
+    [Subject("ExpressionFailureMessageStrategy is used upon creation")]
+    public class when_creating_inclusive_between_validator : inclusive_between_validator_concern
+    {
+        It should_use_a_ExpressionFailureMessageStrategy_as_the_default_failure_message_strategy = () =>
+            validator.failure_message.ShouldEqual("id must be greater than or equal to 5 and less than or equal to 10");
+    }
 }

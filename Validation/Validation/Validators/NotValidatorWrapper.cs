@@ -1,4 +1,6 @@
 using System;
+using System.Linq.Expressions;
+using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
@@ -14,6 +16,8 @@ namespace Validation.Validation.Validators
         public NotValidatorWrapper(TValidator validator)
         {
             this.validator = validator;
+            this.failure_message_strategy = new CustomFailureMessageStrategy(
+                validator.failure_message_strategy.get_failure_message().Replace("must be","must not be"));
         }
 
         public bool Validate(T value)

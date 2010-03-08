@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
@@ -14,6 +15,8 @@ namespace Validation.Validation.Validators
         {
             this.expression = expression;
             this.comparison_value = comparison_value;
+            this.failure_message_strategy = new ExpressionFailureMessageStrategy(
+                expression.Body as MemberExpression, String.Empty, comparison_value.ToString());
         }
 
         public bool Validate(T value)

@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
@@ -9,11 +10,13 @@ namespace Validation.Validation.Validators
     {
         readonly Expression<Func<T, TProperty>> expression;
         readonly TProperty greater_than_value;
-
+        
         public GreaterThanValidator(Expression<Func<T,TProperty>> expression, TProperty greater_than_value)
         {
             this.expression = expression;
             this.greater_than_value = greater_than_value;
+            this.failure_message_strategy = new ExpressionFailureMessageStrategy(
+                expression.Body as MemberExpression, "greater than", greater_than_value.ToString());
         }
 
         /// <summary>

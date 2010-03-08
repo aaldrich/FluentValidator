@@ -69,6 +69,8 @@
     <Compile Include="Stubs\Cat.cs" />
     <Compile Include="Stubs\Dog.cs" />
     <Compile Include="Stubs\DogMap.cs" />
+    <Compile Include="Validation\Failures\CustomFailureMessageStrategySpecs.cs" />
+    <Compile Include="Validation\Failures\ExpressionFailureMessageStrategy.cs" />
     <Compile Include="Validation\ValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\BooleanValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\EqualsValidatorSpecs.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Validation\Validators\NotValidatorWrapperSpecs.cs" />
     <Compile Include="Validation\Validators\NullValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\GreaterThanValidatorSpecs.cs" />
+    <Compile Include="Validation\Validators\ValidatorBaseSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Validation\Validation.csproj">

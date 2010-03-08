@@ -55,4 +55,11 @@ namespace Validation.UnitTests.Validation.Validators
         It should_return_false = () =>
             result.ShouldBeFalse();
     }
+
+    [Subject("ExpressionFailureMessageStrategy is used in default constructor")]
+    public class when_creating_boolean_validator : bool_validator_concern 
+    {
+        It should_use_a_ExpressionFailureMessageStrategy_as_the_default_failure_message_strategy = () =>
+            validator.failure_message.ShouldEqual("is_hungry must be True");
+    }
 }

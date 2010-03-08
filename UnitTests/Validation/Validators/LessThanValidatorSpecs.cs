@@ -68,4 +68,11 @@ namespace Validation.UnitTests.Validation.Validators
         It should_return_false = () =>
             result.ShouldBeFalse();
     }
+
+    [Subject("ExpressionFailureMessageStrategy is used upon creation")]
+    public class when_creating_less_than_validator : less_than_validator_concern
+    {
+        It should_use_a_ExpressionFailureMessageStrategy_as_the_default_failure_message_strategy = () =>
+            validator.failure_message.ShouldEqual("id must be less than 0");
+    }
 }

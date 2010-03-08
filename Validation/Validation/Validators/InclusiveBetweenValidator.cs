@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
@@ -16,6 +17,9 @@ namespace Validation.Validation.Validators
             this.expression = expression;
             this.lower_range = lower_range;
             this.upper_range = upper_range;
+            this.failure_message_strategy = new ExpressionFailureMessageStrategy(
+                expression.Body as MemberExpression,
+                String.Format("greater than or equal to {0} and less than or equal to", lower_range), upper_range.ToString());
         }
 
         /// <summary>

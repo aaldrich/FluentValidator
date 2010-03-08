@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
@@ -12,6 +13,8 @@ namespace Validation.Validation.Validators
         public NullValidator(Expression<Func<T, TProperty>> expression)
         {
             this.expression = expression;
+            this.failure_message_strategy = new ExpressionFailureMessageStrategy(
+                expression.Body as MemberExpression, String.Empty, "non null");
         }
 
         public bool Validate(T value)
