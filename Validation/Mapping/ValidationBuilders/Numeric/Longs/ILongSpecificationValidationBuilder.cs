@@ -8,7 +8,6 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Longs
         IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> greater_than(long value);
         IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> greater_than_zero();
         IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> less_than(long value);
-        BetweenValidationBuilder<T, IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>>, long>
-            between(long lower, long upper);
+        BetweenValidationBuilder<T, ILongEntryValidationBuilder<T>,long> between(long lower, long upper);
     }
 }

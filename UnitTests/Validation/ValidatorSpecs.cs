@@ -3,6 +3,7 @@ using Machine.Specifications;
 using Validation.Registry;
 using Validation.UnitTests.Stubs;
 using Validation.Validation;
+using Validation.Validation.Validators;
 
 namespace Validation.UnitTests.Validation
 {
@@ -13,7 +14,13 @@ namespace Validation.UnitTests.Validation
                 ValidationRegistry.AddAssemblyFrom<CatMap>();
                 ValidationRegistry.AddAssemblyFrom<DogMap>();
                 ValidationRegistry.Configure();
+
+                greater_than_validator = new GreaterThanValidator<Cat,long>(x=>x.id,0);
+                failing_validator_result = new ValidatorResult{failure_message = greater_than_validator.failure_message,successful = false};
             };
+
+        static GreaterThanValidator<Cat, long> greater_than_validator;
+        protected static ValidatorResult failing_validator_result;
 
         protected static Cat valid_cat()
         {
@@ -41,26 +48,31 @@ namespace Validation.UnitTests.Validation
             result = Validator.Validate(cat);	
 
         It should_return_true_if_all_validations_pass = () =>
-            result.ShouldBeTrue();
+            result.successful.ShouldBeTrue();
 
         static Cat cat;
-        static bool result;
+        static ValidationResult result;
     }
 
     [Subject("Validating a valid class")]
     public class when_asked_to_validate_an_invalid_class : validator_concern
     {
         Establish c = () =>
-            cat = invalid_cat(); 
+            {
+                cat = invalid_cat();
+            }; 
 
         Because b = () =>
             result = Validator.Validate(cat);
 
         It should_return_false_if_any_validations_fail = () =>
-            result.ShouldBeFalse();
+            result.successful.ShouldBeFalse();
+
+        It should_return_all_the_validation_result_failures = () =>
+            result.validator_failures.ShouldContain(failing_validator_result);
 
         static Cat cat;
-        static bool result;
+        static ValidationResult result;
     }
 
     [Subject("Validating a class")]
@@ -82,7 +94,7 @@ namespace Validation.UnitTests.Validation
             exception.ShouldNotBeNull();
 
         static Cat cat;
-        static bool result;
+        static ValidationResult result;
         static ArgumentNullException exception = null;
     }
 
@@ -100,10 +112,13 @@ namespace Validation.UnitTests.Validation
             result = Validator.Validate(dog);
 
         It should_validate_the_other_class_as_well = () =>
-            result.ShouldBeFalse(); //Since cat is invalid it should not validate dog
+            result.successful.ShouldBeFalse(); //Since cat is invalid it should not validate dog
+
+        It should_return_the_invalid_validators_in_the_result = () =>
+            result.validator_failures.ShouldContain(failing_validator_result);
 
         static Dog dog;
-        static bool result;
+        static ValidationResult result;
         static Cat cat;
     }
 }

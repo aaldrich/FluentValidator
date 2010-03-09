@@ -1,4 +1,6 @@
 using System;
+using System.Reflection;
+using Validation.Validation.Failures;
 using Validation.Validation.Validators;
 
 namespace Validation.Helpers.Generics
@@ -12,7 +14,9 @@ namespace Validation.Helpers.Generics
             
             var method = generic_validator.GetMethod("Validate");
 
-            return new GenericValidator(generic_validator,method);
+            var failure_message = generic_validator.GetProperty("failure_message_strategy");
+
+            return new GenericValidator(generic_validator,method,failure_message);
         }
     }
 

@@ -102,6 +102,8 @@
     <Compile Include="Mapping\ValidationMappers\DoubleValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\DecimalValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\IntValidationMap.cs" />
+    <Compile Include="Validation\ValidationResult.cs" />
+    <Compile Include="Validation\ValidatorResult.cs" />
     <Compile Include="Validation\Validators\BooleanValidator.cs" />
     <Compile Include="Validation\Failures\ExpressionFailureMessageStrategy.cs" />
     <Compile Include="Validation\Failures\CustomFailureMessageStrategy.cs" />

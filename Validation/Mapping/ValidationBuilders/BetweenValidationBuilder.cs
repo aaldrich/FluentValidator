@@ -1,9 +1,8 @@
 using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
-using Validation.Mapping.ValidationBuilders.Dates;
-using Validation.Mapping.ValidationBuilders.Dates.Months;
+using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
+using Validation.Validation.Failures;
 
 namespace Validation.Mapping.ValidationBuilders
 {
@@ -38,7 +37,7 @@ namespace Validation.Mapping.ValidationBuilders
         /// Removes the inclusive operator from the validators list.
         /// </summary>
         /// <returns>Composite Builder with the exclusive between added to the validators</returns>
-        public CompositeValidationBuilder<T,TReturnBuilder> exclusive()
+        public IFailureEntryValidationBuilder<T,TReturnBuilder> exclusive()
         {
             var exclusive_between_validator = 
                 new ExclusiveBetweenValidator<T, TProperty>(expression,lower,upper);
@@ -46,13 +45,17 @@ namespace Validation.Mapping.ValidationBuilders
             validators.Remove(inclusive_validator);
             validators.Add(exclusive_between_validator);
 
-            var composite_builder = new CompositeValidationBuilder<T, TReturnBuilder>(current_builder);
-            return composite_builder;
+            return new FailureValidationBuilder<T, TReturnBuilder>(exclusive_between_validator, validators, current_builder);
         }
 
         public TReturnBuilder and()
         {
             return current_builder;
+        }
+
+        public IFailureSpecificationValidationBuilder<T, TReturnBuilder> upon_failure()
+        {
+            return new FailureValidationBuilder<T, TReturnBuilder>(inclusive_validator, validators, current_builder);
         }
     }
 }

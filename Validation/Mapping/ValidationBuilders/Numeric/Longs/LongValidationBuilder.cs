@@ -53,17 +53,14 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Longs
         /// <param name="lower">lower range (less than equal to)</param>
         /// <param name="upper">upper range (greather than equal to)</param>
         /// <returns>Between Validation Builder</returns>
-        public BetweenValidationBuilder<T, IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>>, long> between(long lower, long upper)
+        public BetweenValidationBuilder<T, ILongEntryValidationBuilder<T>, long> between(long lower, long upper)
         {
             var inclusive_validator =
                 new InclusiveBetweenValidator<T, long>(expression, lower, upper);
 
             base.add_validator_with_not_wrapper_if_needed(inclusive_validator);
 
-            return  new BetweenValidationBuilder<T, IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>>, long>
-                (expression,
-                inclusive_validator,
-                new FailureValidationBuilder<T,ILongEntryValidationBuilder<T>>(inclusive_validator,validators,this),lower,upper);
+            return new BetweenValidationBuilder<T, ILongEntryValidationBuilder<T>, long>(expression,inclusive_validator, this, lower, upper);
         }
 
         public ILongSpecificationValidationBuilder<T> should_be()

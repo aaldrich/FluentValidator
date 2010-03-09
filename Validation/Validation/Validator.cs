@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using Validation.Helpers;
 using Validation.Helpers.Generics;
@@ -18,12 +19,12 @@ namespace Validation.Validation
             generic_validator_factory = new GenericValidatorFactory();
         }
 
-        public static bool Validate<T>(T instance) where T : class
+        public static ValidationResult Validate<T>(T instance) where T : class
         {
             if (instance == null)
                 throw new ArgumentNullException("instance");
 
-            if (!validate_instance(instance)) return false;
+            var validation_result = validate_instance(instance);
 
             var properties = ReflectionHelper.get_class_properties_for<T>()
                 .Where(x => ValidationRegistry.validation_maps.ContainsKey(x.type.AssemblyQualifiedName));
@@ -34,11 +35,10 @@ namespace Validation.Validation
 
                 object validators_instance = get_property_validators(property, property_validation_map);
 
-                bool result = validate_property_map(instance, property, validators_instance);
-                if (!result) return false;
+                validation_result = validate_property_map(instance, property, validators_instance, validation_result);
             }
 
-            return true;
+            return validation_result;
         }
 
         /// <summary>
@@ -50,10 +50,11 @@ namespace Validation.Validation
         /// <param name="instance">An instance of the Generic Type ie. Person</param>
         /// <param name="property">A TypeInfo that stores things such
         ///  as PropertyInfo ie. Address Property</param>
-        /// <param name="validators_instance">The validators property
+        /// <param name="validators_instance">The validators property</param>
+        /// <param name="validation_result">The validation result that this method should add validation failures to.</param>
         ///  on the cooresponding ValidationMap instance ie. PersonMap.validators</param>
-        /// <returns>true if all validators passed, false if not.</returns>
-        static bool validate_property_map<T>(T instance, TypeInfo property, object validators_instance)
+        /// <returns>Validation Result adding any new validator failures to the list.</returns>
+        static ValidationResult validate_property_map<T>(T instance, TypeInfo property, object validators_instance, ValidationResult validation_result)
         {
             var value = ReflectionHelper.get_property_value(instance, property.property_info.Name);
 
@@ -68,10 +69,11 @@ namespace Validation.Validation
                 var validator = generic_list.items[i];
                 var result = generic_validator.Validate(validator, value);
                 if (!result)
-                    return false;
+                    validation_result.validator_failures.Add(
+                        new ValidatorResult { failure_message = generic_validator.failure_message(validator), successful = false });
             }
 
-            return true;
+            return validation_result;
         }
 
         static object get_property_validators(TypeInfo property, object property_validation_map)
@@ -83,8 +85,10 @@ namespace Validation.Validation
             return validators.GetValue(property_validation_map, null);
         }
 
-        static bool validate_instance<T>(T instance) where T : class
+        static ValidationResult validate_instance<T>(T instance) where T : class
         {
+            var validation_result = new ValidationResult();
+
             var map = ValidationRegistry.validation_maps[instance.GetType().AssemblyQualifiedName];
             var validation_map = map as ValidationMap<T>;
 
@@ -95,10 +99,10 @@ namespace Validation.Validation
             foreach (var validator in validation_map.validators)
             {
                 if (!validator.Validate(instance))
-                    return false;
+                    validation_result.validator_failures.Add(new ValidatorResult { failure_message = validator.failure_message, successful = false });
             }
 
-            return true;
+            return validation_result;
         }
 
         public static void SelfValidate()
