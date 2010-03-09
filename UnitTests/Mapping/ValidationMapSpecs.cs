@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Machine.Specifications;
 using Moq;
 using Validation.Mapping.ValidationBuilders;
-using Validation.Mapping.ValidationBuilders.Numeric;
+using Validation.Mapping.ValidationBuilders.Numeric.Longs;
 using Validation.Mapping.ValidationMappers;
 using Validation.UnitTests.Stubs;
 using Validation.Validation.Validators;
@@ -31,7 +31,7 @@ namespace Validation.UnitTests.Mapping
         It should_return_a_numeric_property_part = () =>
             mapper.ShouldBeOfType<LongValidationBuilder<Cat>>();
 
-        static LongValidationBuilder<Cat> mapper;
+        static ILongEntryValidationBuilder<Cat> mapper;
     }
 
     [Subject("Mapping a string property")]

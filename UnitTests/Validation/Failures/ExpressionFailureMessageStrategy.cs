@@ -32,12 +32,15 @@ namespace Validation.UnitTests.Validation.Failures
         Because b = () =>
             result = strategy.get_failure_message();
 
-        It should_use_a_combination_of_the_member_expression_member_name_the_validation_type_and_expected_value = () =>
-            {
-                result.Contains("id").ShouldBeTrue();
-                result.Contains("greater than").ShouldBeTrue();
-                result.Contains("0").ShouldBeTrue();
-            };
+        It should_contain_the_member_expression_member_name = () =>
+            result.Contains("id").ShouldBeTrue();
+
+        It should_contain_the_validation_type = () =>
+            result.Contains("greater than").ShouldBeTrue();
+
+        It should_contain_the_expected_value = () =>
+            result.Contains("0").ShouldBeTrue();
+        
 
         static ExpressionFailureMessageStrategy strategy;
         static string result;

@@ -85,12 +85,16 @@
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearPartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Failure\FailureValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Failure\IFailureEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Failure\IFailureSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\ByteValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateTimeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DoubleValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DecimalValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\IntValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationMappers\BooleanValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\ByteValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\DateTimeValidationMap.cs" />
@@ -114,7 +118,7 @@
     <Compile Include="Validation\Validators\InclusiveBetweenValidator.cs" />
     <Compile Include="Validation\Validators\GreaterThanValidator.cs" />
     <Compile Include="Mapping\ValidationMappers\ObjectValidationMap.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Numeric\LongValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\LongValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationMappers\LongValidationMap.cs" />
     <Compile Include="Mapping\ValidationBuilders\ValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\StringValidationBuilder.cs" />

@@ -4,6 +4,7 @@ using Machine.Specifications;
 using Validation.Mapping.ValidationBuilders;
 using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.UnitTests.Stubs;
+using Validation.Validation.Failures;
 using Validation.Validation.Validators;
 
 namespace Validation.UnitTests.Mapping.Builders
@@ -30,8 +31,12 @@ namespace Validation.UnitTests.Mapping.Builders
         Because b = () =>
             failure_validation_builder.use_message("Awesome!");
 
-        It should_set_the_validators_failure_message_to_the_specified_message = () =>
-            current_validator.failure_message.ShouldEqual("Awesome!");
+        It should_set_the_validator_failure_message_strategy_to_a_custom_strategy = () =>
+            current_validator.failure_message_strategy.ShouldBeOfType<CustomFailureMessageStrategy>();
+
+        It should_return_the_given_message_when_the_failure_message_is_asked_for = () =>
+            current_validator.failure_message_strategy.get_failure_message().ShouldEqual("Awesome!");
+
     }
 
     [Subject("Setting Executing action upon failure")]

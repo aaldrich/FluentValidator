@@ -8,10 +8,8 @@ namespace Validation.UnitTests.Stubs
     {
         public CatMap()
         {
-            Map(x => x.id).between(0, 10).exclusive()
-                .and().greater_than_zero()
-                .and().not(2);
             Map(x => x.birth_date).date().should_be().between(new DateTime(2004, 01, 01), new DateTime(2009, 01, 01));
+            Map(x => x.id).should_be().greater_than(0).upon_failure().use_message("blah");
         }
     }
 }

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Validation.Validation.Validators;
-
 namespace Validation.Mapping.ValidationBuilders.Dates
 {
     public partial class DateValidationBuilder<T> where T : class
