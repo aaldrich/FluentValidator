@@ -1,7 +1,6 @@
 using System;
 using System.Linq.Expressions;
-using Validation.Helpers;
-using Validation.Mapping.ValidationBuilders;
+using Validation.Mapping.ValidationBuilders.Boolean;
 
 namespace Validation.Mapping.ValidationMappers
 {

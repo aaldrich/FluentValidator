@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using Validation.Validation.Validators;
 
-namespace Validation.Mapping.ValidationBuilders
+namespace Validation.Mapping.ValidationBuilders.Strings
 {
     public class StringValidationBuilder<T> : ValidationBuilder<T> where T : class
     {

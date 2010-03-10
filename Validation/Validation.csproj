@@ -60,7 +60,7 @@
     <Compile Include="Mapping\ValidationBuilders\BetweenValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\CanWrapWithNotValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\CompositeValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\BooleanValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Boolean\BooleanValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DatePartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateValidationBuilder.cs" />
@@ -136,7 +136,7 @@
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\LongValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationMappers\LongValidationMap.cs" />
     <Compile Include="Mapping\ValidationBuilders\ValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\StringValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Strings\StringValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationMappers\StringValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\ValidationMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

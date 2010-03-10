@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
 
-namespace Validation.Mapping.ValidationBuilders
+namespace Validation.Mapping.ValidationBuilders.Boolean
 {
     public class BooleanValidationBuilder<T>: ValidationBuilder<T> where T : class
     {
@@ -15,21 +16,21 @@ namespace Validation.Mapping.ValidationBuilders
             this.expression = expression;
         }
 
-        public CompositeValidationBuilder<T, BooleanValidationBuilder<T>> should_be_true()
+        public IFailureEntryValidationBuilder<T,BooleanValidationBuilder<T>> should_be_true()
         {
             return boolean_validate(true);
         }
 
-        public CompositeValidationBuilder<T, BooleanValidationBuilder<T>> should_be_false()
+        public IFailureEntryValidationBuilder<T, BooleanValidationBuilder<T>> should_be_false()
         {
             return boolean_validate(false);
         }
 
-        CompositeValidationBuilder<T, BooleanValidationBuilder<T>> boolean_validate(bool value)
+        IFailureEntryValidationBuilder<T, BooleanValidationBuilder<T>> boolean_validate(bool value)
         {
             var boolean_validator = new BooleanValidator<T, bool>(expression, value);
             validators.Add(boolean_validator);
-            return new CompositeValidationBuilder<T, BooleanValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T,BooleanValidationBuilder<T>>(boolean_validator,validators,ignore_validators, this);
         }
     }
 }

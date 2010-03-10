@@ -2,7 +2,6 @@ using System;
 using System.Linq.Expressions;
 using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
-using Validation.Validation.Failures;
 
 namespace Validation.Mapping.ValidationBuilders
 {

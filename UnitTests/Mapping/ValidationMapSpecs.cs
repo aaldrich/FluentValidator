@@ -3,6 +3,7 @@ using Machine.Specifications;
 using Moq;
 using Validation.Mapping.ValidationBuilders;
 using Validation.Mapping.ValidationBuilders.Numeric.Longs;
+using Validation.Mapping.ValidationBuilders.Strings;
 using Validation.Mapping.ValidationMappers;
 using Validation.UnitTests.Stubs;
 using Validation.Validation.Validators;
