@@ -11,13 +11,13 @@ namespace Validation.UnitTests.Validation.Validators
         Establish c = () =>
             {
                 expression = x => x.name;
-                validator = new NotNullValidator<Cat, string>(expression);
+                validator = new NullValidator<Cat, string>(expression);
             };
 
         protected static Cat oliver_the_cat;
         protected static bool result;
         protected static Expression<Func<Cat, string>> expression;
-        protected static NotNullValidator<Cat, string> validator;
+        protected static NullValidator<Cat, string> validator;
     }
 
     [Subject("Validating non null object is not null")]
@@ -29,12 +29,12 @@ namespace Validation.UnitTests.Validation.Validators
         Because b = () =>
             result = validator.Validate(oliver_the_cat);
 
-        It should_return_true = () =>
-            result.ShouldBeTrue();
+        It should_return_false = () =>
+            result.ShouldBeFalse();
     }
 
-    [Subject("Validating non null object is not null")]
-    public class when_validating_that_null_object_is_not_null : null_validator_concern
+    [Subject("Validating null string")]
+    public class when_validating_that_null_string_is_not_null : null_validator_concern
     {
         Establish c = () =>
             oliver_the_cat = new Cat { name = null };
@@ -42,11 +42,11 @@ namespace Validation.UnitTests.Validation.Validators
         Because b = () =>
             result = validator.Validate(oliver_the_cat);
 
-        It should_return_false = () =>
-            result.ShouldBeFalse();
+        It should_return_true = () =>
+            result.ShouldBeTrue();
     }
 
-    [Subject("Validating a null value")]
+    [Subject("Validating a null instance")]
     public class when_asking_null_validator_to_validate_a_null_instance : null_validator_concern
     {
         Because b = () =>
@@ -60,6 +60,6 @@ namespace Validation.UnitTests.Validation.Validators
     public class when_creating_null_validator : null_validator_concern
     {
         It should_use_a_ExpressionFailureMessageStrategy_as_the_default_failure_message_strategy = () =>
-            validator.failure_message.ShouldEqual("name must be non null");
+            validator.failure_message.ShouldEqual("name must be null");
     }
 }

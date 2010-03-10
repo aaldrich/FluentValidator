@@ -108,6 +108,8 @@
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IntValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Objects\IObjectEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Objects\IObjectSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Strings\IStringEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Strings\IStringSpecificationValidationBuilder.cs" />
     <Compile Include="Helpers\RegexLibrary.cs" />
@@ -128,7 +130,7 @@
     <Compile Include="Validation\Validators\StringContainsValidator.cs" />
     <Compile Include="Validation\Validators\EqualsValidator.cs" />
     <Compile Include="Validation\Validators\NotEmptyValidator.cs" />
-    <Compile Include="Mapping\ValidationBuilders\ObjectValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Objects\ObjectValidationBuilder.cs" />
     <Compile Include="Registry\ValidationRegistry.cs" />
     <Compile Include="Validation\Validator.cs" />
     <Compile Include="Validation\Failures\IFailureMessageStrategy.cs" />
@@ -149,7 +151,7 @@
     <Compile Include="Validation\Validators\IValidator.cs" />
     <Compile Include="Validation\Validators\LessThanValidator.cs" />
     <Compile Include="Validation\Validators\NotValidatorWrapper.cs" />
-    <Compile Include="Validation\Validators\NotNullValidator.cs" />
+    <Compile Include="Validation\Validators\NullValidator.cs" />
     <Compile Include="Validation\Validators\ValidatorBase.cs" />
     <Compile Include="Validation\Validators\CollectionContainsValidator.cs" />
   </ItemGroup>

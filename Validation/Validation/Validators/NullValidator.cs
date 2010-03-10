@@ -4,17 +4,17 @@ using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
-    public class NotNullValidator<T, TProperty> : ValidatorBase<T>, IValidator<T>
+    public class NullValidator<T, TProperty> : ValidatorBase<T>, IValidator<T>
         where TProperty : class
         where T : class 
     {
         readonly Expression<Func<T, TProperty>> expression;
 
-        public NotNullValidator(Expression<Func<T, TProperty>> expression)
+        public NullValidator(Expression<Func<T, TProperty>> expression)
         {
             this.expression = expression;
             this.failure_message_strategy = new ExpressionFailureMessageStrategy(
-                expression.Body as MemberExpression, String.Empty, "non null");
+                expression.Body as MemberExpression, String.Empty, "null");
         }
 
         public bool Validate(T value)
@@ -25,7 +25,7 @@ namespace Validation.Validation.Validators
             var compiled = expression.Compile();
             var invoked = compiled.Invoke(value);
 
-            var result = invoked != null;
+            var result = invoked == null;
 
             if ((!result) && (null != execute_upon_failure))
                 execute_upon_failure(value);

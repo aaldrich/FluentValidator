@@ -3,6 +3,7 @@ using Machine.Specifications;
 using Moq;
 using Validation.Mapping.ValidationBuilders;
 using Validation.Mapping.ValidationBuilders.Numeric.Longs;
+using Validation.Mapping.ValidationBuilders.Objects;
 using Validation.Mapping.ValidationBuilders.Strings;
 using Validation.Mapping.ValidationMappers;
 using Validation.UnitTests.Stubs;
@@ -56,7 +57,7 @@ namespace Validation.UnitTests.Mapping
         It should_return_a_object_property_part = () =>
             mapper.ShouldBeOfType<ObjectValidationBuilder<Cat>>();
 
-        static ObjectValidationBuilder<Cat> mapper;
+        static IValidationBuilder<Cat> mapper;
     }
 
 }

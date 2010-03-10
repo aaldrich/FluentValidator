@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using Machine.Specifications;
 using Validation.Mapping.ValidationBuilders;
+using Validation.Mapping.ValidationBuilders.Objects;
 using Validation.UnitTests.Stubs;
 using Validation.Validation.Validators;
 
@@ -32,7 +33,7 @@ namespace Validation.UnitTests.Mapping.Builders
 			
         Because b = () =>
             {
-                object_validation_builder.ignore();
+                object_validation_builder.ignore_my_validations();
             };
 
         It should_add_an_IgnoreValidator_to_the_list_of_ignore_validators = () =>

@@ -54,7 +54,7 @@ namespace Validation.Mapping.ValidationBuilders.Strings
 
         public IFailureEntryValidationBuilder<T, IStringEntryValidationBuilder<T>> not_null()
         {
-            var validator = new NotNullValidator<T,string>(expression);
+            var validator = new NullValidator<T,string>(expression);
             base.add_validator_with_not_wrapper_if_needed(validator);
             return new FailureValidationBuilder<T, IStringEntryValidationBuilder<T>>(validator, validators, ignore_validators, this);
         }
