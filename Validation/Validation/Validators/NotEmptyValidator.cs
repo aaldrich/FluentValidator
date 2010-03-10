@@ -5,13 +5,13 @@ using Validation.Validation.Failures;
 
 namespace Validation.Validation.Validators
 {
-    public class EmptyValidator<T,TProperty> : ValidatorBase<T>, IValidator<T>
+    public class NotEmptyValidator<T,TProperty> : ValidatorBase<T>, IValidator<T>
         where TProperty : IEnumerable
         where T : class 
     {
         readonly Expression<Func<T, TProperty>> expression;
 
-        public EmptyValidator(Expression<Func<T,TProperty>> expression)
+        public NotEmptyValidator(Expression<Func<T,TProperty>> expression)
         {
             this.expression = expression;
             this.failure_message_strategy = new ExpressionFailureMessageStrategy(

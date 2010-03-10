@@ -11,13 +11,13 @@ namespace Validation.UnitTests.Validation.Validators
         Establish c = () =>
             {
                 expression = x => x.name;
-                validator = new NullValidator<Cat, string>(expression);
+                validator = new NotNullValidator<Cat, string>(expression);
             };
 
         protected static Cat oliver_the_cat;
         protected static bool result;
         protected static Expression<Func<Cat, string>> expression;
-        protected static NullValidator<Cat, string> validator;
+        protected static NotNullValidator<Cat, string> validator;
     }
 
     [Subject("Validating non null object is not null")]

@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 using Validation.Mapping.ValidationMappers;
 
 namespace Validation.UnitTests.Stubs
@@ -13,6 +14,11 @@ namespace Validation.UnitTests.Stubs
                 .upon_failure().use_message("blah");
             Map(x => x.id).should_be().greater_than(0);
             Map(x => x.fights_with).ignore();
+            Map(x => x.name).should_be().greater_than(0)
+                .and().should_be().a_value_containing_at_least_1_capital_letter()
+                .and().should_be().a_value_containing_at_least_1_number()
+                .and().should_be().a_value_containing_at_least_1_lowercase_letter()
+                .and().should_be().a_value_that_matches(new Regex("[A-Z]"));
         }
     }
 }

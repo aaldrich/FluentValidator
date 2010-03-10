@@ -108,6 +108,10 @@
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IntValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Strings\IStringEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Strings\IStringSpecificationValidationBuilder.cs" />
+    <Compile Include="Helpers\RegexLibrary.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Strings\StringSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationMappers\BooleanValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\ByteValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\DateTimeValidationMap.cs" />
@@ -120,9 +124,10 @@
     <Compile Include="Validation\Validators\BooleanValidator.cs" />
     <Compile Include="Validation\Failures\ExpressionFailureMessageStrategy.cs" />
     <Compile Include="Validation\Failures\CustomFailureMessageStrategy.cs" />
+    <Compile Include="Validation\Validators\RegexValidator.cs" />
     <Compile Include="Validation\Validators\StringContainsValidator.cs" />
     <Compile Include="Validation\Validators\EqualsValidator.cs" />
-    <Compile Include="Validation\Validators\EmptyValidator.cs" />
+    <Compile Include="Validation\Validators\NotEmptyValidator.cs" />
     <Compile Include="Mapping\ValidationBuilders\ObjectValidationBuilder.cs" />
     <Compile Include="Registry\ValidationRegistry.cs" />
     <Compile Include="Validation\Validator.cs" />
@@ -144,12 +149,9 @@
     <Compile Include="Validation\Validators\IValidator.cs" />
     <Compile Include="Validation\Validators\LessThanValidator.cs" />
     <Compile Include="Validation\Validators\NotValidatorWrapper.cs" />
-    <Compile Include="Validation\Validators\NullValidator.cs" />
+    <Compile Include="Validation\Validators\NotNullValidator.cs" />
     <Compile Include="Validation\Validators\ValidatorBase.cs" />
     <Compile Include="Validation\Validators\CollectionContainsValidator.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Validators\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

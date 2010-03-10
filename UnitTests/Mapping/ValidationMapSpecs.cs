@@ -44,7 +44,7 @@ namespace Validation.UnitTests.Mapping
         It should_return_a_string_property_part = () =>
             mapper.ShouldBeOfType<StringValidationBuilder<Cat>>();
 
-        static StringValidationBuilder<Cat> mapper;
+        static IValidationBuilder<Cat> mapper;
     }
 
     [Subject("Mapping a object property")]

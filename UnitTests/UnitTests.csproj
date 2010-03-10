@@ -75,6 +75,7 @@
     <Compile Include="Validation\ValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\BooleanValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\CollectionContainsValidatorSpecs.cs" />
+    <Compile Include="Validation\Validators\RegexValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\StringContainsValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\EqualsValidatorSpecs.cs" />
     <Compile Include="Validation\Validators\EmptyValidatorSpecs.cs" />

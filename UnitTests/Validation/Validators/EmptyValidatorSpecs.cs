@@ -12,13 +12,13 @@ namespace Validation.UnitTests.Validation.Validators
         Establish c = () =>
             {
                 expression = x => x.name;
-                validator = new EmptyValidator<Cat, string>(expression);
+                validator = new NotEmptyValidator<Cat, string>(expression);
             };
 
         protected static Cat oliver_the_cat;
         protected static bool result;
         static Expression<Func<Cat, string>> expression;
-        protected static EmptyValidator<Cat, string> validator;
+        protected static NotEmptyValidator<Cat, string> validator;
     }
 
     [Subject("Validating non empty object is not empty ")]
@@ -52,11 +52,11 @@ namespace Validation.UnitTests.Validation.Validators
         Establish c = () =>
         {
             expression = x => x.kittens;
-            validator = new EmptyValidator<Cat, IList<Cat>>(expression);
+            validator = new NotEmptyValidator<Cat, IList<Cat>>(expression);
         };
 
         static Expression<Func<Cat, IList<Cat> >> expression;
-        new protected static EmptyValidator<Cat, IList<Cat>> validator;
+        new protected static NotEmptyValidator<Cat, IList<Cat>> validator;
     }
 
     [Subject("Validating empty list is not empty")]

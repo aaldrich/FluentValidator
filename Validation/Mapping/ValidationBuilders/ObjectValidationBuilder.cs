@@ -19,7 +19,7 @@ namespace Validation.Mapping.ValidationBuilders
 
         public ObjectValidationBuilder<T> not_null()
         {
-            var validator = new NullValidator<T, object>(expression);
+            var validator = new NotNullValidator<T, object>(expression);
             validators.Add(validator);
             return this;
         }

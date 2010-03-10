@@ -5,7 +5,10 @@ using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Strings
 {
-    public class StringValidationBuilder<T> : ValidationBuilder<T> where T : class
+    public partial class StringValidationBuilder<T> : CanWrapWithNotValidationBuilder<T>,
+                                              IStringEntryValidationBuilder<T>,
+                                              IStringSpecificationValidationBuilder<T>
+                                              where T : class
     {
         readonly Expression<Func<T, string>> expression;
 
@@ -14,19 +17,16 @@ namespace Validation.Mapping.ValidationBuilders.Strings
         {
             this.expression = expression;
         }
-
-        public CompositeValidationBuilder<T,StringValidationBuilder<T>> not_null()
+        
+        public IStringSpecificationValidationBuilder<T> should_be()
         {
-            var validator = new NullValidator<T, string>(expression);
-            validators.Add(validator);
-            return new CompositeValidationBuilder<T, StringValidationBuilder<T>>(this);
+            return this;
         }
 
-        public CompositeValidationBuilder<T,StringValidationBuilder<T>> not_empty()
+        public IStringSpecificationValidationBuilder<T> should_not_be()
         {
-            var validator = new EmptyValidator<T, string>(expression);
-            validators.Add(validator);
-            return new CompositeValidationBuilder<T, StringValidationBuilder<T>>(this);
+            base.should_wrap_with_not = true;
+            return this;
         }
     }
 }
