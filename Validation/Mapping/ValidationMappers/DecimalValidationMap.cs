@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public DecimalValidationBuilder<T> Map(Expression<Func<T, decimal>> property)
         {
-            return new DecimalValidationBuilder<T>(property,validators);
+            return new DecimalValidationBuilder<T>(property, validators, ignore_validators);
         }
     }
 }

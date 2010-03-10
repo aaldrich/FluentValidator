@@ -7,17 +7,13 @@ namespace Validation.Mapping.ValidationBuilders
 {
     public class ValidationBuilder<T> : IValidationBuilder<T>, IObjectHidingHelper
     {
-        private IList<IValidator<T>> _validators;
+        public IList<IValidator<T>> validators { get; set; }
+        public HashSet<IgnoreValidator> ignore_validators { get; set; }
 
-        public ValidationBuilder(IList<IValidator<T>> validators)
+        public ValidationBuilder(IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
         {
             this.validators = validators;
-        }
-
-        public IList<IValidator<T>> validators 
-        {
-            get { return _validators; }
-            set { _validators = value; }
+            this.ignore_validators = ignore_validators;
         }
     }
 
@@ -28,5 +24,6 @@ namespace Validation.Mapping.ValidationBuilders
     public interface IValidationBuilder<T>
     {
         IList<IValidator<T>> validators {get;set;}
+        HashSet<IgnoreValidator> ignore_validators { get; set; }
     }
 }

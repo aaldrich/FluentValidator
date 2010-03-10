@@ -9,7 +9,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public BooleanValidationBuilder<T> Map(Expression<Func<T, bool>> property)
         {
-            return new BooleanValidationBuilder<T>(property,validators);
+            return new BooleanValidationBuilder<T>(property,validators,ignore_validators);
         }
     }
 }

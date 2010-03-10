@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public ILongEntryValidationBuilder<T> Map(Expression<Func<T, long>> property)
         {
-            return new LongValidationBuilder<T>(property,validators);
+            return new LongValidationBuilder<T>(property,validators,ignore_validators);
         }
     }
 }

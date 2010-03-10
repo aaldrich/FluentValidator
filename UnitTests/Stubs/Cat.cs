@@ -11,5 +11,6 @@ namespace Validation.UnitTests.Stubs
         public bool is_hungry { get; set; }
         public DateTime birth_date { get; set; }
         public int age { get; set; }
+        public Dog fights_with { get; set; }
     }
 }

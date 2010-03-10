@@ -22,7 +22,7 @@ namespace Validation.Mapping.ValidationBuilders
             InclusiveBetweenValidator<T,TProperty> inclusive_validator
             ,TReturnBuilder current_builder
             ,TProperty lower,
-            TProperty upper): base(current_builder.validators)
+            TProperty upper): base(current_builder.validators,current_builder.ignore_validators)
         {
             this.expression = expression;
             this.inclusive_validator = inclusive_validator;
@@ -45,7 +45,7 @@ namespace Validation.Mapping.ValidationBuilders
             validators.Remove(inclusive_validator);
             validators.Add(exclusive_between_validator);
 
-            return new FailureValidationBuilder<T, TReturnBuilder>(exclusive_between_validator, validators, current_builder);
+            return new FailureValidationBuilder<T, TReturnBuilder>(exclusive_between_validator, validators, ignore_validators, current_builder);
         }
 
         public TReturnBuilder and()
@@ -55,7 +55,7 @@ namespace Validation.Mapping.ValidationBuilders
 
         public IFailureSpecificationValidationBuilder<T, TReturnBuilder> upon_failure()
         {
-            return new FailureValidationBuilder<T, TReturnBuilder>(inclusive_validator, validators, current_builder);
+            return new FailureValidationBuilder<T, TReturnBuilder>(inclusive_validator, validators, ignore_validators, current_builder);
         }
     }
 }

@@ -18,14 +18,14 @@ namespace Validation.UnitTests.Mapping.Builders
                 expression = x => x.id;
                 inclusive_validator = new InclusiveBetweenValidator<Cat, long>(expression, 1, 10);
                 validators = new List<IValidator<Cat>>() { inclusive_validator };
-                validation_builder = new ValidationBuilder<Cat>(validators);
+                validation_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         protected static InclusiveBetweenValidator<Cat, long> inclusive_validator;
         protected static Expression<Func<Cat, long>> expression;
         protected static ValidationBuilder<Cat> validation_builder;
         protected static IList<IValidator<Cat>> validators;
-        
+        static HashSet<IgnoreValidator> ignore_validators;
     }
 
     [Subject("Specifying that between validation should be exclusive")]

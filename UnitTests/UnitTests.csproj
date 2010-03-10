@@ -58,6 +58,7 @@
     <Compile Include="Mapping\Builders\BetweenValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\Builders\DayValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\Builders\FailureValidationBuilder.cs" />
+    <Compile Include="Mapping\Builders\ObjectValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\Builders\YearValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\Builders\IntValidationBuilderSpecs.cs" />
     <Compile Include="Mapping\Builders\MonthValidationBuilderSpecs.cs" />

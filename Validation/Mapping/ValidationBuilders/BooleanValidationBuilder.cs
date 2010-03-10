@@ -9,8 +9,8 @@ namespace Validation.Mapping.ValidationBuilders
     {
         readonly Expression<Func<T, bool>> expression;
 
-        public BooleanValidationBuilder(Expression<Func<T, bool>> expression, IList<IValidator<T>> validators)
-            : base(validators)
+        public BooleanValidationBuilder(Expression<Func<T, bool>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
+            : base(validators,ignore_validators)
         {
             this.expression = expression;
         }

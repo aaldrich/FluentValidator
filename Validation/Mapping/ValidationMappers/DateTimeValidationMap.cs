@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public IDateTimeEntryValidationBuilder<T> Map(Expression<Func<T, DateTime>> property)
         {
-            return new DateTimeValidationBuilder<T>(property,validators);
+            return new DateTimeValidationBuilder<T>(property,validators,ignore_validators);
         }
     }
 }

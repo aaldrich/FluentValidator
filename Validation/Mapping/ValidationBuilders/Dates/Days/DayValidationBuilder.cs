@@ -22,8 +22,8 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
         
         Func<DayOfWeek,ValidationBuilder<T>> day_building_context;
         
-        public DayValidationBuilder(Expression<Func<T,DateTime>> expression, IList<IValidator<T>> validators)
-            : base(validators)
+        public DayValidationBuilder(Expression<Func<T,DateTime>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
+            : base(validators,ignore_validators)
         {
             this.expression = expression;
         }

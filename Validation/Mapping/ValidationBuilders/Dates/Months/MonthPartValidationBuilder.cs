@@ -78,7 +78,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
             return new BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, int>(
                 lambda,inclusive_validator,
                 new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(
-                    new DateTimeValidationBuilder<T>(expression,validators)),
+                    new DateTimeValidationBuilder<T>(expression,validators,ignore_validators)),
                 lower.value, upper.value);
         }   
     }

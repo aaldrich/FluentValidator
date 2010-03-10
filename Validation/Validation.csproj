@@ -87,6 +87,9 @@
     <Compile Include="Mapping\ValidationBuilders\Failure\FailureValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Failure\IFailureEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Failure\IFailureSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Finished\FinishedValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Finished\IFinishedValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\IgnoreValidator.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\ByteValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateTimeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />

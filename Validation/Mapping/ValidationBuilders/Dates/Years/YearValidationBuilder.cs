@@ -19,8 +19,8 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Years
     {
         readonly Expression<Func<T, DateTime>> expression;
         
-        public YearValidationBuilder(Expression<Func<T,DateTime>> expression,IList<IValidator<T>> validators)
-            : base(validators)
+        public YearValidationBuilder(Expression<Func<T,DateTime>> expression,IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
+            : base(validators,ignore_validators)
         {
             this.expression = expression;
         }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Validation.Helpers;
+using Validation.Mapping.ValidationBuilders.Finished;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders
@@ -9,8 +11,8 @@ namespace Validation.Mapping.ValidationBuilders
     {
         readonly Expression<Func<T, object>> expression;
 
-        public ObjectValidationBuilder(Expression<Func<T, object>> expression, IList<IValidator<T>> validators)
-            : base(validators)
+        public ObjectValidationBuilder(Expression<Func<T, object>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
+            : base(validators,ignore_validators)
         {
             this.expression = expression;
         }
@@ -20,6 +22,15 @@ namespace Validation.Mapping.ValidationBuilders
             var validator = new NullValidator<T, object>(expression);
             validators.Add(validator);
             return this;
+        }
+
+        public IFinishedValidationBuilder ignore()
+        {
+            ignore_validators.Add(new IgnoreValidator(
+                                    typeof(T).AssemblyQualifiedName,
+                                    ExpressionHelper.GetMemberName(expression),
+                                    ExpressionHelper.GetMemberType(expression).AssemblyQualifiedName));
+            return new FinishedValidationBuilder();
         }
     }
 }

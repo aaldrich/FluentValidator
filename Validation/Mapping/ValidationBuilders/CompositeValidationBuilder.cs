@@ -13,7 +13,7 @@ namespace Validation.Mapping.ValidationBuilders
         readonly IValidationBuilder<T> return_builder;
 
         public CompositeValidationBuilder(IValidationBuilder<T> return_builder)
-            : base(return_builder.validators)
+            : base(return_builder.validators,return_builder.ignore_validators)
         {
             this.return_builder = return_builder;
         }

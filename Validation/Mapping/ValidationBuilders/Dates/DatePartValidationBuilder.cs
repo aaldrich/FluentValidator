@@ -9,28 +9,28 @@ namespace Validation.Mapping.ValidationBuilders.Dates
         {
             var validator = new GreaterThanValidator<T, DateTime>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(validator);
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression,validators));
+            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
         public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(DateTime value)
         {
             var validator = new EqualsValidator<T, DateTime>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(validator);
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression, validators));
+            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression, validators,ignore_validators));
         }
 
         public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(DateTime value)
         {
             var validator = new LessThanValidator<T, DateTime>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(validator);
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression, validators));
+            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
         public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> not(DateTime value)
         {
             var validator = new NotValidator<T, DateTime>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(validator);
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression, validators));
+            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates
 
             base.add_validator_with_not_wrapper_if_needed(inclusive_validator);
             return new BetweenValidationBuilder<T, IDateTimeEntryValidationBuilder<T>, DateTime>
-                (expression, inclusive_validator, new DateTimeValidationBuilder<T>(expression,validators), lower, upper);
+                (expression, inclusive_validator, new DateTimeValidationBuilder<T>(expression,validators,ignore_validators), lower, upper);
         }
     }
 }

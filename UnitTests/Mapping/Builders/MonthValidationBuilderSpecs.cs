@@ -12,7 +12,7 @@ namespace Validation.UnitTests.Mapping.Builders
 {
     public abstract class month_validation_builder_concern
     {
-		
+        protected static HashSet<IgnoreValidator> ignore_validators;		
     }
 
     [Subject("Specifiying a Month must be january")]
@@ -24,7 +24,7 @@ namespace Validation.UnitTests.Mapping.Builders
             };
 
         Because b = () =>
-                    month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators)
+                    month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
                                         .should_be().equal_to().January();
 
         It should_add_an_integer_equals_validator_to_the_list_of_validators = () =>
@@ -40,11 +40,11 @@ namespace Validation.UnitTests.Mapping.Builders
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
-                current_builder = new ValidationBuilder<Cat>(validators);
+                current_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         Because b = () =>
-                    month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators)
+                    month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
                                         .should_be().between(Month.January,Month.July);
 
         It should_add_an_inclusive_between_validator_to_the_list_of_validators = () =>
@@ -61,11 +61,11 @@ namespace Validation.UnitTests.Mapping.Builders
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
-                current_builder = new ValidationBuilder<Cat>(validators);
+                current_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         Because b = () =>
-                    month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators)
+                    month_builder = new MonthValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
                                         .should_not_be().greater_than().January();
 
         It should_add_a_not_validator_wrapping_a_greater_than_validator_to_the_list_of_validators = () =>

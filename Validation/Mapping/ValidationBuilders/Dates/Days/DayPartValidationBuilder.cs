@@ -108,7 +108,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
             return new BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, int>(
                 lambda,inclusive_validator,
                 new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(
-                    new DateTimeValidationBuilder<T>(expression,validators)),
+                    new DateTimeValidationBuilder<T>(expression,validators,ignore_validators)),
                 lower_day_of_month, upper_day_of_month);
         }
 
@@ -123,7 +123,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
             return new BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, DayOfWeek>(
                 lambda, inclusive_validator,
                 new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(
-                    new DateTimeValidationBuilder<T>(expression, validators)),
+                    new DateTimeValidationBuilder<T>(expression,validators,ignore_validators)),
                 lower, upper);
         }   
     }

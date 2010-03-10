@@ -15,14 +15,15 @@ namespace Validation.UnitTests.Mapping.Builders
             {
                 current_validator = new EqualsValidator<Cat, long>(x => x.id, 1);
                 validators = new List<IValidator<Cat>>{current_validator};
-                failure_validation_builder 
-                    = new FailureValidationBuilder<Cat,ValidationBuilder<Cat>>(current_validator,validators,return_builder);
+                failure_validation_builder
+                    = new FailureValidationBuilder<Cat, ValidationBuilder<Cat>>(current_validator, validators, ignore_validators, return_builder);
             };
 
         protected static EqualsValidator<Cat, long> current_validator;
         static IList<IValidator<Cat>> validators;
         static ValidationBuilder<Cat> return_builder;
         protected static FailureValidationBuilder<Cat, ValidationBuilder<Cat>> failure_validation_builder;
+        static HashSet<IgnoreValidator> ignore_validators;
     }
 		
     [Subject("Using a specific message upon failure")]

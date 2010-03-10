@@ -16,8 +16,9 @@ namespace Validation.Mapping.ValidationBuilders.Failure
         public FailureValidationBuilder(
             IValidator<T> current_validator,
             IList<IValidator<T>> validators,
+            HashSet<IgnoreValidator> ignore_validators,
             TReturnBuilder return_builder)
-            : base(validators)
+            : base(validators,ignore_validators)
         {
             this.current_validator = current_validator;
             this.return_builder = return_builder;

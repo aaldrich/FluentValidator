@@ -13,8 +13,8 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Longs
     {
         readonly Expression<Func<T, long>> expression;
 
-        public LongValidationBuilder(Expression<Func<T,long>> expression, IList<IValidator<T>> validators)
-            : base(validators)
+        public LongValidationBuilder(Expression<Func<T,long>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
+            : base(validators,ignore_validators)
         {
             this.expression = expression;
         }
@@ -28,21 +28,21 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Longs
         {
             var equal_to_validator = new EqualsValidator<T, long>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(equal_to_validator);
-            return new FailureValidationBuilder<T,ILongEntryValidationBuilder<T>>(equal_to_validator,validators,this) ;
+            return new FailureValidationBuilder<T,ILongEntryValidationBuilder<T>>(equal_to_validator,validators,ignore_validators,this) ;
         }
 
         public IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> greater_than(long value)
         {
             var greater_than_validator = new GreaterThanValidator<T, long>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(greater_than_validator);
-            return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(greater_than_validator,validators,this);
+            return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(greater_than_validator,validators,ignore_validators,this);
         }
 
         public IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> less_than(long value)
         {
             var less_than_validator = new LessThanValidator<T, long>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(less_than_validator);
-            return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(less_than_validator, validators, this);
+            return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(less_than_validator, validators, ignore_validators, this);
         }
 
         /// <summary>

@@ -13,7 +13,7 @@ namespace Validation.UnitTests.Mapping.Builders
 {
     public abstract class long_property_part_concern
     {
-		
+        protected static HashSet<IgnoreValidator> ignore_validators;
     }
 
     [Subject("Specifiying a Long is greater than 0")]
@@ -23,7 +23,7 @@ namespace Validation.UnitTests.Mapping.Builders
             validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-            long_builder = new LongValidationBuilder<Cat>(x=>x.id,validators).greater_than_zero();
+            long_builder = new LongValidationBuilder<Cat>(x=>x.id,validators,ignore_validators).greater_than_zero();
 
         It should_add_the_greater_than_validation_to_the_list_of_validators = () =>
             validators.First().ShouldBeOfType<GreaterThanValidator<Cat, long>>();
@@ -39,7 +39,7 @@ namespace Validation.UnitTests.Mapping.Builders
             validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-            long_builder = new LongValidationBuilder<Cat>(x => x.id, validators).greater_than(-1);
+            long_builder = new LongValidationBuilder<Cat>(x => x.id, validators,ignore_validators).greater_than(-1);
 
         It should_add_the_greater_than_validation_to_the_list_of_validators = () =>
            validators.First().ShouldBeOfType<GreaterThanValidator<Cat, long>>();
@@ -55,7 +55,7 @@ namespace Validation.UnitTests.Mapping.Builders
             validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-            long_builder = new LongValidationBuilder<Cat>(x => x.id, validators).between(1, 10);
+            long_builder = new LongValidationBuilder<Cat>(x => x.id, validators,ignore_validators).between(1, 10);
 
         It should_add_an_inclusive_between_validator_to_the_list_of_validators = () =>
             validators.First().ShouldBeOfType<InclusiveBetweenValidator<Cat,long>>();

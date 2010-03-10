@@ -13,7 +13,7 @@ namespace Validation.UnitTests.Mapping.Builders
 {
     public abstract class day_validation_builder_concern
     {
-		
+        protected static HashSet<IgnoreValidator> ignore_validators;		
     }
 
     [Subject("Specifiying a Day must be Friday")]
@@ -25,14 +25,15 @@ namespace Validation.UnitTests.Mapping.Builders
             };
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date,validators)
-                                      .should_be().equal_to().Friday();
+            day_builder = new DayValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
+                        .should_be().equal_to().Friday();
 
         It should_add_a_dayofweek_equals_validator_to_the_list_of_validators = () =>
-                                                                               validators.First().ShouldBeOfType<EqualsValidator<Cat, DayOfWeek>>();
+            validators.First().ShouldBeOfType<EqualsValidator<Cat, DayOfWeek>>();
 
         static IList<IValidator<Cat>> validators;
         static ValidationBuilder<Cat> day_builder;
+
     }
 
     [Subject("Specifiying a Day must be greater than Friday")]
@@ -42,7 +43,7 @@ namespace Validation.UnitTests.Mapping.Builders
                       validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_be().greater_than().Friday();
 
         It should_add_a_dayofweek_greater_than_validator_to_the_list_of_validators = () =>
@@ -59,7 +60,7 @@ namespace Validation.UnitTests.Mapping.Builders
                       validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_be().less_than().Friday();
 
         It should_add_a_dayofweek_less_than_validator_to_the_list_of_validators = () =>
@@ -75,11 +76,11 @@ namespace Validation.UnitTests.Mapping.Builders
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
-                current_builder = new ValidationBuilder<Cat>(validators);
+                current_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date,validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
                                       .should_be().between(DayOfWeek.Monday,DayOfWeek.Friday);
 
         It should_add_an_inclusive_between_validator_to_the_list_of_validators = () =>
@@ -96,11 +97,11 @@ namespace Validation.UnitTests.Mapping.Builders
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
-                current_builder = new ValidationBuilder<Cat>(validators);
+                current_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date,validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
                                       .should_not_be().greater_than().Monday();
 
         It should_add_a_not_validator_wrapping_a_greater_than_validator_to_the_list_of_validators = () =>
@@ -118,7 +119,7 @@ namespace Validation.UnitTests.Mapping.Builders
                       validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_be().equal_to(30);
 
         It should_add_a_integer_equals_validator_to_the_list_of_validators = () =>
@@ -135,7 +136,7 @@ namespace Validation.UnitTests.Mapping.Builders
                       validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_be().greater_than(30);
 
         It should_add_an_integer_greater_than_validator_to_the_list_of_validators = () =>
@@ -152,7 +153,7 @@ namespace Validation.UnitTests.Mapping.Builders
                       validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_be().less_than(30);
 
         It should_add_an_integer_less_than_validator_to_the_list_of_validators = () =>
@@ -168,11 +169,11 @@ namespace Validation.UnitTests.Mapping.Builders
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
-                current_builder = new ValidationBuilder<Cat>(validators);
+                current_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_be().between(1, 30);
 
         It should_add_an_inclusive_between_validator_to_the_list_of_validators = () =>
@@ -189,11 +190,11 @@ namespace Validation.UnitTests.Mapping.Builders
         Establish c = () =>
             {
                 validators = new List<IValidator<Cat>>();
-                current_builder = new ValidationBuilder<Cat>(validators);
+                current_builder = new ValidationBuilder<Cat>(validators,ignore_validators);
             };
 
         Because b = () =>
-                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators)
+                    day_builder = new DayValidationBuilder<Cat>(x => x.birth_date, validators,ignore_validators)
                                       .should_not_be().greater_than(30);
 
         It should_add_a_not_validator_wrapping_a_greater_than_validator_to_the_list_of_validators = () =>

@@ -9,8 +9,8 @@ namespace Validation.Mapping.ValidationBuilders.Numeric
     {
         readonly Expression<Func<T, decimal>> expression;
 
-        public DecimalValidationBuilder(Expression<Func<T,decimal>> expression, IList<IValidator<T>> validators)
-            : base(validators)
+        public DecimalValidationBuilder(Expression<Func<T,decimal>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
+            : base(validators,ignore_validators)
         {
             this.expression = expression;
         }

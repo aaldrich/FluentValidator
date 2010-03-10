@@ -23,7 +23,7 @@ namespace Validation.UnitTests.Mapping.Builders
                       validators = new List<IValidator<Cat>>();
 
         Because b = () =>
-                    int_builder = new IntValidationBuilder<Cat>(x=>x.birth_date.Month,validators)
+                    int_builder = new IntValidationBuilder<Cat>(x=>x.birth_date.Month,validators,ignore_validators)
                                       .greater_than_zero();
 
         It should_add_the_greater_than_validation_to_the_list_of_validators = () =>
@@ -31,5 +31,6 @@ namespace Validation.UnitTests.Mapping.Builders
 
         static ValidationBuilder<Cat> int_builder;
         static IList<IValidator<Cat>> validators;
+        static HashSet<IgnoreValidator> ignore_validators;
     }
 }

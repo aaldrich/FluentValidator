@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public StringValidationBuilder<T> Map(Expression<Func<T, string>> property)
         {
-            return new StringValidationBuilder<T>(property,validators);
+            return new StringValidationBuilder<T>(property, validators, ignore_validators);
         }
     }
 }

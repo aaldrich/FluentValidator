@@ -13,6 +13,7 @@ namespace Validation.UnitTests.Stubs
                 .between(new DateTime(2004, 01, 01), new DateTime(2009, 01, 01))
                 .upon_failure().use_message("blah");
             Map(x => x.id).should_be().greater_than(0);
+            Map(x => x.fights_with).ignore();
         }
     }
 }

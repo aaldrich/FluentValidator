@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Validation.Helpers;
+using Validation.Mapping.ValidationBuilders;
 using Validation.Mapping.ValidationMappers;
 
 namespace Validation.Registry
@@ -52,7 +53,7 @@ namespace Validation.Registry
                 }
             } 
         }
-
+        
         public static void IsValid()
         {
             

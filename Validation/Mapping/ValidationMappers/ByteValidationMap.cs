@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public ByteValidationBuilder<T> Map(Expression<Func<T, byte>> property)
         {
-            return new ByteValidationBuilder<T>(property,validators);
+            return new ByteValidationBuilder<T>(property, validators, ignore_validators);
         }
     }
 }

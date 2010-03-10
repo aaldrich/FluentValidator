@@ -11,10 +11,12 @@ namespace Validation.Mapping.ValidationMappers
     public partial class ValidationMap<T> : IValidationMap where T : class
     {
         public IList<IValidator<T>> validators {get; protected set;}
+        public HashSet<IgnoreValidator> ignore_validators { get; protected set; }
 
         public ValidationMap()
         {
             validators = new List<IValidator<T>>();
+            ignore_validators = new HashSet<IgnoreValidator>();
         }
 
         //I want to build a generic builder entry point but I'm having trouble
@@ -29,7 +31,7 @@ namespace Validation.Mapping.ValidationMappers
         //        Expression<Func<T,long>> new_expression 
         //            = Expression.Lambda<Func<T,long>>(expression.Body,expression.Parameters);
 
-        //        return new LongValidationBuilder<T>(new_expression, validators);
+        //        return new LongValidationBuilder<T>(new_expression,validators,ignore_validators);
         //    }
         //}
         public Type ValidationType

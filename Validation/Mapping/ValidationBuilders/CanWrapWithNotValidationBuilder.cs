@@ -12,7 +12,7 @@ namespace Validation.Mapping.ValidationBuilders
     {
         protected bool should_wrap_with_not {get;set;}
 
-        protected CanWrapWithNotValidationBuilder(IList<IValidator<T>> validators) : base(validators)
+        protected CanWrapWithNotValidationBuilder(IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators) : base(validators,ignore_validators)
         {
         }
 

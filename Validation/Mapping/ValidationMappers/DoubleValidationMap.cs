@@ -8,7 +8,7 @@ namespace Validation.Mapping.ValidationMappers
     {
         public DoubleValidationBuilder<T> Map(Expression<Func<T, double>> property)
         {
-            return new DoubleValidationBuilder<T>(property,validators);
+            return new DoubleValidationBuilder<T>(property,validators,ignore_validators);
         }
     }
 }
