@@ -1,12 +1,12 @@
 using System;
 using System.Linq.Expressions;
-using Validation.Mapping.ValidationBuilders.Numeric;
+using Validation.Mapping.ValidationBuilders.Numeric.Floats;
 
 namespace Validation.Mapping.ValidationMappers
 {
     public partial class ValidationMap<T> where T : class
     {
-        public FloatValidationBuilder<T> Map(Expression<Func<T, float>> property)
+        public IFloatEntryValidationBuilder<T> Map(Expression<Func<T, float>> property)
         {
             return new FloatValidationBuilder<T>(property, validators, ignore_validators);
         }

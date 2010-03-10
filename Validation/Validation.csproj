@@ -100,7 +100,9 @@
     <Compile Include="Mapping\ValidationBuilders\Numeric\Doubles\IDoubleEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Doubles\IDoubleSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Doubles\DoubleValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Floats\IFloatEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Floats\IFloatSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Floats\FloatValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IIntegerEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IIntegerSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongSpecificationValidationBuilder.cs" />
