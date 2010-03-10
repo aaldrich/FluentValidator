@@ -95,8 +95,10 @@
     <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DoubleValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DecimalValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IIntegerEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IIntegerSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongSpecificationValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Numeric\IntValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IntValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationMappers\BooleanValidationMap.cs" />
     <Compile Include="Mapping\ValidationMappers\ByteValidationMap.cs" />

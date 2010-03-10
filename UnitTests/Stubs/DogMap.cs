@@ -6,7 +6,7 @@ namespace Validation.UnitTests.Stubs
     {
         public DogMap()
         {
-            Map(x => x.id).greater_than(0);
+            Map(x => x.id).should_be().greater_than_zero();
         } 
     }
 }
