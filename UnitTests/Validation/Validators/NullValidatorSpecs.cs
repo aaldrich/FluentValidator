@@ -16,7 +16,7 @@ namespace Validation.UnitTests.Validation.Validators
 
         protected static Cat oliver_the_cat;
         protected static bool result;
-        static Expression<Func<Cat, string>> expression;
+        protected static Expression<Func<Cat, string>> expression;
         protected static NullValidator<Cat, string> validator;
     }
 

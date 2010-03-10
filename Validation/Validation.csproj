@@ -120,6 +120,7 @@
     <Compile Include="Validation\Validators\BooleanValidator.cs" />
     <Compile Include="Validation\Failures\ExpressionFailureMessageStrategy.cs" />
     <Compile Include="Validation\Failures\CustomFailureMessageStrategy.cs" />
+    <Compile Include="Validation\Validators\StringContainsValidator.cs" />
     <Compile Include="Validation\Validators\EqualsValidator.cs" />
     <Compile Include="Validation\Validators\EmptyValidator.cs" />
     <Compile Include="Mapping\ValidationBuilders\ObjectValidationBuilder.cs" />
@@ -145,6 +146,10 @@
     <Compile Include="Validation\Validators\NotValidatorWrapper.cs" />
     <Compile Include="Validation\Validators\NullValidator.cs" />
     <Compile Include="Validation\Validators\ValidatorBase.cs" />
+    <Compile Include="Validation\Validators\CollectionContainsValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Validators\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
