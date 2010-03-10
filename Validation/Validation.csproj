@@ -94,9 +94,11 @@
     <Compile Include="Mapping\ValidationBuilders\Numeric\Bytes\IByteSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Bytes\ByteValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateTimeValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Decimals\IDecimalEntryValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Decimals\IDecimalSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Numeric\Decimals\DecimalValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\FloatValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\DoubleValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Numeric\DecimalValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IIntegerEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Integers\IIntegerSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Numeric\Longs\ILongSpecificationValidationBuilder.cs" />
