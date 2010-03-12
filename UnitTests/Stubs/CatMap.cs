@@ -1,5 +1,6 @@
 using System;
 using System.Text.RegularExpressions;
+using Validation.Mapping.ValidationBuilders.Dates.Months;
 using Validation.Mapping.ValidationMappers;
 
 namespace Validation.UnitTests.Stubs
@@ -16,7 +17,8 @@ namespace Validation.UnitTests.Stubs
             Map(x => x.birth_date).year().should_be().greater_than(2003);
             Map(x => x.birth_date).day().should_be().equal_to(7);
             Map(x => x.birth_date).day().should_be().equal_to().Tuesday();
-            
+            Map(x => x.birth_date).month().should_be().equal_to().June();
+            Map(x => x.birth_date).month().should_be().between(Month.May, Month.July);
 
             Map(x => x.id).should_be().greater_than(0);
             Map(x => x.fights_with).ignore_my_validations();

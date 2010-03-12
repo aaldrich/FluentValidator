@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates.Months
@@ -17,14 +18,15 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
             return this;
         }
 
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(Month month)
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(Month month)
         {
             Expression<Func<T, int>> lambda = get_month_expression();
 
             var validator = new LessThanValidator<T, int>(lambda, month.value);
             add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator,validators,ignore_validators,new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
         public IMonthSpecificationValidationBuilder<T> greater_than()
@@ -33,14 +35,15 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
             return this;
         }
 
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(Month month)
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(Month month)
         {
             Expression<Func<T, int>> lambda = get_month_expression();
 
             var validator = new GreaterThanValidator<T, int>(lambda, month.value);
             add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+            (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
         public IMonthSpecificationValidationBuilder<T> equal_to()
@@ -49,14 +52,15 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
             return this;
         }
 
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(Month month)
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(Month month)
         {
             Expression<Func<T, int>> lambda = get_month_expression();
 
             var validator = new EqualsValidator<T, int>(lambda, month.value);
             add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+            (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
         /// <summary>
@@ -67,7 +71,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
         /// <param name="lower">lower range (less than equal to)</param>
         /// <param name="upper">upper range (greather than equal to)</param>
         /// <returns>Between Validation Builder</returns>
-        public BetweenValidationBuilder<T,CompositeValidationBuilder<T,IDateTimeEntryValidationBuilder<T>>,int> between(Month lower, Month upper)
+        public BetweenValidationBuilder<T,IDateTimeEntryValidationBuilder<T>,int> between(Month lower, Month upper)
         {
             Expression<Func<T, int>> lambda = get_month_expression();
 
@@ -75,10 +79,9 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
                 new InclusiveBetweenValidator<T, int>(lambda, lower.value, upper.value);
             add_validator_with_not_wrapper_if_needed(inclusive_validator);
 
-            return new BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, int>(
+            return new BetweenValidationBuilder<T, IDateTimeEntryValidationBuilder<T>, int>(
                 lambda,inclusive_validator,
-                new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(
-                    new DateTimeValidationBuilder<T>(expression,validators,ignore_validators)),
+                new DateTimeValidationBuilder<T>(expression,validators,ignore_validators),
                 lower.value, upper.value);
         }   
     }

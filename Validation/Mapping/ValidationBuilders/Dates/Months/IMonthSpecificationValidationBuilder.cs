@@ -1,18 +1,20 @@
+using Validation.Mapping.ValidationBuilders.Failure;
+
 namespace Validation.Mapping.ValidationBuilders.Dates.Months
 {
     public interface IMonthSpecificationValidationBuilder<T> where T : class
     {
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> January();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> February();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> March();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> April();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> May();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> June();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> July();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> August();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> September();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> October();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> November();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> December();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> January();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> February();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> March();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> April();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> May();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> June();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> July();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> August();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> September();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> October();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> November();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> December();
     }
 }

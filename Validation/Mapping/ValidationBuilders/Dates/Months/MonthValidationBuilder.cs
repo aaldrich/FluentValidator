@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates.Months
@@ -20,7 +21,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
     {
         readonly Expression<Func<T, DateTime>> expression;
         
-        Func<Month,ValidationBuilder<T>> month_building_context;
+        Func<Month,IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>> month_building_context;
         
         public MonthValidationBuilder(Expression<Func<T,DateTime>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
             : base(validators,ignore_validators)
