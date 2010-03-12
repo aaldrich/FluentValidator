@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AssembliesMetrics>
+  <Assembly Assembly="Validation v1.0.0.0" NTypes="90" NAbstractTypes="37" NILInstructionInAsm="5231" NbLinesOfCodeInAsm="764" NbLinesOfCommentInAsm="253" PercentageCommentInAsm="24" AfferentCoupling="147" EfferentCoupling="56" RelationalCohesion="4.92" Instability="0.28" Abstractness="0.41" DistFrMainSeq="0.22" NormDistFrMainSeq="0.31" />
+  <Assembly Assembly="Validation.UnitTests v1.0.0.0" NTypes="158" NAbstractTypes="32" NILInstructionInAsm="7753" NbLinesOfCodeInAsm="779" NbLinesOfCommentInAsm="18" PercentageCommentInAsm="2" AfferentCoupling="0" EfferentCoupling="109" RelationalCohesion="1.76" Instability="1" Abstractness="0.21" DistFrMainSeq="0.15" NormDistFrMainSeq="0.21" />
+</AssembliesMetrics>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ApplicationMetrics NAsm="2" NbLinesOfCode="1543" NbLinesOfComment="271" PercentageComment="14" NType="248" NClass="211" NAbstractClass="33" NInterface="37" NValueType="0" NExceptionType="0" NAttributeType="0" NDelegateType="0" NEnumType="0" NGenericMethodsDefinition="17" NGenericTypesDefinition="67" NILInstruction="12984" PercentPublicType="100" PercentPublicMethod="54.42" PercentClassWithAtLeastOnePublicField="1.61">
+  <PropertyOnInterface Occ="37" Avg="0.19" StdDev="0.61" MaxVal="3" MaxName="Validation.Validation.Validators.IValidator&lt;T&gt;" />
+  <MethodOnInterface Occ="37" Avg="3.65" StdDev="2.77" MaxVal="13" MaxName="Validation.Mapping.ValidationBuilders.Strings.IStringSpecificationValidationBuilder&lt;T&gt;" />
+  <ArgOnMethodOnInterface Occ="135" Avg="0.51" StdDev="0.65" MaxVal="2" MaxName="Validation.Mapping.ValidationBuilders.Dates.IDatePartValidationBuilder&lt;T&gt;.between(DateTime,DateTime)" />
+  <PublicPropertyOnClass Occ="211" Avg="0.15" StdDev="0.67" MaxVal="7" MaxName="Validation.UnitTests.Stubs.Cat" />
+  <PublicMethodOnClass Occ="211" Avg="1.87" StdDev="2.9" MaxVal="19" MaxName="Validation.Mapping.ValidationBuilders.Dates.Months.MonthValidationBuilder&lt;T&gt;" />
+  <ArgOnPublicMethodOnClass Occ="394" Avg="0.55" StdDev="0.86" MaxVal="5" MaxName="Validation.Mapping.ValidationBuilders.BetweenValidationBuilder&lt;T,TReturnBuilder,TProperty&gt;..ctor(Expression&lt;Func&lt;T,TProperty&gt;&gt;,InclusiveBetweenValidator&lt;T,TProperty&gt;,TReturnBuilder,TProperty,TProperty)" />
+  <ILInstructionInNonAbstractMethods Occ="837" Avg="15.51" StdDev="13.61" MaxVal="154" MaxName="Validation.UnitTests.Stubs.CatMap..ctor()" />
+  <TypeWithTheMostILInstruction Occ="211" Avg="61.54" StdDev="47.04" MaxVal="390" MaxName="Validation.Mapping.ValidationBuilders.Strings.StringValidationBuilder&lt;T&gt;" />
+  <MethodCC Occ="837" Avg="1.62" StdDev="1.31" MaxVal="10" MaxName="Validation.Registry.ValidationRegistry.add_validation_maps()" />
+</ApplicationMetrics>

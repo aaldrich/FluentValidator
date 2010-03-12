@@ -25,14 +25,14 @@ namespace Validation.UnitTests.Mapping.Builders
             };
 
         Because b = () =>
-                    year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,current_builder.validators,ignore_validators)
+            year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,current_builder.validators,ignore_validators)
                                        .should_be().equal_to(2010);
 
         It should_add_an_integer_equals_validator_to_the_list_of_validators = () =>
-                                                                              validators.First().ShouldBeOfType<EqualsValidator<Cat, int>>();
+            validators.First().ShouldBeOfType<EqualsValidator<Cat, int>>();
 
         static IList<IValidator<Cat>> validators;
-        static ValidationBuilder<Cat> year_builder;
+        static IValidationBuilder<Cat> year_builder;
         static ValidationBuilder<Cat> current_builder;
         static HashSet<IgnoreValidator> ignore_validators;
     }
@@ -46,11 +46,15 @@ namespace Validation.UnitTests.Mapping.Builders
             };
 
         Because b = () =>
-                    year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
-                                       .should_be().between(2008,2010);
+            {
+                year_builder = new YearValidationBuilder<Cat>(x => x.birth_date, validators, ignore_validators)
+                                   .should_be().between(2008, 2010);
+            };
 
         It should_add_an_inclusive_between_validator_to_the_list_of_validators = () =>
-                                                                                 validators.First().ShouldBeOfType<InclusiveBetweenValidator<Cat, int>>();
+            {
+                validators.First().ShouldBeOfType<InclusiveBetweenValidator<Cat, int>>();
+            };
 
         static IList<IValidator<Cat>> validators;
         static ValidationBuilder<Cat> year_builder;
@@ -65,13 +69,17 @@ namespace Validation.UnitTests.Mapping.Builders
             };
 
         Because b = () =>
-                    year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
-                                       .should_not_be().greater_than(2009);
+            {
+                year_builder = new YearValidationBuilder<Cat>(x => x.birth_date,validators,ignore_validators)
+                .should_not_be().greater_than(2009);
+            };
 
         It should_add_a_not_validator_wrapping_a_greater_than_validator_to_the_list_of_validators = () =>
-                                                                                                    validators.First().ShouldBeOfType<NotValidatorWrapper<Cat,GreaterThanValidator<Cat, int>>>();
+            {
+                validators.First().ShouldBeOfType<NotValidatorWrapper<Cat, GreaterThanValidator<Cat, int>>>();
+            };
 
         static IList<IValidator<Cat>> validators;
-        static ValidationBuilder<Cat> year_builder;
+        static IValidationBuilder<Cat> year_builder;
     }
 }

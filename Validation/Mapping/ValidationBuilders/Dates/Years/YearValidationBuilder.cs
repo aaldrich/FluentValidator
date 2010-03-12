@@ -15,7 +15,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Years
     /// </typeparam>
     public partial class YearValidationBuilder<T> : CanWrapWithNotValidationBuilder<T>,
                                                     IYearEntryValidationBuilder<T>,
-                                                    IYearPartValidationBuilder<T> where T : class
+                                                    IYearSpecificationValidationBuilder<T> where T : class
     {
         readonly Expression<Func<T, DateTime>> expression;
         
@@ -25,12 +25,12 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Years
             this.expression = expression;
         }
 
-        public IYearPartValidationBuilder<T> should_be()
+        public IYearSpecificationValidationBuilder<T> should_be()
         {
             return this;
         }
 
-        public IYearPartValidationBuilder<T> should_not_be()
+        public IYearSpecificationValidationBuilder<T> should_not_be()
         {
             should_wrap_with_not = true;
             return this; 

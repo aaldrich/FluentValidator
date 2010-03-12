@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<InfoWarnings>
+  <Info>03/10/2010 23:08:58 Begin full analysis with NDepend v3.0.1</Info>
+  <Info>No Baseline for Comparison loaded.</Info>
+  <Info>Assemblies loaded from {C:\WINDOWS\Microsoft.NET\Framework\v4.0.30128} 
+   mscorlib.dll   v4.0.0.0
+   System.Core.dll   v4.0.0.0
+   System.dll   v4.0.0.0</Info>
+  <Warning>No application or tier assembly found in directory {C:\WINDOWS\Microsoft.NET\Framework\v4.0.30128\WPF}</Warning>
+  <Info>Assemblies loaded from {C:\repositories\validator\UnitTests\bin\Debug} 
+   Validation.UnitTests.dll   v1.0.0.0
+   Validation.dll   v1.0.0.0
+   Machine.Specifications.dll   v0.3.0.0
+   Moq.dll   v3.1.416.3</Info>
+  <Info>141 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
+  <Info>0 CQL constraint has been extracted from code.</Info>
+  <Info>No dependency cycle detected in assemblies referencement graph.</Info>
+  <Info>03/10/2010 23:09:05 Analyse dependencies of your application.</Info>
+  <Info>03/10/2010 23:09:06 Building the report (standard).</Info>
+</InfoWarnings>

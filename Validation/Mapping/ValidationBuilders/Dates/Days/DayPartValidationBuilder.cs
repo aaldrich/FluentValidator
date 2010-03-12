@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates.Days
@@ -17,24 +18,26 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
             return this;
         }
 
-        CompositeValidationBuilder<T,IDateTimeEntryValidationBuilder<T>> less_than(DayOfWeek day_of_week)
+        IFailureEntryValidationBuilder<T,IDateTimeEntryValidationBuilder<T>> less_than(DayOfWeek day_of_week)
         {
             Expression<Func<T, DayOfWeek>> lambda = get_day_of_week_expression();
 
             var validator = new LessThanValidator<T, DayOfWeek>(lambda, day_of_week);
-            add_validator_with_not_wrapper_if_needed(validator);
+            base.add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator,validators,ignore_validators,new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
-        public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(int day_of_month)
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(int day_of_month)
         {
             Expression<Func<T, int>> lambda = get_day_of_month_expression();
 
             var validator = new LessThanValidator<T, int>(lambda, day_of_month);
-            add_validator_with_not_wrapper_if_needed(validator);
+            base.add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
         public IDaySpecificationValidationBuilder<T> greater_than()
@@ -43,24 +46,26 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
             return this;
         }
 
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(DayOfWeek day_of_week)
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(DayOfWeek day_of_week)
         {
             Expression<Func<T, DayOfWeek>> lambda = get_day_of_week_expression();
 
             var validator = new GreaterThanValidator<T,DayOfWeek>(lambda, day_of_week);
-            add_validator_with_not_wrapper_if_needed(validator);
+            base.add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
-        public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(int day_of_month)
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(int day_of_month)
         {
             Expression<Func<T, int>> lambda = get_day_of_month_expression();
 
             var validator = new GreaterThanValidator<T, int>(lambda, day_of_month);
-            add_validator_with_not_wrapper_if_needed(validator);
+            base.add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
         public IDaySpecificationValidationBuilder<T> equal_to()
@@ -69,24 +74,26 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
             return this;
         }
 
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(DayOfWeek day_of_week)
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(DayOfWeek day_of_week)
         {
             Expression<Func<T, DayOfWeek>> lambda = get_day_of_week_expression();
 
             var validator = new EqualsValidator<T, DayOfWeek>(lambda, day_of_week);
-            add_validator_with_not_wrapper_if_needed(validator);
+            base.add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
-        public CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(int day_of_month)
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(int day_of_month)
         {
             Expression<Func<T, int>> lambda = get_day_of_month_expression();
 
             var validator = new EqualsValidator<T, int>(lambda, day_of_month);
-            add_validator_with_not_wrapper_if_needed(validator);
+            base.add_validator_with_not_wrapper_if_needed(validator);
 
-            return new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(this);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
         /// <summary>
@@ -97,33 +104,31 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
         /// <param name="lower_day_of_month">lower range (less than equal to)</param>
         /// <param name="upper_day_of_month">upper_day_of_month range (greather than equal to)</param>
         /// <returns>Between Validation Builder</returns>
-        public BetweenValidationBuilder<T,CompositeValidationBuilder<T,IDateTimeEntryValidationBuilder<T>>,int> between(int lower_day_of_month, int upper_day_of_month)
+        public BetweenValidationBuilder<T,IDateTimeEntryValidationBuilder<T>,int> between(int lower_day_of_month, int upper_day_of_month)
         {
             Expression<Func<T, int>> lambda = get_day_of_month_expression();
 
             var inclusive_validator =
                 new InclusiveBetweenValidator<T, int>(lambda, lower_day_of_month, upper_day_of_month);
-            add_validator_with_not_wrapper_if_needed(inclusive_validator);
+            base.add_validator_with_not_wrapper_if_needed(inclusive_validator);
 
-            return new BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, int>(
+            return new BetweenValidationBuilder<T, IDateTimeEntryValidationBuilder<T>, int>(
                 lambda,inclusive_validator,
-                new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(
-                    new DateTimeValidationBuilder<T>(expression,validators,ignore_validators)),
+                new DateTimeValidationBuilder<T>(expression,validators,ignore_validators),
                 lower_day_of_month, upper_day_of_month);
         }
 
-        public BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, DayOfWeek> between(DayOfWeek lower, DayOfWeek upper)
+        public BetweenValidationBuilder<T, IDateTimeEntryValidationBuilder<T>, DayOfWeek> between(DayOfWeek lower, DayOfWeek upper)
         {
             Expression<Func<T, DayOfWeek>> lambda = get_day_of_week_expression();
 
             var inclusive_validator =
                 new InclusiveBetweenValidator<T, DayOfWeek>(lambda, lower, upper);
-            add_validator_with_not_wrapper_if_needed(inclusive_validator);
+            base.add_validator_with_not_wrapper_if_needed(inclusive_validator);
 
-            return new BetweenValidationBuilder<T, CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>, DayOfWeek>(
+            return new BetweenValidationBuilder<T, IDateTimeEntryValidationBuilder<T>, DayOfWeek>(
                 lambda, inclusive_validator,
-                new CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>(
-                    new DateTimeValidationBuilder<T>(expression,validators,ignore_validators)),
+                new DateTimeValidationBuilder<T>(expression,validators,ignore_validators),
                 lower, upper);
         }   
     }

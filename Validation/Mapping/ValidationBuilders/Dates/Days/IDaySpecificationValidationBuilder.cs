@@ -1,13 +1,15 @@
+using Validation.Mapping.ValidationBuilders.Failure;
+
 namespace Validation.Mapping.ValidationBuilders.Dates.Days
 {
     public interface IDaySpecificationValidationBuilder<T> where T : class
     {
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Sunday();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Monday();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Tuesday();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Wednesday();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Thursday();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Friday();
-        CompositeValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Saturday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Sunday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Monday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Tuesday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Wednesday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Thursday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Friday();
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> Saturday();
     }
 }

@@ -1,0 +1,1738 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CQLResult>
+  <Group Name="Code Quality" Status="Warn">
+    <Query Status="Warn" Name="Quick summary of methods to refactor" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Quick&amp;#0160;summary&amp;#0160;of&amp;#0160;methods&amp;#0160;to&amp;#0160;refactor&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;/*OUT&amp;#0160;OF&amp;#0160;"YourGeneratedCode"&amp;#0160;*/&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Metrics'&amp;#0160;definitions&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NbLinesOfCode&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;30&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbLinesOfCode" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbLinesOfCode&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbILInstructions&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;200&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbILInstructions" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbILInstructions&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;CyclomaticComplexity&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;20&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#CC" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#CC&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;ILCyclomaticComplexity&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;50&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#ILCC" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#ILCC&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;ILNestingDepth&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;4&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#ILNestingDepth" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#ILNestingDepth&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbParameters&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;5&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbParameters" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbParameters&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbVariables&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;8&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbVariables" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbVariables&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbOverloads&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;6&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbOverloads" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbOverloads&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Here&amp;#0160;are&amp;#0160;some&amp;#0160;ways&amp;#0160;to&amp;#0160;avoid&amp;#0160;taking&amp;#0160;account&amp;#0160;of&amp;#0160;generated&amp;#0160;methods.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NameIs&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"InitializeComponent()"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;NDepend.CQL.GeneratedAttribute&amp;#0160;is&amp;#0160;defined&amp;#0160;in&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;the&amp;#0160;redistributable&amp;#0160;assembly&amp;#0160;$NDependInstallDir$\Lib\NDepend.CQL.dll&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;You&amp;#0160;can&amp;#0160;define&amp;#0160;your&amp;#0160;own&amp;#0160;attribute&amp;#0160;to&amp;#0160;mark&amp;#0160;"Generated".&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;HasAttribute&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"OPTIONAL:NDepend.CQL.GeneratedAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># lines of code (LOC)</Column>
+        <Column># IL instructions</Column>
+        <Column>Cyclomatic Complexity (CC)</Column>
+        <Column>IL Cyclomatic Complexity (ILCC)</Column>
+        <Column>IL Nesting Depth</Column>
+        <Column># Parameters</Column>
+        <Column># Variables</Column>
+        <Column># Overloads</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Validate&lt;T&gt;(T)" FullName="Validation.Validation.Validator.Validate&lt;T&gt;(T)">
+          <Val>14</Val>
+          <Val>78</Val>
+          <Val>4</Val>
+          <Val>7</Val>
+          <Val>2</Val>
+          <Val>1</Val>
+          <Val>9</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)" FullName="Validation.Validation.Validator.validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)">
+          <Val>11</Val>
+          <Val>72</Val>
+          <Val>3</Val>
+          <Val>4</Val>
+          <Val>2</Val>
+          <Val>4</Val>
+          <Val>9</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,DateTime&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,DateTime&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Boolean&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Boolean&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Double&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Double&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Decimal&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Decimal&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Object&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Object&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,String&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,String&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Byte&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Byte&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Int32&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Int32&gt;&gt;)">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>33</Val>
+          <Val>238</Val>
+          <Val>15</Val>
+          <Val>19</Val>
+          <Val>4</Val>
+          <Val>13</Val>
+          <Val>26</Val>
+          <Val>82</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>3.3</Val>
+          <Val>23.8</Val>
+          <Val>1.5</Val>
+          <Val>1.9</Val>
+          <Val>0.4</Val>
+          <Val>1.3</Val>
+          <Val>2.6</Val>
+          <Val>8.2</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>1</Val>
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>14</Val>
+          <Val>78</Val>
+          <Val>4</Val>
+          <Val>7</Val>
+          <Val>2</Val>
+          <Val>4</Val>
+          <Val>9</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>4.6487</Val>
+          <Val>25.635</Val>
+          <Val>1.0247</Val>
+          <Val>1.9209</Val>
+          <Val>0.8</Val>
+          <Val>0.9</Val>
+          <Val>3.2</Val>
+          <Val>3.6</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>21.61</Val>
+          <Val>657.16</Val>
+          <Val>1.05</Val>
+          <Val>3.69</Val>
+          <Val>0.64</Val>
+          <Val>0.81</Val>
+          <Val>10.24</Val>
+          <Val>12.96</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Methods poorly commented (PercentageComment)" NbNodeMatched="4" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;poorly&amp;#0160;commented&amp;#0160;(PercentageComment)&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;PercentageComment&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;20&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbLinesOfCode&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;ORDER&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;BY&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;PercentageComment&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;ASC&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;METHODS&amp;#0160;WHERE&amp;#0160;%Comment&amp;#0160;&amp;lt;&amp;#0160;20&amp;#0160;and&amp;#0160;that&amp;#0160;have&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;at&amp;#0160;least&amp;#0160;10&amp;#0160;lines&amp;#0160;of&amp;#0160;code&amp;#0160;should&amp;#0160;be&amp;#0160;more&amp;#0160;commented.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;See&amp;#0160;the&amp;#0160;definition&amp;#0160;of&amp;#0160;the&amp;#0160;PercentageComment&amp;#0160;metric&amp;#0160;here&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#PercentageComment" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#PercentageComment&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column>Percentage Comment</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)" FullName="Validation.Validation.Validator.validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)">
+          <Val>0</Val>
+          <Val>11</Val>
+        </Row>
+        <Row Name=".cctor()" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month..cctor()">
+          <Val>0</Val>
+          <Val>12</Val>
+        </Row>
+        <Row Name="add_validation_maps()" FullName="Validation.Registry.ValidationRegistry.add_validation_maps()">
+          <Val>0</Val>
+          <Val>11</Val>
+        </Row>
+        <Row Name="Validate&lt;T&gt;(T)" FullName="Validation.Validation.Validator.Validate&lt;T&gt;(T)">
+          <Val>0</Val>
+          <Val>14</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>48</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>12</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>11</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>14</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>1.2247</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>1.5</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Methods with too many overloads (NbOverloads)" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;with&amp;#0160;too&amp;#0160;many&amp;#0160;overloads&amp;#0160;(NbOverloads)&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbOverloads&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;6&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;ORDER&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;BY&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NbOverloads&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;DESC&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;METHODS&amp;#0160;WHERE&amp;#0160;NbOverloads&amp;#0160;&amp;gt;&amp;#0160;6&amp;#0160;might&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;be&amp;#0160;a&amp;#0160;problem&amp;#0160;to&amp;#0160;maintain&amp;#0160;and&amp;#0160;provoke&amp;#0160;higher&amp;#0160;coupling&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;than&amp;#0160;necessary.&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;might&amp;#0160;also&amp;#0160;reveal&amp;#0160;a&amp;#0160;potential&amp;#0160;misused&amp;#0160;of&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;C#&amp;#0160;and&amp;#0160;VB.NET&amp;#0160;language&amp;#0160;that&amp;#0160;since&amp;#0160;C#3&amp;#0160;and&amp;#0160;VB9&amp;#0160;support&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;object&amp;#0160;initialization.&amp;#0160;This&amp;#0160;feature&amp;#0160;helps&amp;#0160;reducing&amp;#0160;the&amp;#0160;number&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;of&amp;#0160;constructors&amp;#0160;of&amp;#0160;a&amp;#0160;class.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;See&amp;#0160;the&amp;#0160;definition&amp;#0160;of&amp;#0160;the&amp;#0160;NbOverloads&amp;#0160;metric&amp;#0160;here&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbOverloads" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbOverloads&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># Overloads</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Map(Expression&lt;Func&lt;T,Byte&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Byte&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,String&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,String&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Int32&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Int32&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Int64&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Int64&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Single&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Single&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Boolean&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Boolean&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,DateTime&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,DateTime&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Double&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Double&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Object&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Object&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Decimal&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Decimal&gt;&gt;)">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>100</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Code Quality \ Type Metrics" Status="Warn">
+    <Query Status="Warn" Name="Types with too many methods" NbNodeMatched="2" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Types&amp;#0160;with&amp;#0160;too&amp;#0160;many&amp;#0160;methods&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbMethods&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;20&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;ORDER&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;BY&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NbMethods&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;DESC&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;TYPES&amp;#0160;WHERE&amp;#0160;NbMethods&amp;#0160;&amp;gt;&amp;#0160;20&amp;#0160;might&amp;#0160;be&amp;#0160;hard&amp;#0160;to&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;understand&amp;#0160;and&amp;#0160;maintain&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;but&amp;#0160;there&amp;#0160;might&amp;#0160;be&amp;#0160;cases&amp;#0160;where&amp;#0160;it&amp;#0160;is&amp;#0160;relevant&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;to&amp;#0160;have&amp;#0160;a&amp;#0160;high&amp;#0160;value&amp;#0160;for&amp;#0160;NbMethods.&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;For&amp;#0160;example,&amp;#0160;the&amp;#0160;System.Windows.Forms.DataGridView&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;standard&amp;#0160;class&amp;#0160;has&amp;#0160;more&amp;#0160;than&amp;#0160;1000&amp;#0160;methods.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;See&amp;#0160;the&amp;#0160;definition&amp;#0160;of&amp;#0160;the&amp;#0160;NbMethods&amp;#0160;metric&amp;#0160;here&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#NbMethods" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#NbMethods&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># Methods</Column>
+      </Columns>
+      <Rows>
+        <Row Name="MonthValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.MonthValidationBuilder&lt;T&gt;">
+          <Val>24</Val>
+        </Row>
+        <Row Name="DayValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Dates.Days.DayValidationBuilder&lt;T&gt;">
+          <Val>24</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>48</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>24</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>24</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>24</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Code Quality from Now!" Status="Ok" />
+  <Group Name="Design" Status="Warn">
+    <Query Status="Warn" Name="Assembly should not contain namespaces dependency cycles" NbNodeMatched="1" NbNodeTested="7" KindOfNode=" assemblies">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Assembly&amp;#0160;should&amp;#0160;not&amp;#0160;contain&amp;#0160;namespaces&amp;#0160;dependency&amp;#0160;cycles&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;ASSEMBLIES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;ContainsNamespaceDependencyCycle&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Dependency&amp;#0160;cycles&amp;#0160;between&amp;#0160;namespaces&amp;#0160;must&amp;#0160;be&amp;#0160;avoided&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;in&amp;#0160;order&amp;#0160;to&amp;#0160;have&amp;#0160;a&amp;#0160;levelized&amp;#0160;and&amp;#0160;comprehensive&amp;#0160;design.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;More&amp;#0160;info&amp;#0160;available&amp;#0160;on&amp;#0160;the&amp;#0160;screencast&amp;#0160;'Reduce&amp;#0160;the&amp;#0160;complexity'&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://s3.amazonaws.com/NDependOnlineDemos/NDependReducingComplexity_viewlet_swf.html" target="_blank"&gt;http://s3.amazonaws.com/NDependOnlineDemos/NDependReducingComplexity_viewlet_swf.html&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;You&amp;#0160;can&amp;#0160;also&amp;#0160;read&amp;#0160;this&amp;#0160;article&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.theserverside.net/tt/articles/showarticle.tss?id=ControllingDependencies" target="_blank"&gt;http://www.theserverside.net/tt/articles/showarticle.tss?id=ControllingDependencies&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>assemblies</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Validation" FullName="Validation">
+          <Val>764</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>764</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>764</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>764</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>764</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="A stateless class or structure might be turned into a static type" NbNodeMatched="2" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;A&amp;#0160;stateless&amp;#0160;class&amp;#0160;or&amp;#0160;structure&amp;#0160;might&amp;#0160;be&amp;#0160;turned&amp;#0160;into&amp;#0160;a&amp;#0160;static&amp;#0160;type&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;For&amp;#0160;accuracy,&amp;#0160;this&amp;#0160;constraint&amp;#0160;doesn't&amp;#0160;take&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;account&amp;#0160;of&amp;#0160;types&amp;#0160;that&amp;#0160;implement&amp;#0160;some&amp;#0160;interfaces.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;and&amp;#0160;classes&amp;#0160;that&amp;#0160;have&amp;#0160;a&amp;#0160;base&amp;#0160;class&amp;#0160;and&amp;#0160;don't&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;derive&amp;#0160;directly&amp;#0160;from&amp;#0160;System.Object,&amp;#0160;or&amp;#0160;classes&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;that&amp;#0160;have&amp;#0160;sub-classes&amp;#0160;children.&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbInterfacesImplemented&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000064'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;DepthOfInheritance&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NbChildren&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsStructure&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneric&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;this&amp;#0160;rule&amp;#0160;indicates&amp;#0160;stateless&amp;#0160;types&amp;#0160;that&amp;#0160;might&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;eventually&amp;#0160;be&amp;#0160;turned&amp;#0160;into&amp;#0160;static&amp;#0160;classes.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;See&amp;#0160;the&amp;#0160;definition&amp;#0160;of&amp;#0160;the&amp;#0160;SizeOfInst&amp;#0160;metric&amp;#0160;here&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#SizeOfInst" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#SizeOfInst&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>Size of instance</Column>
+        <Column># interfaces implemented</Column>
+        <Column>Depth of inheritance</Column>
+        <Column># Children</Column>
+      </Columns>
+      <Rows>
+        <Row Name="ReflectionHelper" FullName="Validation.Helpers.ReflectionHelper">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="ExpressionHelper" FullName="Validation.Helpers.ExpressionHelper">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>2</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Class with no descendant should be sealed if possible" NbNodeMatched="10" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Class&amp;#0160;with&amp;#0160;no&amp;#0160;descendant&amp;#0160;should&amp;#0160;be&amp;#0160;sealed&amp;#0160;if&amp;#0160;possible&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbChildren&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsSealed&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsStatic&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;AND&amp;#0160;!IsPublic&amp;#0160;&amp;lt;--&amp;#0160;You&amp;#0160;might&amp;#0160;want&amp;#0160;to&amp;#0160;add&amp;#0160;this&amp;#0160;condition&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;if&amp;#0160;you&amp;#0160;are&amp;#0160;developping&amp;#0160;a&amp;#0160;framework&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;with&amp;#0160;classes&amp;#0160;that&amp;#0160;are&amp;#0160;intended&amp;#0160;to&amp;#0160;be&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;sub-classed&amp;#0160;by&amp;#0160;your&amp;#0160;clients.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;ORDER&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;BY&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NbLinesOfCode&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># Children</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Dog" FullName="Validation.UnitTests.Stubs.Dog">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="FinishedValidationBuilder" FullName="Validation.Mapping.ValidationBuilders.Finished.FinishedValidationBuilder">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Cat" FullName="Validation.UnitTests.Stubs.Cat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="when_creating_inclusive_between_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_inclusive_between_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="when_creating_greater_than_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_greater_than_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="when_creating_not_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_not_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="when_creating_exclusive_between_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_exclusive_between_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="when_creating_empty_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_empty_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="when_creating_boolean_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_boolean_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="when_creating_equals_validator" FullName="Validation.UnitTests.Validation.Validators.when_creating_equals_validator">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>14</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>1.4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>2</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0.91652</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0.84</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Classes that are candidate to be turned into Structures" NbNodeMatched="10" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Classes&amp;#0160;that&amp;#0160;are&amp;#0160;candidate&amp;#0160;to&amp;#0160;be&amp;#0160;turned&amp;#0160;into&amp;#0160;Structures&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;=&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;16&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Structure&amp;#0160;instance&amp;#0160;must&amp;#0160;not&amp;#0160;be&amp;#0160;too&amp;#0160;big,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;else&amp;#0160;it&amp;#0160;degrades&amp;#0160;performance.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbChildren&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Must&amp;#0160;not&amp;#0160;have&amp;#0160;children&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;DepthOfInheritance&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Must&amp;#0160;derive&amp;#0160;directly&amp;#0160;from&amp;#0160;System.Object&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;AND&amp;#0160;IsSealed&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;lt;--&amp;#0160;You&amp;#0160;might&amp;#0160;want&amp;#0160;to&amp;#0160;add&amp;#0160;this&amp;#0160;condition&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;to&amp;#0160;restreint&amp;#0160;the&amp;#0160;set.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;AND&amp;#0160;IsImmutable&amp;#0160;&amp;lt;--&amp;#0160;Structures&amp;#0160;should&amp;#0160;be&amp;#0160;immutable&amp;#0160;type.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;AND&amp;#0160;!IsPublic&amp;#0160;&amp;#0160;&amp;#0160;&amp;lt;--&amp;#0160;You&amp;#0160;might&amp;#0160;want&amp;#0160;to&amp;#0160;add&amp;#0160;this&amp;#0160;condition&amp;#0160;if&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;you&amp;#0160;are&amp;#0160;developping&amp;#0160;a&amp;#0160;framework&amp;#0160;with&amp;#0160;classes&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;that&amp;#0160;are&amp;#0160;intended&amp;#0160;to&amp;#0160;be&amp;#0160;sub-classed&amp;#0160;by&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;your&amp;#0160;clients.&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>Size of instance</Column>
+        <Column># Children</Column>
+        <Column>Depth of inheritance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="ValidationResult" FullName="Validation.Validation.ValidationResult">
+          <Val>4</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="ValidatorResult" FullName="Validation.Validation.ValidatorResult">
+          <Val>5</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="CustomFailureMessageStrategy" FullName="Validation.Validation.Failures.CustomFailureMessageStrategy">
+          <Val>4</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="ExpressionFailureMessageStrategy" FullName="Validation.Validation.Failures.ExpressionFailureMessageStrategy">
+          <Val>12</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="TypeInfo" FullName="Validation.Helpers.TypeInfo">
+          <Val>8</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="ReflectionHelper" FullName="Validation.Helpers.ReflectionHelper">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="ExpressionHelper" FullName="Validation.Helpers.ExpressionHelper">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="GenericList" FullName="Validation.Helpers.Generics.GenericList">
+          <Val>8</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="GenericListFactory" FullName="Validation.Helpers.Generics.GenericListFactory">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="GenericValidator" FullName="Validation.Helpers.Generics.GenericValidator">
+          <Val>12</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>53</Val>
+          <Val>0</Val>
+          <Val>10</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>5.3</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>12</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>4.3829</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>19.21</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Avoid namespaces with few types" NbNodeMatched="10" NbNodeTested="48" KindOfNode=" namespaces">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;namespaces&amp;#0160;with&amp;#0160;few&amp;#0160;types&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;NAMESPACES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbTypes&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;5&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;ORDER&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;BY&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;NbTypes&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;ASC&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Make&amp;#0160;sure&amp;#0160;that&amp;#0160;there&amp;#0160;is&amp;#0160;a&amp;#0160;logical&amp;#0160;organization&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;to&amp;#0160;each&amp;#0160;of&amp;#0160;your&amp;#0160;namespaces,&amp;#0160;and&amp;#0160;that&amp;#0160;there&amp;#0160;is&amp;#0160;a&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;valid&amp;#0160;reason&amp;#0160;for&amp;#0160;putting&amp;#0160;types&amp;#0160;in&amp;#0160;a&amp;#0160;sparsely&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;populated&amp;#0160;namespace.&amp;#0160;Namespaces&amp;#0160;should&amp;#0160;contain&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;types&amp;#0160;that&amp;#0160;are&amp;#0160;used&amp;#0160;together&amp;#0160;in&amp;#0160;most&amp;#0160;scenarios.&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;When&amp;#0160;their&amp;#0160;applications&amp;#0160;are&amp;#0160;mutually&amp;#0160;exclusive,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;types&amp;#0160;should&amp;#0160;be&amp;#0160;located&amp;#0160;in&amp;#0160;separate&amp;#0160;namespaces&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>namespaces</Column>
+        <Column># Types</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Validation.Mapping.ValidationBuilders.Boolean" FullName="Validation.Mapping.ValidationBuilders.Boolean">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Validation.Registry" FullName="Validation.Registry">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationMappers" FullName="Validation.Mapping.ValidationMappers">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Finished" FullName="Validation.Mapping.ValidationBuilders.Finished">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Numeric.Integers" FullName="Validation.Mapping.ValidationBuilders.Numeric.Integers">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Numeric.Longs" FullName="Validation.Mapping.ValidationBuilders.Numeric.Longs">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Numeric.Bytes" FullName="Validation.Mapping.ValidationBuilders.Numeric.Bytes">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Numeric.Floats" FullName="Validation.Mapping.ValidationBuilders.Numeric.Floats">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Numeric.Doubles" FullName="Validation.Mapping.ValidationBuilders.Numeric.Doubles">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Validation.Mapping.ValidationBuilders.Numeric.Decimals" FullName="Validation.Mapping.ValidationBuilders.Numeric.Decimals">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>24</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>2.4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0.8</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0.64</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Avoid empty interfaces" NbNodeMatched="1" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;empty&amp;#0160;interfaces&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsInterface&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbMethods&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Interfaces&amp;#0160;define&amp;#0160;members&amp;#0160;that&amp;#0160;provide&amp;#0160;a&amp;#0160;behavior&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;or&amp;#0160;usage&amp;#0160;contract.&amp;#0160;The&amp;#0160;functionality&amp;#0160;described&amp;#0160;by&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;the&amp;#0160;interface&amp;#0160;can&amp;#0160;be&amp;#0160;adopted&amp;#0160;by&amp;#0160;any&amp;#0160;type,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;regardless&amp;#0160;of&amp;#0160;where&amp;#0160;the&amp;#0160;type&amp;#0160;appears&amp;#0160;in&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;inheritance&amp;#0160;hierarchy.&amp;#0160;A&amp;#0160;type&amp;#0160;implements&amp;#0160;an&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;interface&amp;#0160;by&amp;#0160;providing&amp;#0160;implementations&amp;#0160;for&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;interface's&amp;#0160;members.&amp;#0160;An&amp;#0160;empty&amp;#0160;interface&amp;#0160;does&amp;#0160;not&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;define&amp;#0160;any&amp;#0160;members,&amp;#0160;and&amp;#0160;as&amp;#0160;such,&amp;#0160;does&amp;#0160;not&amp;#0160;define&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;a&amp;#0160;contract&amp;#0160;that&amp;#0160;can&amp;#0160;be&amp;#0160;implemented.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;your&amp;#0160;design&amp;#0160;includes&amp;#0160;empty&amp;#0160;interfaces&amp;#0160;that&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;types&amp;#0160;are&amp;#0160;expected&amp;#0160;to&amp;#0160;implement,&amp;#0160;you&amp;#0160;are&amp;#0160;probably&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;using&amp;#0160;an&amp;#0160;interface&amp;#0160;as&amp;#0160;a&amp;#0160;marker,&amp;#0160;or&amp;#0160;a&amp;#0160;way&amp;#0160;of&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;identifying&amp;#0160;a&amp;#0160;group&amp;#0160;of&amp;#0160;types.&amp;#0160;If&amp;#0160;this&amp;#0160;identification&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;will&amp;#0160;occur&amp;#0160;at&amp;#0160;runtime,&amp;#0160;the&amp;#0160;correct&amp;#0160;way&amp;#0160;to&amp;#0160;accomplish&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;this&amp;#0160;is&amp;#0160;to&amp;#0160;use&amp;#0160;a&amp;#0160;custom&amp;#0160;attribute.&amp;#0160;Use&amp;#0160;the&amp;#0160;presence&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;or&amp;#0160;absence&amp;#0160;of&amp;#0160;the&amp;#0160;attribute,&amp;#0160;or&amp;#0160;the&amp;#0160;attribute's&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;properties,&amp;#0160;to&amp;#0160;identify&amp;#0160;the&amp;#0160;target&amp;#0160;types.&amp;#0160;If&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;identification&amp;#0160;must&amp;#0160;occurs&amp;#0160;at&amp;#0160;compile&amp;#0160;time,&amp;#0160;then&amp;#0160;using&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;an&amp;#0160;empty&amp;#0160;interface&amp;#0160;is&amp;#0160;acceptable.&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># Methods</Column>
+      </Columns>
+      <Rows>
+        <Row Name="IFinishedValidationBuilder" FullName="Validation.Mapping.ValidationBuilders.Finished.IFinishedValidationBuilder">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Assemblies with poor cohesion (RelationalCohesion)" NbNodeMatched="1" NbNodeTested="7" KindOfNode=" assemblies">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Assemblies&amp;#0160;with&amp;#0160;poor&amp;#0160;cohesion&amp;#0160;(RelationalCohesion)&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;ASSEMBLIES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;RelationalCohesion&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1.5&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;RelationalCohesion&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;4.0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;As&amp;#0160;classes&amp;#0160;inside&amp;#0160;an&amp;#0160;assembly&amp;#0160;should&amp;#0160;be&amp;#0160;strongly&amp;#0160;related,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;the&amp;#0160;cohesion&amp;#0160;should&amp;#0160;be&amp;#0160;high.&amp;#0160;On&amp;#0160;the&amp;#0160;other&amp;#0160;hand,&amp;#0160;a&amp;#0160;value&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;which&amp;#0160;is&amp;#0160;too&amp;#0160;high&amp;#0160;may&amp;#0160;indicate&amp;#0160;over-coupling.&amp;#0160;A&amp;#0160;good&amp;#0160;range&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;for&amp;#0160;RelationalCohesion&amp;#0160;is&amp;#0160;1.5&amp;#0160;to&amp;#0160;4.0.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;See&amp;#0160;the&amp;#0160;definition&amp;#0160;of&amp;#0160;the&amp;#0160;RelationalCohesion&amp;#0160;metric&amp;#0160;here&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#RelationalCohesion" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#RelationalCohesion&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>assemblies</Column>
+        <Column>Relational cohesion</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Validation" FullName="Validation">
+          <Val>4.9222</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>4.9222</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4.9222</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4.9222</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4.9222</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0.00084496</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>7.139606E-07</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Design \ Performance" Status="Warn">
+    <Query Status="Warn" Name="Boxing/unboxing should be avoided (Type)" NbNodeMatched="20" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Boxing/unboxing&amp;#0160;should&amp;#0160;be&amp;#0160;avoided&amp;#0160;(Type)&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Percentage&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;5&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsUsingBoxing&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsUsingUnboxing&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Thanks&amp;#0160;to&amp;#0160;generics,&amp;#0160;boxing&amp;#0160;and&amp;#0160;unboxing&amp;#0160;should&amp;#0160;be&amp;#0160;rare.&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>254</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>12.7</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>3</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>48</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>8.6896</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>75.51</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Unused Code / Dead Code" Status="Warn">
+    <Query Status="Warn" Name="Potentially unused fields" NbNodeMatched="2" NbNodeTested="1019" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Potentially&amp;#0160;unused&amp;#0160;fields&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;FieldCa&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Ca=0&amp;#0160;-&amp;gt;&amp;#0160;No&amp;#0160;Afferent&amp;#0160;Coupling&amp;#0160;-&amp;gt;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;field&amp;#0160;is&amp;#0160;not&amp;#0160;used&amp;#0160;in&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;context&amp;#0160;of&amp;#0160;this&amp;#0160;application.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsPublic&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Although&amp;#0160;not&amp;#0160;recommended,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;public&amp;#0160;fields&amp;#0160;might&amp;#0160;be&amp;#0160;used&amp;#0160;by&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;client&amp;#0160;applications&amp;#0160;of&amp;#0160;your&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;assemblies.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;uses&amp;#0160;literal&amp;#0160;fields.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsEnumValue&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;uses&amp;#0160;enumeration&amp;#0160;value.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameIs&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"value__"&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Field&amp;#0160;named&amp;#0160;'value__'&amp;#0160;are&amp;#0160;relative&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;to&amp;#0160;enumerations&amp;#0160;and&amp;#0160;the&amp;#0160;IL&amp;#0160;code&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;never&amp;#0160;explicitely&amp;#0160;uses&amp;#0160;them.&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Afferent coupling (FieldCa)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="dog" FullName="Validation.UnitTests.Helpers.when_asking_for_all_properties_of_a_class_that_are_an_object.dog">
+          <Val>0</Val>
+        </Row>
+        <Row Name="result" FullName="Validation.UnitTests.Validation.Validators.when_validating_that_oliver_contains_null.result">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Encapsulation" Status="Warn">
+    <Query Status="Warn" Name="Fields should be declared as private" NbNodeMatched="10" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;should&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;private&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsPrivate&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;These&amp;#0160;conditions&amp;#0160;filter&amp;#0160;cases&amp;#0160;where&amp;#0160;fields&amp;#0160;&lt;br/&gt;&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;doesn't&amp;#0160;represent&amp;#0160;state&amp;#0160;that&amp;#0160;should&amp;#0160;be&amp;#0160;encapsulated.&amp;#0160;&lt;br/&gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInFrameworkAssembly&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsSpecialName&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInitOnly&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsEnumValue&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="validation_maps" FullName="Validation.Registry.ValidationRegistry.validation_maps">
+          <Val>0</Val>
+        </Row>
+        <Row Name="type" FullName="Validation.Helpers.TypeInfo.type">
+          <Val>4</Val>
+        </Row>
+        <Row Name="property_info" FullName="Validation.Helpers.TypeInfo.property_info">
+          <Val>4</Val>
+        </Row>
+        <Row Name="January" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.January">
+          <Val>0</Val>
+        </Row>
+        <Row Name="February" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.February">
+          <Val>0</Val>
+        </Row>
+        <Row Name="March" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.March">
+          <Val>0</Val>
+        </Row>
+        <Row Name="April" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.April">
+          <Val>0</Val>
+        </Row>
+        <Row Name="May" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.May">
+          <Val>0</Val>
+        </Row>
+        <Row Name="June" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.June">
+          <Val>0</Val>
+        </Row>
+        <Row Name="July" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.July">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>8</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0.8</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>1.6</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>2.56</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Encapsulation \ Methods Optimal Encapsulation" Status="Warn">
+    <Query Status="Warn" Name="Methods that could be declared as 'internal' in C#,  'Friend' in VB.NET" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;that&amp;#0160;could&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;'internal'&amp;#0160;in&amp;#0160;C#,&amp;#0160;&amp;#0160;'Friend'&amp;#0160;in&amp;#0160;VB.NET&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;CouldBeInternal&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Eliminate&amp;#0160;default&amp;#0160;constructor&amp;#0160;from&amp;#0160;the&amp;#0160;result.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Whatever&amp;#0160;the&amp;#0160;visibility&amp;#0160;of&amp;#0160;the&amp;#0160;declaring&amp;#0160;class,&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;default&amp;#0160;constructors&amp;#0160;are&amp;#0160;public&amp;#0160;and&amp;#0160;introduce&amp;#0160;noise&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;in&amp;#0160;the&amp;#0160;current&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;(&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsConstructor&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsPublic&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbILInstructions&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;3&lt;/b&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name=".ctor()" FullName="Validation.Validation.ValidationResult..ctor()">
+          <Val>2</Val>
+        </Row>
+        <Row Name="create_instance_from_type(Type)" FullName="Validation.Helpers.ReflectionHelper.create_instance_from_type(Type)">
+          <Val>2</Val>
+        </Row>
+        <Row Name="get_property_value(Object,String)" FullName="Validation.Helpers.ReflectionHelper.get_property_value(Object,String)">
+          <Val>1</Val>
+        </Row>
+        <Row Name="get_count()" FullName="Validation.Helpers.Generics.GenericList.get_count()">
+          <Val>0</Val>
+        </Row>
+        <Row Name="get_items()" FullName="Validation.Helpers.Generics.GenericList.get_items()">
+          <Val>0</Val>
+        </Row>
+        <Row Name=".ctor()" FullName="Validation.Helpers.Generics.GenericList..ctor()">
+          <Val>3</Val>
+        </Row>
+        <Row Name="get_generic_type()" FullName="Validation.Helpers.Generics.GenericValidator.get_generic_type()">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Validate(Object,Object)" FullName="Validation.Helpers.Generics.GenericValidator.Validate(Object,Object)">
+          <Val>1</Val>
+        </Row>
+        <Row Name="failure_message(Object)" FullName="Validation.Helpers.Generics.GenericValidator.failure_message(Object)">
+          <Val>2</Val>
+        </Row>
+        <Row Name=".ctor(Type,MethodInfo,PropertyInfo)" FullName="Validation.Helpers.Generics.GenericValidator..ctor(Type,MethodInfo,PropertyInfo)">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>15</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>1.5</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>1.2845</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>1.65</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Methods that could be declared as 'private' in C#,  'Private' in VB.NET" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;that&amp;#0160;could&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;'private'&amp;#0160;in&amp;#0160;C#,&amp;#0160;&amp;#0160;'Private'&amp;#0160;in&amp;#0160;VB.NET&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;CouldBePrivate&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="SelfValidate()" FullName="Validation.Validation.Validator.SelfValidate()">
+          <Val>1</Val>
+        </Row>
+        <Row Name="set_validator_failures(IList&lt;ValidatorResult&gt;)" FullName="Validation.Validation.ValidationResult.set_validator_failures(IList&lt;ValidatorResult&gt;)">
+          <Val>0</Val>
+        </Row>
+        <Row Name="get_successful()" FullName="Validation.Validation.ValidatorResult.get_successful()">
+          <Val>0</Val>
+        </Row>
+        <Row Name="get_failure_message()" FullName="Validation.Validation.ValidatorResult.get_failure_message()">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Equals(ValidatorResult)" FullName="Validation.Validation.ValidatorResult.Equals(ValidatorResult)">
+          <Val>5</Val>
+        </Row>
+        <Row Name="Equals(TypeInfo)" FullName="Validation.Helpers.TypeInfo.Equals(TypeInfo)">
+          <Val>5</Val>
+        </Row>
+        <Row Name=".ctor()" FullName="Validation.Helpers.ReflectionHelper..ctor()">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name=".ctor()" FullName="Validation.Helpers.ExpressionHelper..ctor()">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="set_generic_type(Type)" FullName="Validation.Helpers.Generics.GenericValidator.set_generic_type(Type)">
+          <Val>0</Val>
+        </Row>
+        <Row Name="and()" FullName="Validation.Mapping.ValidationBuilders.CompositeValidationBuilder&lt;T,TReturnBuilder&gt;.and()">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>12</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>1.2</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>5</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>1.9391</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>3.76</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Encapsulation \ Types Optimal Encapsulation" Status="Warn">
+    <Query Status="Warn" Name="Types that could be declared as internal" NbNodeMatched="10" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Types&amp;#0160;that&amp;#0160;could&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;internal&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;CouldBeInternal&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="RegexLibrary" FullName="Validation.Helpers.RegexLibrary">
+          <Val>0</Val>
+        </Row>
+        <Row Name="GenericList" FullName="Validation.Helpers.Generics.GenericList">
+          <Val>6</Val>
+        </Row>
+        <Row Name="IGenericListFactory" FullName="Validation.Helpers.Generics.IGenericListFactory">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="GenericListFactory" FullName="Validation.Helpers.Generics.GenericListFactory">
+          <Val>8</Val>
+        </Row>
+        <Row Name="GenericValidator" FullName="Validation.Helpers.Generics.GenericValidator">
+          <Val>7</Val>
+        </Row>
+        <Row Name="IGenericValidatorFactory" FullName="Validation.Helpers.Generics.IGenericValidatorFactory">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="GenericValidatorFactory" FullName="Validation.Helpers.Generics.GenericValidatorFactory">
+          <Val>4</Val>
+        </Row>
+        <Row Name="FinishedValidationBuilder" FullName="Validation.Mapping.ValidationBuilders.Finished.FinishedValidationBuilder">
+          <Val>0</Val>
+        </Row>
+        <Row Name="BooleanValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Boolean.BooleanValidationBuilder&lt;T&gt;">
+          <Val>7</Val>
+        </Row>
+        <Row Name="DateValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Dates.DateValidationBuilder&lt;T&gt;">
+          <Val>20</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>52</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>5.2</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>20</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>5.8617</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>34.36</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Encapsulation \ Fields Optimal Encapsulation" Status="Warn">
+    <Query Status="Warn" Name="Fields that could be declared as internal" NbNodeMatched="10" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;that&amp;#0160;could&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;internal&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;CouldBeInternal&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="value" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.value">
+          <Val>4</Val>
+        </Row>
+        <Row Name="February" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.February">
+          <Val>0</Val>
+        </Row>
+        <Row Name="March" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.March">
+          <Val>0</Val>
+        </Row>
+        <Row Name="April" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.April">
+          <Val>0</Val>
+        </Row>
+        <Row Name="May" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.May">
+          <Val>0</Val>
+        </Row>
+        <Row Name="June" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.June">
+          <Val>0</Val>
+        </Row>
+        <Row Name="August" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.August">
+          <Val>0</Val>
+        </Row>
+        <Row Name="September" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.September">
+          <Val>0</Val>
+        </Row>
+        <Row Name="October" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.October">
+          <Val>0</Val>
+        </Row>
+        <Row Name="November" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.November">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0.4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>1.2</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>1.44</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Fields that could be declared as 'private' in C#,  'Private' in VB.NET" NbNodeMatched="1" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;that&amp;#0160;could&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;'private'&amp;#0160;in&amp;#0160;C#,&amp;#0160;&amp;#0160;'Private'&amp;#0160;in&amp;#0160;VB.NET&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;CouldBePrivate&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="name" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.name">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Diff / Changes / Evolution" Status="Ok" />
+  <Group Name="Diff / Changes / Evolution \ API Breaking Changes" Status="Ok" />
+  <Group Name="Test Coverage" Status="Warn">
+    <Query Status="Warn" Name="Complex methods should be 100% covered by tests" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Complex&amp;#0160;methods&amp;#0160;should&amp;#0160;be&amp;#0160;100%&amp;#0160;covered&amp;#0160;by&amp;#0160;tests&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;/*OUT&amp;#0160;OF&amp;#0160;"YourGeneratedCode"&amp;#0160;*/&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;These&amp;#0160;metrics'&amp;#0160;definitions&amp;#0160;are&amp;#0160;available&amp;#0160;here:&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#MetricsOnMethods" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#MetricsOnMethods&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbILInstructions&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;200&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;ILCyclomaticComplexity&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;50&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;ILNestingDepth&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;4&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbParameters&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;5&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbVariables&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;8&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NbOverloads&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;6&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;PercentageCoverage&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;100&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;To&amp;#0160;run&amp;#0160;this&amp;#0160;constraint&amp;#0160;properly&amp;#0160;coverage&amp;#0160;data&amp;#0160;must&amp;#0160;be&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;gathered&amp;#0160;from&amp;#0160;NCover™&amp;#0160;or&amp;#0160;Visual&amp;#0160;Studio™&amp;#0160;Coverage.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;can&amp;#0160;be&amp;#0160;done&amp;#0160;throught&amp;#0160;the&amp;#0160;menu:&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;NDepend&amp;#0160;-&amp;gt;&amp;#0160;Coverage&amp;#0160;-&amp;gt;&amp;#0160;Import&amp;#0160;Coverage&amp;#0160;Files&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;can&amp;#0160;be&amp;#0160;done&amp;#0160;at&amp;#0160;analysis&amp;#0160;time&amp;#0160;throught&amp;#0160;the&amp;#0160;menu:&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Project&amp;#0160;Properties&amp;#0160;-&amp;gt;&amp;#0160;Analysis&amp;#0160;-&amp;gt;&amp;#0160;Code&amp;#0160;Coverage&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;More&amp;#0160;information&amp;#0160;on&amp;#0160;how&amp;#0160;to&amp;#0160;import&amp;#0160;coverage&amp;#0160;data&amp;#0160;here:&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Coverage.aspx" target="_blank"&gt;http://www.ndepend.com/Coverage.aspx&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># IL instructions</Column>
+        <Column>IL Cyclomatic Complexity (ILCC)</Column>
+        <Column>IL Nesting Depth</Column>
+        <Column># Parameters</Column>
+        <Column># Variables</Column>
+        <Column># Overloads</Column>
+        <Column>Percentage Coverage</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Validate&lt;T&gt;(T)" FullName="Validation.Validation.Validator.Validate&lt;T&gt;(T)">
+          <Val>78</Val>
+          <Val>7</Val>
+          <Val>2</Val>
+          <Val>1</Val>
+          <Val>9</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)" FullName="Validation.Validation.Validator.validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)">
+          <Val>72</Val>
+          <Val>4</Val>
+          <Val>2</Val>
+          <Val>4</Val>
+          <Val>9</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,DateTime&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,DateTime&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Boolean&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Boolean&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Double&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Double&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Decimal&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Decimal&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Object&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Object&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,String&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,String&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Byte&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Byte&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Map(Expression&lt;Func&lt;T,Int32&gt;&gt;)" FullName="Validation.Mapping.ValidationMappers.ValidationMap&lt;T&gt;.Map(Expression&lt;Func&lt;T,Int32&gt;&gt;)">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>238</Val>
+          <Val>19</Val>
+          <Val>4</Val>
+          <Val>13</Val>
+          <Val>26</Val>
+          <Val>82</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>23.8</Val>
+          <Val>1.9</Val>
+          <Val>0.4</Val>
+          <Val>1.3</Val>
+          <Val>2.6</Val>
+          <Val>8.2</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>11</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>1</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>78</Val>
+          <Val>7</Val>
+          <Val>2</Val>
+          <Val>4</Val>
+          <Val>9</Val>
+          <Val>10</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>25.635</Val>
+          <Val>1.9209</Val>
+          <Val>0.8</Val>
+          <Val>0.9</Val>
+          <Val>3.2</Val>
+          <Val>3.6</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>657.16</Val>
+          <Val>3.69</Val>
+          <Val>0.64</Val>
+          <Val>0.81</Val>
+          <Val>10.24</Val>
+          <Val>12.96</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Purity / Immutability / Side-Effects" Status="Warn">
+    <Query Status="Warn" Name="Fields should be marked as ReadOnly when possible" NbNodeMatched="357" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;should&amp;#0160;be&amp;#0160;marked&amp;#0160;as&amp;#0160;ReadOnly&amp;#0160;when&amp;#0160;possible&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsImmutable&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInitOnly&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;A&amp;#0160;field&amp;#0160;that&amp;#0160;matches&amp;#0160;the&amp;#0160;condition&amp;#0160;IsImmutable&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;is&amp;#0160;a&amp;#0160;field&amp;#0160;that&amp;#0160;is&amp;#0160;assigned&amp;#0160;only&amp;#0160;by&amp;#0160;constructors&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;of&amp;#0160;its&amp;#0160;class.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;For&amp;#0160;an&amp;#0160;instance&amp;#0160;field,&amp;#0160;this&amp;#0160;means&amp;#0160;its&amp;#0160;value&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;will&amp;#0160;remain&amp;#0160;constant&amp;#0160;throught&amp;#0160;the&amp;#0160;lifetime&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;of&amp;#0160;the&amp;#0160;object.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;For&amp;#0160;a&amp;#0160;static&amp;#0160;field,&amp;#0160;this&amp;#0160;means&amp;#0160;its&amp;#0160;value&amp;#0160;will&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;remain&amp;#0160;constant&amp;#0160;throught&amp;#0160;the&amp;#0160;lifetime&amp;#0160;of&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;program.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;In&amp;#0160;both&amp;#0160;cases,&amp;#0160;such&amp;#0160;field&amp;#0160;can&amp;#0160;safely&amp;#0160;be&amp;#0160;marked&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;with&amp;#0160;the&amp;#0160;C#&amp;#0160;readonly&amp;#0160;keyword&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(ReadOnly&amp;#0160;in&amp;#0160;VB.NET).&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;condition&amp;#0160;IsInitOnly&amp;#0160;matches&amp;#0160;fields&amp;#0160;that&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;are&amp;#0160;marked&amp;#0160;with&amp;#0160;the&amp;#0160;C#&amp;#0160;readonly&amp;#0160;keyword&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(ReadOnly&amp;#0160;in&amp;#0160;VB.NET).&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>1 392</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>3.8992</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0.62705</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0.39319</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Naming Conventions" Status="Warn">
+    <Query Status="Warn" Name="Instance fields should be prefixed with a 'm_'" NbNodeMatched="10" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Instance&amp;#0160;fields&amp;#0160;should&amp;#0160;be&amp;#0160;prefixed&amp;#0160;with&amp;#0160;a&amp;#0160;'m_'&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^m_"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneratedByCompiler&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsSpecialName&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsEventDelegateObject&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;naming&amp;#0160;convention&amp;#0160;provokes&amp;#0160;debate.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Don't&amp;#0160;hesitate&amp;#0160;to&amp;#0160;customize&amp;#0160;the&amp;#0160;regex&amp;#0160;of&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;NameLike&amp;#0160;to&amp;#0160;your&amp;#0160;preference.&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="expression" FullName="Validation.Validation.Validators.LessThanValidator&lt;T,TProperty&gt;.expression">
+          <Val>4</Val>
+        </Row>
+        <Row Name="comparison_value" FullName="Validation.Validation.Validators.LessThanValidator&lt;T,TProperty&gt;.comparison_value">
+          <Val>4</Val>
+        </Row>
+        <Row Name="expression" FullName="Validation.Validation.Validators.ExclusiveBetweenValidator&lt;T,TProperty&gt;.expression">
+          <Val>4</Val>
+        </Row>
+        <Row Name="lower_range" FullName="Validation.Validation.Validators.ExclusiveBetweenValidator&lt;T,TProperty&gt;.lower_range">
+          <Val>4</Val>
+        </Row>
+        <Row Name="upper_range" FullName="Validation.Validation.Validators.ExclusiveBetweenValidator&lt;T,TProperty&gt;.upper_range">
+          <Val>4</Val>
+        </Row>
+        <Row Name="expression" FullName="Validation.Validation.Validators.LessThanEqualToValidator&lt;T,TProperty&gt;.expression">
+          <Val>4</Val>
+        </Row>
+        <Row Name="comparison_value" FullName="Validation.Validation.Validators.LessThanEqualToValidator&lt;T,TProperty&gt;.comparison_value">
+          <Val>4</Val>
+        </Row>
+        <Row Name="expression" FullName="Validation.Validation.Validators.NotValidator&lt;T,TProperty&gt;.expression">
+          <Val>4</Val>
+        </Row>
+        <Row Name="comparison_value" FullName="Validation.Validation.Validators.NotValidator&lt;T,TProperty&gt;.comparison_value">
+          <Val>4</Val>
+        </Row>
+        <Row Name="expression" FullName="Validation.Validation.Validators.EqualsValidator&lt;T,TProperty&gt;.expression">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>40</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Static fields should be prefixed with a 's_'" NbNodeMatched="10" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Static&amp;#0160;fields&amp;#0160;should&amp;#0160;be&amp;#0160;prefixed&amp;#0160;with&amp;#0160;a&amp;#0160;'s_'&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^s_"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsSpecialName&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsEventDelegateObject&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;naming&amp;#0160;convention&amp;#0160;provokes&amp;#0160;debate.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Don't&amp;#0160;hesitate&amp;#0160;to&amp;#0160;customize&amp;#0160;the&amp;#0160;regex&amp;#0160;of&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;NameLike&amp;#0160;to&amp;#0160;your&amp;#0160;preference.&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="scan_assemblies" FullName="Validation.Registry.ValidationRegistry.scan_assemblies">
+          <Val>0</Val>
+        </Row>
+        <Row Name="validation_maps" FullName="Validation.Registry.ValidationRegistry.validation_maps">
+          <Val>0</Val>
+        </Row>
+        <Row Name="generic_list_factory" FullName="Validation.Validation.Validator.generic_list_factory">
+          <Val>0</Val>
+        </Row>
+        <Row Name="generic_validator_factory" FullName="Validation.Validation.Validator.generic_validator_factory">
+          <Val>0</Val>
+        </Row>
+        <Row Name="January" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.January">
+          <Val>0</Val>
+        </Row>
+        <Row Name="February" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.February">
+          <Val>0</Val>
+        </Row>
+        <Row Name="March" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.March">
+          <Val>0</Val>
+        </Row>
+        <Row Name="April" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.April">
+          <Val>0</Val>
+        </Row>
+        <Row Name="May" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.May">
+          <Val>0</Val>
+        </Row>
+        <Row Name="June" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.Month.June">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Abstract base class should be suffixed with 'Base'" NbNodeMatched="10" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Abstract&amp;#0160;base&amp;#0160;class&amp;#0160;should&amp;#0160;be&amp;#0160;suffixed&amp;#0160;with&amp;#0160;'Base'&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsAbstract&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;equivalent&amp;#0160;to:&amp;#0160;&amp;#0160;&amp;#0160;DepthOfDeriveFrom&amp;#0160;"System.Object"&amp;#0160;==&amp;#0160;1&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;DepthOfInheritance&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneric&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"Base$"&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsGeneric&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"Base&amp;lt;"&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>Depth of inheritance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="validation_registry_concern" FullName="Validation.UnitTests.Registry.validation_registry_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="expression_helper_concern" FullName="Validation.UnitTests.Helpers.expression_helper_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="reflection_helper_concern" FullName="Validation.UnitTests.Helpers.reflection_helper_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="validator_concern" FullName="Validation.UnitTests.Validation.validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="null_validator_concern" FullName="Validation.UnitTests.Validation.Validators.null_validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="greater_than_equal_to_validator_concern" FullName="Validation.UnitTests.Validation.Validators.greater_than_equal_to_validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="equals_validator_concern" FullName="Validation.UnitTests.Validation.Validators.equals_validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="not_validator_concern" FullName="Validation.UnitTests.Validation.Validators.not_validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="not_string_validator_concern" FullName="Validation.UnitTests.Validation.Validators.not_string_validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="bool_validator_concern" FullName="Validation.UnitTests.Validation.Validators.bool_validator_concern">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Types name should begin with an Upper character" NbNodeMatched="10" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Types&amp;#0160;name&amp;#0160;should&amp;#0160;begin&amp;#0160;with&amp;#0160;an&amp;#0160;Upper&amp;#0160;character&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;name&amp;#0160;of&amp;#0160;a&amp;#0160;type&amp;#0160;should&amp;#0160;begin&amp;#0160;with&amp;#0160;an&amp;#0160;Upper&amp;#0160;letter.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^[A-Z]"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Except&amp;#0160;if&amp;#0160;it&amp;#0160;is&amp;#0160;generated&amp;#0160;by&amp;#0160;compiler&amp;#0160;or&amp;#0160;...&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;...&amp;#0160;if&amp;#0160;it&amp;#0160;is&amp;#0160;declared&amp;#0160;in&amp;#0160;a&amp;#0160;tier&amp;#0160;assembly.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInFrameworkAssembly&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="validation_registry_concern" FullName="Validation.UnitTests.Registry.validation_registry_concern">
+          <Val>0</Val>
+        </Row>
+        <Row Name="when_given_a_type_to_pull_assembly_from" FullName="Validation.UnitTests.Registry.when_given_a_type_to_pull_assembly_from">
+          <Val>4</Val>
+        </Row>
+        <Row Name="when_given_a_type_to_pull_assembly_from_and_the_assembly_has_already_been_added" FullName="Validation.UnitTests.Registry.when_given_a_type_to_pull_assembly_from_and_the_assembly_has_already_been_added">
+          <Val>5</Val>
+        </Row>
+        <Row Name="when_asked_for_all_the_validation_maps" FullName="Validation.UnitTests.Registry.when_asked_for_all_the_validation_maps">
+          <Val>10</Val>
+        </Row>
+        <Row Name="when_asked_for_a_validation_map_for_the_specified_type" FullName="Validation.UnitTests.Registry.when_asked_for_a_validation_map_for_the_specified_type">
+          <Val>7</Val>
+        </Row>
+        <Row Name="when_validating_the_registry_with_multiple_maps_for_a_given_type" FullName="Validation.UnitTests.Registry.when_validating_the_registry_with_multiple_maps_for_a_given_type">
+          <Val>8</Val>
+        </Row>
+        <Row Name="expression_helper_concern" FullName="Validation.UnitTests.Helpers.expression_helper_concern">
+          <Val>0</Val>
+        </Row>
+        <Row Name="when_getting_property_name_given_an_expression_func_Cat_object" FullName="Validation.UnitTests.Helpers.when_getting_property_name_given_an_expression_func_Cat_object">
+          <Val>6</Val>
+        </Row>
+        <Row Name="when_getting_property_type_given_an_expression_func_Cat_object" FullName="Validation.UnitTests.Helpers.when_getting_property_type_given_an_expression_func_Cat_object">
+          <Val>6</Val>
+        </Row>
+        <Row Name="when_getting_property_type_given_an_expression_func_Cat_long" FullName="Validation.UnitTests.Helpers.when_getting_property_type_given_an_expression_func_Cat_long">
+          <Val>6</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>52</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>5.2</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>10</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>3.0265</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>9.16</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Methods name should begin with an Upper character" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;name&amp;#0160;should&amp;#0160;begin&amp;#0160;with&amp;#0160;an&amp;#0160;Upper&amp;#0160;character&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^[A-Z]"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsClassConstructor&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsConstructor&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsPropertyGetter&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsPropertySetter&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsIndexerGetter&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsIndexerSetter&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsEventAdder&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;IsEventRemover&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;OR&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;IsOperator&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInFrameworkAssembly&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;name&amp;#0160;of&amp;#0160;a&amp;#0160;regular&amp;#0160;method&amp;#0160;should&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;begin&amp;#0160;with&amp;#0160;an&amp;#0160;Upper&amp;#0160;letter.&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="should_ignore_validator&lt;T&gt;(T,TypeInfo)" FullName="Validation.Validation.Validator.should_ignore_validator&lt;T&gt;(T,TypeInfo)">
+          <Val>3</Val>
+        </Row>
+        <Row Name="validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)" FullName="Validation.Validation.Validator.validate_property_map&lt;T&gt;(T,TypeInfo,Object,ValidationResult)">
+          <Val>11</Val>
+        </Row>
+        <Row Name="validate_instance&lt;T&gt;(T)" FullName="Validation.Validation.Validator.validate_instance&lt;T&gt;(T)">
+          <Val>9</Val>
+        </Row>
+        <Row Name="create_instance_from_type(Type)" FullName="Validation.Helpers.ReflectionHelper.create_instance_from_type(Type)">
+          <Val>2</Val>
+        </Row>
+        <Row Name="create_generic_ValidationMap(String)" FullName="Validation.Helpers.ReflectionHelper.create_generic_ValidationMap(String)">
+          <Val>1</Val>
+        </Row>
+        <Row Name="is_unary_expression(Expression)" FullName="Validation.Helpers.ExpressionHelper.is_unary_expression(Expression)">
+          <Val>1</Val>
+        </Row>
+        <Row Name="create(Type,Object)" FullName="Validation.Helpers.Generics.IGenericListFactory.create(Type,Object)">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="create(Type,Object)" FullName="Validation.Helpers.Generics.GenericListFactory.create(Type,Object)">
+          <Val>8</Val>
+        </Row>
+        <Row Name="failure_message(Object)" FullName="Validation.Helpers.Generics.GenericValidator.failure_message(Object)">
+          <Val>2</Val>
+        </Row>
+        <Row Name="create(String)" FullName="Validation.Helpers.Generics.IGenericValidatorFactory.create(String)">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>37</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>3.7</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>11</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>3.8484</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>14.81</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Naming Conventions \ Name too long" Status="Warn">
+    <Query Status="Warn" Name="Avoid methods with name too long" NbNodeMatched="10" NbNodeTested="1079" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;methods&amp;#0160;with&amp;#0160;name&amp;#0160;too&amp;#0160;long&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;METHODS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^[^\&amp;lt;\(]{35,}.*$"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsExplicitInterfaceImpl&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInFrameworkAssembly&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;regex&amp;#0160;matches&amp;#0160;methods&amp;#0160;with&amp;#0160;name&amp;#0160;longer&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;than&amp;#0160;35&amp;#0160;characters.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Method&amp;#0160;Name&amp;#0160;doesn't&amp;#0160;contain&amp;#0160;the&amp;#0160;type&amp;#0160;and&amp;#0160;namespace&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;prefix,&amp;#0160;FullName&amp;#0160;does.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;regex&amp;#0160;computes&amp;#0160;the&amp;#0160;method&amp;#0160;name&amp;#0160;length&amp;#0160;from&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;the&amp;#0160;beginning&amp;#0160;until&amp;#0160;the&amp;#0160;first&amp;#0160;open&amp;#0160;parenthesis&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;or&amp;#0160;first&amp;#0160;lower&amp;#0160;than&amp;#0160;(for&amp;#0160;generic&amp;#0160;methods).&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Explicit&amp;#0160;Interface&amp;#0160;Implementation&amp;#0160;methods&amp;#0160;are&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;discarded&amp;#0160;because&amp;#0160;their&amp;#0160;names&amp;#0160;are&amp;#0160;prefixed&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;with&amp;#0160;the&amp;#0160;interface&amp;#0160;name.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="get_expected_type_with_space_if_not_empty()" FullName="Validation.Validation.Failures.ExpressionFailureMessageStrategy.get_expected_type_with_space_if_not_empty()">
+          <Val>1</Val>
+        </Row>
+        <Row Name="get_member_expression_from_unary_expression(UnaryExpression)" FullName="Validation.Helpers.ExpressionHelper.get_member_expression_from_unary_expression(UnaryExpression)">
+          <Val>2</Val>
+        </Row>
+        <Row Name="add_validator_with_not_wrapper_if_needed&lt;TValidator&gt;(TValidator)" FullName="Validation.Mapping.ValidationBuilders.CanWrapWithNotValidationBuilder&lt;T&gt;.add_validator_with_not_wrapper_if_needed&lt;TValidator&gt;(TValidator)">
+          <Val>3</Val>
+        </Row>
+        <Row Name="a_value_containing_at_least_1_capital_letter()" FullName="Validation.Mapping.ValidationBuilders.Strings.IStringSpecificationValidationBuilder&lt;T&gt;.a_value_containing_at_least_1_capital_letter()">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="a_value_containing_at_least_1_lowercase_letter()" FullName="Validation.Mapping.ValidationBuilders.Strings.IStringSpecificationValidationBuilder&lt;T&gt;.a_value_containing_at_least_1_lowercase_letter()">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="a_value_containing_at_least_1_number()" FullName="Validation.Mapping.ValidationBuilders.Strings.IStringSpecificationValidationBuilder&lt;T&gt;.a_value_containing_at_least_1_number()">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="a_value_containing_at_least_1_capital_letter()" FullName="Validation.Mapping.ValidationBuilders.Strings.StringValidationBuilder&lt;T&gt;.a_value_containing_at_least_1_capital_letter()">
+          <Val>4</Val>
+        </Row>
+        <Row Name="a_value_containing_at_least_1_lowercase_letter()" FullName="Validation.Mapping.ValidationBuilders.Strings.StringValidationBuilder&lt;T&gt;.a_value_containing_at_least_1_lowercase_letter()">
+          <Val>4</Val>
+        </Row>
+        <Row Name="a_value_containing_at_least_1_number()" FullName="Validation.Mapping.ValidationBuilders.Strings.StringValidationBuilder&lt;T&gt;.a_value_containing_at_least_1_number()">
+          <Val>4</Val>
+        </Row>
+        <Row Name="set_regex_validator_failure_message(RegexValidator&lt;T&gt;,String)" FullName="Validation.Mapping.ValidationBuilders.Strings.StringValidationBuilder&lt;T&gt;.set_regex_validator_failure_message(RegexValidator&lt;T&gt;,String)">
+          <Val>1</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>19</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>1.9</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>1.6401</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>2.69</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Avoid types with name too long" NbNodeMatched="10" NbNodeTested="338" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;types&amp;#0160;with&amp;#0160;name&amp;#0160;too&amp;#0160;long&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TYPES&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^[^\&amp;lt;]{35,}.*$"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsNested&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInFrameworkAssembly&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;regex&amp;#0160;matches&amp;#0160;types&amp;#0160;with&amp;#0160;name&amp;#0160;longer&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;than&amp;#0160;35&amp;#0160;characters.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Type&amp;#0160;Name&amp;#0160;doesn't&amp;#0160;contain&amp;#0160;the&amp;#0160;namespace&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;prefix,&amp;#0160;FullName&amp;#0160;does.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;regex&amp;#0160;computes&amp;#0160;the&amp;#0160;type&amp;#0160;name&amp;#0160;length&amp;#0160;from&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;the&amp;#0160;beginning&amp;#0160;until&amp;#0160;the&amp;#0160;end&amp;#0160;or&amp;#0160;the&amp;#0160;first&amp;#0160;lower&amp;#0160;than&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(for&amp;#0160;generic&amp;#0160;types).&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Nested&amp;#0160;types&amp;#0160;are&amp;#0160;discarded&amp;#0160;because&amp;#0160;their&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;names&amp;#0160;are&amp;#0160;prefixed&amp;#0160;with&amp;#0160;outer&amp;#0160;type's&amp;#0160;name.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="IFailureSpecificationValidationBuilder&lt;T,TReturnBuilder&gt;" FullName="Validation.Mapping.ValidationBuilders.Failure.IFailureSpecificationValidationBuilder&lt;T,TReturnBuilder&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IStringSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Strings.IStringSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IObjectSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Objects.IObjectSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IMonthSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Dates.Months.IMonthSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="ILongSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Numeric.Longs.ILongSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IIntegerSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Numeric.Integers.IIntegerSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IByteSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Numeric.Bytes.IByteSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IDecimalSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Numeric.Decimals.IDecimalSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IDoubleSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Numeric.Doubles.IDoubleSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="IFloatSpecificationValidationBuilder&lt;T&gt;" FullName="Validation.Mapping.ValidationBuilders.Numeric.Floats.IFloatSpecificationValidationBuilder&lt;T&gt;">
+          <Val>N/A</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Avoid fields with name too long" NbNodeMatched="10" NbNodeTested="1021" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;fields&amp;#0160;with&amp;#0160;name&amp;#0160;too&amp;#0160;long&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;WARN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IF&lt;/font&gt;&amp;#0160;&lt;font color='#000064'&gt;Count&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;IN&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;SELECT&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;TOP&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;10&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;FIELDS&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;WHERE&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000064'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#A31515'&gt;"^[^\&amp;lt;]{35,}.*$"&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;AND&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000064'&gt;IsInFrameworkAssembly&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;regex&amp;#0160;matches&amp;#0160;fields&amp;#0160;with&amp;#0160;name&amp;#0160;longer&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;than&amp;#0160;35&amp;#0160;characters.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Field&amp;#0160;Name&amp;#0160;doesn't&amp;#0160;contain&amp;#0160;the&amp;#0160;type&amp;#0160;and&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;namespace&amp;#0160;prefix,&amp;#0160;FullName&amp;#0160;does.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="assembly_qualified_parent_class_name" FullName="Validation.Mapping.ValidationBuilders.IgnoreValidator.assembly_qualified_parent_class_name">
+          <Val>4</Val>
+        </Row>
+        <Row Name="assembly_qualified_child_class_name" FullName="Validation.Mapping.ValidationBuilders.IgnoreValidator.assembly_qualified_child_class_name">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_store_the_assembly_into_the_scan_assemblies" FullName="Validation.UnitTests.Registry.when_given_a_type_to_pull_assembly_from.should_store_the_assembly_into_the_scan_assemblies">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_not_add_duplicate_assemblies_to_the_scan_assemblies" FullName="Validation.UnitTests.Registry.when_given_a_type_to_pull_assembly_from_and_the_assembly_has_already_been_added.should_not_add_duplicate_assemblies_to_the_scan_assemblies">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_return_all_the_classes_that_inherit_from_validationmap" FullName="Validation.UnitTests.Registry.when_asked_for_all_the_validation_maps.should_return_all_the_classes_that_inherit_from_validationmap">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_return_the_validation_map_instance_for_the_given_type" FullName="Validation.UnitTests.Registry.when_asked_for_a_validation_map_for_the_specified_type.should_return_the_validation_map_instance_for_the_given_type">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_throw_a_AmbiguousMatchException" FullName="Validation.UnitTests.Registry.when_validating_the_registry_with_multiple_maps_for_a_given_type.should_throw_a_AmbiguousMatchException">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_return_the_name_of_the_object_parameter" FullName="Validation.UnitTests.Helpers.when_getting_property_name_given_an_expression_func_Cat_object.should_return_the_name_of_the_object_parameter">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_return_the_type_of_the_object_parameter" FullName="Validation.UnitTests.Helpers.when_getting_property_type_given_an_expression_func_Cat_object.should_return_the_type_of_the_object_parameter">
+          <Val>4</Val>
+        </Row>
+        <Row Name="should_return_the_type_of_the_long_parameter" FullName="Validation.UnitTests.Helpers.when_getting_property_type_given_an_expression_func_Cat_long.should_return_the_type_of_the_long_parameter">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>40</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Constraints extracted from Source Code" Status="Not yet compiled" />
+</CQLResult>

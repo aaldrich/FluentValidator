@@ -62,7 +62,7 @@
     <Compile Include="Mapping\ValidationBuilders\CompositeValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Boolean\BooleanValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateEntryValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Dates\DatePartValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\DateSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\DateValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Days\DayValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Days\IDayEntryValidationBuilder.cs" />
@@ -72,7 +72,7 @@
     <Compile Include="Mapping\ValidationBuilders\Dates\Days\DaySpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\IDateEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\IDateTimeEntryValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Dates\IDatePartValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\IDateSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\IMonthEntryValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\IMonthPartValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\IMonthSpecificationValidationBuilder.cs" />
@@ -81,8 +81,8 @@
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\Month.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Months\MonthValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\IYearEntryValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Dates\Years\IYearPartValidationBuilder.cs" />
-    <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearPartValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Years\IYearSpecificationValidationBuilder.cs" />
+    <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearSpecificationValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Dates\Years\YearValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Failure\FailureValidationBuilder.cs" />
     <Compile Include="Mapping\ValidationBuilders\Failure\IFailureEntryValidationBuilder.cs" />

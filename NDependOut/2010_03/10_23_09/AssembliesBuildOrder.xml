@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AssemblySortForCompilOrObfusk>
+  <Assembly Assembly="Validation">6</Assembly>
+  <Assembly Assembly="Validation.UnitTests">7</Assembly>
+</AssemblySortForCompilOrObfusk>

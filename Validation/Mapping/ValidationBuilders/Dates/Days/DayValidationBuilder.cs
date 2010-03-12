@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Validation.Mapping.ValidationBuilders.Failure;
 using Validation.Validation.Validators;
 
 namespace Validation.Mapping.ValidationBuilders.Dates.Days
@@ -20,7 +21,7 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
     {
         readonly Expression<Func<T, DateTime>> expression;
         
-        Func<DayOfWeek,ValidationBuilder<T>> day_building_context;
+        Func<DayOfWeek,IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>> day_building_context;
         
         public DayValidationBuilder(Expression<Func<T,DateTime>> expression, IList<IValidator<T>> validators, HashSet<IgnoreValidator> ignore_validators)
             : base(validators,ignore_validators)

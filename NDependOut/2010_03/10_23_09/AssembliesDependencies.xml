@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AssemblyDependencies>
+  <Dependencies_For Assembly="Validation v1.0.0.0">
+    <DependsOn>
+      <DependsOn_Name>mscorlib v4.0.0.0</DependsOn_Name>
+      <DependsOn_Name>System.Core v4.0.0.0</DependsOn_Name>
+      <DependsOn_Name>System v4.0.0.0</DependsOn_Name>
+    </DependsOn>
+    <ReferencedBy>
+      <ReferencedBy_Name>Validation.UnitTests v1.0.0.0</ReferencedBy_Name>
+    </ReferencedBy>
+  </Dependencies_For>
+  <Dependencies_For Assembly="Validation.UnitTests v1.0.0.0">
+    <DependsOn>
+      <DependsOn_Name>mscorlib v4.0.0.0</DependsOn_Name>
+      <DependsOn_Name>Validation v1.0.0.0</DependsOn_Name>
+      <DependsOn_Name>Machine.Specifications v0.3.0.0</DependsOn_Name>
+      <DependsOn_Name>System.Core v4.0.0.0</DependsOn_Name>
+      <DependsOn_Name>Moq v3.1.416.3</DependsOn_Name>
+      <DependsOn_Name>System v4.0.0.0</DependsOn_Name>
+    </DependsOn>
+  </Dependencies_For>
+</AssemblyDependencies>
