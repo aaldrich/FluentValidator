@@ -68,6 +68,62 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Days
                 (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
+        public IDaySpecificationValidationBuilder<T> greater_than_or_equal_to()
+        {
+            day_building_context = greater_than_or_equal_to;
+            return this;
+        }
+
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than_or_equal_to(DayOfWeek day_of_week)
+        {
+            Expression<Func<T, DayOfWeek>> lambda = get_day_of_week_expression();
+
+            var validator = new GreaterThanEqualToValidator<T, DayOfWeek>(lambda, day_of_week);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than_or_equal_to(int day_of_month)
+        {
+            Expression<Func<T, int>> lambda = get_day_of_month_expression();
+
+            var validator = new GreaterThanEqualToValidator<T, int>(lambda, day_of_month);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
+        public IDaySpecificationValidationBuilder<T> less_than_or_equal_to()
+        {
+            day_building_context = less_than_or_equal_to;
+            return this;
+        }
+
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than_or_equal_to(DayOfWeek day_of_week)
+        {
+            Expression<Func<T, DayOfWeek>> lambda = get_day_of_week_expression();
+
+            var validator = new LessThanEqualToValidator<T, DayOfWeek>(lambda, day_of_week);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than_or_equal_to(int day_of_month)
+        {
+            Expression<Func<T, int>> lambda = get_day_of_month_expression();
+
+            var validator = new LessThanEqualToValidator<T, int>(lambda, day_of_month);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
         public IDaySpecificationValidationBuilder<T> equal_to()
         {
             day_building_context = equal_to;

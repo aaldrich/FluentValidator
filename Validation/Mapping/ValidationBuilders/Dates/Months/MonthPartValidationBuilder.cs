@@ -29,6 +29,23 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
                 (validator,validators,ignore_validators,new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
+        public IMonthSpecificationValidationBuilder<T> less_than_or_equal_to()
+        {
+            month_building_context = less_than_or_equal_to;
+            return this;
+        }
+
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than_or_equal_to(Month month)
+        {
+            Expression<Func<T, int>> lambda = get_month_expression();
+
+            var validator = new LessThanEqualToValidator<T, int>(lambda, month.value);
+            add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
         public IMonthSpecificationValidationBuilder<T> greater_than()
         {
             month_building_context = greater_than;
@@ -40,6 +57,23 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Months
             Expression<Func<T, int>> lambda = get_month_expression();
 
             var validator = new GreaterThanValidator<T, int>(lambda, month.value);
+            add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+            (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
+        public IMonthSpecificationValidationBuilder<T> greater_than_or_equal_to()
+        {
+            month_building_context = greater_than_or_equal_to;
+            return this;
+        }
+
+        IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than_or_equal_to(Month month)
+        {
+            Expression<Func<T, int>> lambda = get_month_expression();
+
+            var validator = new GreaterThanEqualToValidator<T, int>(lambda, month.value);
             add_validator_with_not_wrapper_if_needed(validator);
 
             return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>

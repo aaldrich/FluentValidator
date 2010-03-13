@@ -23,11 +23,33 @@ namespace Validation.Mapping.ValidationBuilders.Dates.Years
                 (validator,validators,ignore_validators,new DateTimeValidationBuilder<T>(expression,validators,ignore_validators));
         }
 
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than_or_equal_to(int year)
+        {
+            Expression<Func<T, int>> lambda = get_year_expression();
+
+            var validator = new LessThanEqualToValidator<T, int>(lambda, year);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
         public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than(int year)
         {
             Expression<Func<T, int>> lambda = get_year_expression();
 
             var validator = new GreaterThanValidator<T, int>(lambda, year);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than_or_equal_to(int year)
+        {
+            Expression<Func<T, int>> lambda = get_year_expression();
+
+            var validator = new GreaterThanEqualToValidator<T, int>(lambda, year);
             base.add_validator_with_not_wrapper_if_needed(validator);
 
             return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>

@@ -14,6 +14,14 @@ namespace Validation.Mapping.ValidationBuilders.Dates
                 (validator,validators,ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
         }
 
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> greater_than_or_equal_to(DateTime value)
+        {
+            var validator = new GreaterThanEqualToValidator<T, DateTime>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
         public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> equal_to(DateTime value)
         {
             var validator = new EqualsValidator<T, DateTime>(expression, value);
@@ -25,6 +33,14 @@ namespace Validation.Mapping.ValidationBuilders.Dates
         public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than(DateTime value)
         {
             var validator = new LessThanValidator<T, DateTime>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(validator);
+            return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
+                (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
+        }
+
+        public IFailureEntryValidationBuilder<T, IDateTimeEntryValidationBuilder<T>> less_than_or_equal_to(DateTime value)
+        {
+            var validator = new LessThanEqualToValidator<T, DateTime>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(validator);
             return new FailureValidationBuilder<T, IDateTimeEntryValidationBuilder<T>>
                 (validator, validators, ignore_validators, new DateTimeValidationBuilder<T>(expression, validators, ignore_validators));
