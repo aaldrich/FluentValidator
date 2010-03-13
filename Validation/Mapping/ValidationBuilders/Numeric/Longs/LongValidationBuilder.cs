@@ -38,11 +38,25 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Longs
             return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(greater_than_validator,validators,ignore_validators,this);
         }
 
+        public IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> greater_than_or_equal_to(long value)
+        {
+            var greater_than_equal_to_validator = new GreaterThanEqualToValidator<T, long>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(greater_than_equal_to_validator);
+            return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(greater_than_equal_to_validator, validators, ignore_validators, this);
+        }
+
         public IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> less_than(long value)
         {
             var less_than_validator = new LessThanValidator<T, long>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(less_than_validator);
             return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(less_than_validator, validators, ignore_validators, this);
+        }
+
+        public IFailureEntryValidationBuilder<T, ILongEntryValidationBuilder<T>> less_than_or_equal_to(long value)
+        {
+            var less_than_equal_to_validator = new LessThanEqualToValidator<T, long>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(less_than_equal_to_validator);
+            return new FailureValidationBuilder<T, ILongEntryValidationBuilder<T>>(less_than_equal_to_validator, validators, ignore_validators, this);
         }
 
         /// <summary>

@@ -38,9 +38,23 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Bytes
             return new FailureValidationBuilder<T, IByteEntryValidationBuilder<T>>(greater_than_validator,validators,ignore_validators,this);
         }
 
+        public IFailureEntryValidationBuilder<T, IByteEntryValidationBuilder<T>> greater_than_or_equal_to(byte value)
+        {
+            var greater_than_validator = new GreaterThanEqualToValidator<T, byte>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(greater_than_validator);
+            return new FailureValidationBuilder<T, IByteEntryValidationBuilder<T>>(greater_than_validator, validators, ignore_validators, this);
+        }
+
         public IFailureEntryValidationBuilder<T, IByteEntryValidationBuilder<T>> less_than(byte value)
         {
             var less_than_validator = new LessThanValidator<T, byte>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(less_than_validator);
+            return new FailureValidationBuilder<T, IByteEntryValidationBuilder<T>>(less_than_validator, validators, ignore_validators, this);
+        }
+
+        public IFailureEntryValidationBuilder<T, IByteEntryValidationBuilder<T>> less_than_or_equal_to(byte value)
+        {
+            var less_than_validator = new LessThanEqualToValidator<T, byte>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(less_than_validator);
             return new FailureValidationBuilder<T, IByteEntryValidationBuilder<T>>(less_than_validator, validators, ignore_validators, this);
         }

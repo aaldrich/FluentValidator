@@ -6,8 +6,10 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Integers
     {
         IFailureEntryValidationBuilder<T, IIntegerEntryValidationBuilder<T>> equal_to(int value);
         IFailureEntryValidationBuilder<T, IIntegerEntryValidationBuilder<T>> greater_than(int value);
+        IFailureEntryValidationBuilder<T, IIntegerEntryValidationBuilder<T>> greater_than_or_equal_to(int value);
         IFailureEntryValidationBuilder<T, IIntegerEntryValidationBuilder<T>> greater_than_zero();
         IFailureEntryValidationBuilder<T, IIntegerEntryValidationBuilder<T>> less_than(int value);
+        IFailureEntryValidationBuilder<T, IIntegerEntryValidationBuilder<T>> less_than_or_equal_to(int value);
         BetweenValidationBuilder<T, IIntegerEntryValidationBuilder<T>,int> between(int lower, int upper);
     }
 }

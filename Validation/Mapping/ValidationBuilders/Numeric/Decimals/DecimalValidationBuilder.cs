@@ -38,11 +38,25 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Decimals
             return new FailureValidationBuilder<T, IDecimalEntryValidationBuilder<T>>(greater_than_validator,validators,ignore_validators,this);
         }
 
+        public IFailureEntryValidationBuilder<T, IDecimalEntryValidationBuilder<T>> greater_than_or_equal_to(decimal value)
+        {
+            var greater_than_equal_to_validator = new GreaterThanEqualToValidator<T, decimal>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(greater_than_equal_to_validator);
+            return new FailureValidationBuilder<T, IDecimalEntryValidationBuilder<T>>(greater_than_equal_to_validator, validators, ignore_validators, this);
+        }
+
         public IFailureEntryValidationBuilder<T, IDecimalEntryValidationBuilder<T>> less_than(decimal value)
         {
             var less_than_validator = new LessThanValidator<T, decimal>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(less_than_validator);
             return new FailureValidationBuilder<T, IDecimalEntryValidationBuilder<T>>(less_than_validator, validators, ignore_validators, this);
+        }
+
+        public IFailureEntryValidationBuilder<T, IDecimalEntryValidationBuilder<T>> less_than_or_equal_to(decimal value)
+        {
+            var less_than_equal_to_validator = new LessThanEqualToValidator<T, decimal>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(less_than_equal_to_validator);
+            return new FailureValidationBuilder<T, IDecimalEntryValidationBuilder<T>>(less_than_equal_to_validator, validators, ignore_validators, this);
         }
 
         /// <summary>

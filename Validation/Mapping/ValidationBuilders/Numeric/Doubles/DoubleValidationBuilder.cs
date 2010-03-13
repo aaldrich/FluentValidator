@@ -38,11 +38,25 @@ namespace Validation.Mapping.ValidationBuilders.Numeric.Doubles
             return new FailureValidationBuilder<T, IDoubleEntryValidationBuilder<T>>(greater_than_validator,validators,ignore_validators,this);
         }
 
+        public IFailureEntryValidationBuilder<T, IDoubleEntryValidationBuilder<T>> greater_than_or_equal_to(double value)
+        {
+            var greater_than_equal_to_validator = new GreaterThanEqualToValidator<T, double>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(greater_than_equal_to_validator);
+            return new FailureValidationBuilder<T, IDoubleEntryValidationBuilder<T>>(greater_than_equal_to_validator, validators, ignore_validators, this);
+        }
+
         public IFailureEntryValidationBuilder<T, IDoubleEntryValidationBuilder<T>> less_than(double value)
         {
             var less_than_validator = new LessThanValidator<T, double>(expression, value);
             base.add_validator_with_not_wrapper_if_needed(less_than_validator);
             return new FailureValidationBuilder<T, IDoubleEntryValidationBuilder<T>>(less_than_validator, validators, ignore_validators, this);
+        }
+
+        public IFailureEntryValidationBuilder<T, IDoubleEntryValidationBuilder<T>> less_than_or_equal_to(double value)
+        {
+            var less_than_equal_to_validator = new LessThanEqualToValidator<T, double>(expression, value);
+            base.add_validator_with_not_wrapper_if_needed(less_than_equal_to_validator);
+            return new FailureValidationBuilder<T, IDoubleEntryValidationBuilder<T>>(less_than_equal_to_validator, validators, ignore_validators, this);
         }
 
         /// <summary>
